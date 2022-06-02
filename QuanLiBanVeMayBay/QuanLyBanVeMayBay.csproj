@@ -53,6 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DanhSachChuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachChuyenBay.Designer.cs">
+      <DependentUpon>DanhSachChuyenBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachKhachHang.Designer.cs">
+      <DependentUpon>DanhSachKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhSachNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +85,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DanhSachChuyenBay.resx">
+      <DependentUpon>DanhSachChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachKhachHang.resx">
+      <DependentUpon>DanhSachKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhSachNhanVien.resx">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +165,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\assets\img\Plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Authorization.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Function.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Function11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Function.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Function11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

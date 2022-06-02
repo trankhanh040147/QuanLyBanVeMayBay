@@ -1,0 +1,602 @@
+﻿
+namespace QuanLyBanVeMayBay
+{
+    partial class DanhSachChuyenBay
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTimKiemThongThuong = new System.Windows.Forms.Button();
+            this.dtpNgayden = new System.Windows.Forms.DateTimePicker();
+            this.dtpGioBay = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgaydi = new System.Windows.Forms.DateTimePicker();
+            this.txtMachuyenbay = new System.Windows.Forms.TextBox();
+            this.rdbMachuyenbay = new System.Windows.Forms.RadioButton();
+            this.rdbNgayDen = new System.Windows.Forms.RadioButton();
+            this.rdbNgayDi = new System.Windows.Forms.RadioButton();
+            this.rdbGioBay = new System.Windows.Forms.RadioButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grbKhoangThoiGian = new System.Windows.Forms.GroupBox();
+            this.dtpTgTo = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dtpTgFrom = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.grbKhoanggio = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtpGioFrom = new System.Windows.Forms.DateTimePicker();
+            this.dtpGioTo = new System.Windows.Forms.DateTimePicker();
+            this.grbBoLocDaNang = new System.Windows.Forms.GroupBox();
+            this.rdbKhoangtgden = new System.Windows.Forms.RadioButton();
+            this.rdbKhoangtgdi = new System.Windows.Forms.RadioButton();
+            this.rdbKhoanggiobay = new System.Windows.Forms.RadioButton();
+            this.btnTimDaNang = new System.Windows.Forms.Button();
+            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnXoa = new MaterialSkin.Controls.MaterialButton();
+            this.btnTim = new MaterialSkin.Controls.MaterialButton();
+            this.txtTim = new MaterialSkin.Controls.MaterialTextBox();
+            this.groupBox1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.grbKhoangThoiGian.SuspendLayout();
+            this.grbKhoanggio.SuspendLayout();
+            this.grbBoLocDaNang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnTimKiemThongThuong);
+            this.groupBox1.Controls.Add(this.dtpNgayden);
+            this.groupBox1.Controls.Add(this.dtpGioBay);
+            this.groupBox1.Controls.Add(this.dtpNgaydi);
+            this.groupBox1.Controls.Add(this.txtMachuyenbay);
+            this.groupBox1.Controls.Add(this.rdbMachuyenbay);
+            this.groupBox1.Controls.Add(this.rdbNgayDen);
+            this.groupBox1.Controls.Add(this.rdbNgayDi);
+            this.groupBox1.Controls.Add(this.rdbGioBay);
+            this.groupBox1.Font = new System.Drawing.Font("Cherry Swash", 12F);
+            this.groupBox1.ForeColor = System.Drawing.Color.Gold;
+            this.groupBox1.Location = new System.Drawing.Point(18, 20);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(250, 234);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tìm kiếm thông thường";
+            // 
+            // btnTimKiemThongThuong
+            // 
+            this.btnTimKiemThongThuong.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiemThongThuong.ForeColor = System.Drawing.Color.Blue;
+            this.btnTimKiemThongThuong.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
+            this.btnTimKiemThongThuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiemThongThuong.Location = new System.Drawing.Point(21, 172);
+            this.btnTimKiemThongThuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimKiemThongThuong.Name = "btnTimKiemThongThuong";
+            this.btnTimKiemThongThuong.Size = new System.Drawing.Size(210, 47);
+            this.btnTimKiemThongThuong.TabIndex = 10;
+            this.btnTimKiemThongThuong.Text = "Tìm kiếm";
+            this.btnTimKiemThongThuong.UseVisualStyleBackColor = true;
+            // 
+            // dtpNgayden
+            // 
+            this.dtpNgayden.CustomFormat = "dd/mm/yyyy";
+            this.dtpNgayden.Font = new System.Drawing.Font("Arial", 9F);
+            this.dtpNgayden.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgayden.Location = new System.Drawing.Point(134, 102);
+            this.dtpNgayden.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpNgayden.Name = "dtpNgayden";
+            this.dtpNgayden.Size = new System.Drawing.Size(98, 21);
+            this.dtpNgayden.TabIndex = 9;
+            // 
+            // dtpGioBay
+            // 
+            this.dtpGioBay.CustomFormat = "dd/mm/yyyy";
+            this.dtpGioBay.Font = new System.Drawing.Font("Arial", 9F);
+            this.dtpGioBay.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpGioBay.Location = new System.Drawing.Point(134, 37);
+            this.dtpGioBay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpGioBay.Name = "dtpGioBay";
+            this.dtpGioBay.ShowUpDown = true;
+            this.dtpGioBay.Size = new System.Drawing.Size(98, 21);
+            this.dtpGioBay.TabIndex = 8;
+            // 
+            // dtpNgaydi
+            // 
+            this.dtpNgaydi.CustomFormat = "dd/mm/yyyy";
+            this.dtpNgaydi.Font = new System.Drawing.Font("Arial", 9F);
+            this.dtpNgaydi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgaydi.Location = new System.Drawing.Point(134, 68);
+            this.dtpNgaydi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpNgaydi.Name = "dtpNgaydi";
+            this.dtpNgaydi.Size = new System.Drawing.Size(98, 21);
+            this.dtpNgaydi.TabIndex = 8;
+            // 
+            // txtMachuyenbay
+            // 
+            this.txtMachuyenbay.Font = new System.Drawing.Font("Arial", 9F);
+            this.txtMachuyenbay.Location = new System.Drawing.Point(134, 136);
+            this.txtMachuyenbay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMachuyenbay.Name = "txtMachuyenbay";
+            this.txtMachuyenbay.Size = new System.Drawing.Size(98, 21);
+            this.txtMachuyenbay.TabIndex = 7;
+            // 
+            // rdbMachuyenbay
+            // 
+            this.rdbMachuyenbay.AutoSize = true;
+            this.rdbMachuyenbay.Font = new System.Drawing.Font("Arial", 9F);
+            this.rdbMachuyenbay.ForeColor = System.Drawing.SystemColors.Control;
+            this.rdbMachuyenbay.Location = new System.Drawing.Point(21, 136);
+            this.rdbMachuyenbay.Name = "rdbMachuyenbay";
+            this.rdbMachuyenbay.Size = new System.Drawing.Size(105, 19);
+            this.rdbMachuyenbay.TabIndex = 4;
+            this.rdbMachuyenbay.TabStop = true;
+            this.rdbMachuyenbay.Text = "Mã chuyến bay";
+            this.rdbMachuyenbay.UseVisualStyleBackColor = true;
+            // 
+            // rdbNgayDen
+            // 
+            this.rdbNgayDen.AutoSize = true;
+            this.rdbNgayDen.Font = new System.Drawing.Font("Arial", 9F);
+            this.rdbNgayDen.ForeColor = System.Drawing.SystemColors.Control;
+            this.rdbNgayDen.Location = new System.Drawing.Point(21, 102);
+            this.rdbNgayDen.Name = "rdbNgayDen";
+            this.rdbNgayDen.Size = new System.Drawing.Size(77, 19);
+            this.rdbNgayDen.TabIndex = 5;
+            this.rdbNgayDen.TabStop = true;
+            this.rdbNgayDen.Text = "Ngày đến";
+            this.rdbNgayDen.UseVisualStyleBackColor = true;
+            // 
+            // rdbNgayDi
+            // 
+            this.rdbNgayDi.AutoSize = true;
+            this.rdbNgayDi.Font = new System.Drawing.Font("Arial", 9F);
+            this.rdbNgayDi.ForeColor = System.Drawing.SystemColors.Control;
+            this.rdbNgayDi.Location = new System.Drawing.Point(21, 68);
+            this.rdbNgayDi.Name = "rdbNgayDi";
+            this.rdbNgayDi.Size = new System.Drawing.Size(66, 19);
+            this.rdbNgayDi.TabIndex = 6;
+            this.rdbNgayDi.TabStop = true;
+            this.rdbNgayDi.Text = "Ngày đi";
+            this.rdbNgayDi.UseVisualStyleBackColor = true;
+            // 
+            // rdbGioBay
+            // 
+            this.rdbGioBay.AutoSize = true;
+            this.rdbGioBay.Font = new System.Drawing.Font("Arial", 9F);
+            this.rdbGioBay.ForeColor = System.Drawing.SystemColors.Control;
+            this.rdbGioBay.Location = new System.Drawing.Point(21, 37);
+            this.rdbGioBay.Name = "rdbGioBay";
+            this.rdbGioBay.Size = new System.Drawing.Size(67, 19);
+            this.rdbGioBay.TabIndex = 6;
+            this.rdbGioBay.TabStop = true;
+            this.rdbGioBay.Text = "Giờ bay";
+            this.rdbGioBay.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel3.Controls.Add(this.groupBox2);
+            this.panel3.Controls.Add(this.groupBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(274, 776);
+            this.panel3.TabIndex = 10;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.grbKhoangThoiGian);
+            this.groupBox2.Controls.Add(this.grbKhoanggio);
+            this.groupBox2.Controls.Add(this.grbBoLocDaNang);
+            this.groupBox2.Controls.Add(this.btnTimDaNang);
+            this.groupBox2.Font = new System.Drawing.Font("Cherry Swash", 12F);
+            this.groupBox2.ForeColor = System.Drawing.Color.Gold;
+            this.groupBox2.Location = new System.Drawing.Point(18, 273);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(250, 493);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Tìm kiếm đa năng";
+            // 
+            // grbKhoangThoiGian
+            // 
+            this.grbKhoangThoiGian.Controls.Add(this.dtpTgTo);
+            this.grbKhoangThoiGian.Controls.Add(this.label4);
+            this.grbKhoangThoiGian.Controls.Add(this.dtpTgFrom);
+            this.grbKhoangThoiGian.Controls.Add(this.label5);
+            this.grbKhoangThoiGian.Location = new System.Drawing.Point(21, 308);
+            this.grbKhoangThoiGian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbKhoangThoiGian.Name = "grbKhoangThoiGian";
+            this.grbKhoangThoiGian.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbKhoangThoiGian.Size = new System.Drawing.Size(210, 104);
+            this.grbKhoangThoiGian.TabIndex = 11;
+            this.grbKhoangThoiGian.TabStop = false;
+            // 
+            // dtpTgTo
+            // 
+            this.dtpTgTo.CustomFormat = "dd/mm/yyyy";
+            this.dtpTgTo.Font = new System.Drawing.Font("Arial", 9F);
+            this.dtpTgTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTgTo.Location = new System.Drawing.Point(99, 62);
+            this.dtpTgTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTgTo.Name = "dtpTgTo";
+            this.dtpTgTo.Size = new System.Drawing.Size(98, 21);
+            this.dtpTgTo.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(10, 62);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 23);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Đến:";
+            // 
+            // dtpTgFrom
+            // 
+            this.dtpTgFrom.CustomFormat = "dd/mm/yyyy";
+            this.dtpTgFrom.Font = new System.Drawing.Font("Arial", 9F);
+            this.dtpTgFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTgFrom.Location = new System.Drawing.Point(99, 28);
+            this.dtpTgFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTgFrom.Name = "dtpTgFrom";
+            this.dtpTgFrom.Size = new System.Drawing.Size(98, 21);
+            this.dtpTgFrom.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 24);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(96, 23);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Khoảng từ:";
+            // 
+            // grbKhoanggio
+            // 
+            this.grbKhoanggio.Controls.Add(this.label3);
+            this.grbKhoanggio.Controls.Add(this.label2);
+            this.grbKhoanggio.Controls.Add(this.dtpGioFrom);
+            this.grbKhoanggio.Controls.Add(this.dtpGioTo);
+            this.grbKhoanggio.Location = new System.Drawing.Point(21, 188);
+            this.grbKhoanggio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbKhoanggio.Name = "grbKhoanggio";
+            this.grbKhoanggio.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbKhoanggio.Size = new System.Drawing.Size(210, 104);
+            this.grbKhoanggio.TabIndex = 11;
+            this.grbKhoanggio.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(10, 62);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 23);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Đến:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 24);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 23);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Khoảng từ:";
+            // 
+            // dtpGioFrom
+            // 
+            this.dtpGioFrom.CustomFormat = "dd/mm/yyyy";
+            this.dtpGioFrom.Font = new System.Drawing.Font("Arial", 9F);
+            this.dtpGioFrom.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpGioFrom.Location = new System.Drawing.Point(98, 28);
+            this.dtpGioFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpGioFrom.Name = "dtpGioFrom";
+            this.dtpGioFrom.ShowUpDown = true;
+            this.dtpGioFrom.Size = new System.Drawing.Size(98, 21);
+            this.dtpGioFrom.TabIndex = 16;
+            // 
+            // dtpGioTo
+            // 
+            this.dtpGioTo.CustomFormat = "dd/mm/yyyy";
+            this.dtpGioTo.Font = new System.Drawing.Font("Arial", 9F);
+            this.dtpGioTo.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpGioTo.Location = new System.Drawing.Point(98, 65);
+            this.dtpGioTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpGioTo.Name = "dtpGioTo";
+            this.dtpGioTo.ShowUpDown = true;
+            this.dtpGioTo.Size = new System.Drawing.Size(98, 21);
+            this.dtpGioTo.TabIndex = 9;
+            // 
+            // grbBoLocDaNang
+            // 
+            this.grbBoLocDaNang.Controls.Add(this.rdbKhoangtgden);
+            this.grbBoLocDaNang.Controls.Add(this.rdbKhoangtgdi);
+            this.grbBoLocDaNang.Controls.Add(this.rdbKhoanggiobay);
+            this.grbBoLocDaNang.Location = new System.Drawing.Point(21, 40);
+            this.grbBoLocDaNang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbBoLocDaNang.Name = "grbBoLocDaNang";
+            this.grbBoLocDaNang.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbBoLocDaNang.Size = new System.Drawing.Size(210, 136);
+            this.grbBoLocDaNang.TabIndex = 11;
+            this.grbBoLocDaNang.TabStop = false;
+            // 
+            // rdbKhoangtgden
+            // 
+            this.rdbKhoangtgden.AutoSize = true;
+            this.rdbKhoangtgden.Font = new System.Drawing.Font("Arial", 9F);
+            this.rdbKhoangtgden.ForeColor = System.Drawing.SystemColors.Control;
+            this.rdbKhoangtgden.Location = new System.Drawing.Point(21, 94);
+            this.rdbKhoangtgden.Name = "rdbKhoangtgden";
+            this.rdbKhoangtgden.Size = new System.Drawing.Size(143, 19);
+            this.rdbKhoangtgden.TabIndex = 11;
+            this.rdbKhoangtgden.TabStop = true;
+            this.rdbKhoangtgden.Text = "Khoảng thời gian đến";
+            this.rdbKhoangtgden.UseVisualStyleBackColor = true;
+            // 
+            // rdbKhoangtgdi
+            // 
+            this.rdbKhoangtgdi.AutoSize = true;
+            this.rdbKhoangtgdi.Font = new System.Drawing.Font("Arial", 9F);
+            this.rdbKhoangtgdi.ForeColor = System.Drawing.SystemColors.Control;
+            this.rdbKhoangtgdi.Location = new System.Drawing.Point(21, 60);
+            this.rdbKhoangtgdi.Name = "rdbKhoangtgdi";
+            this.rdbKhoangtgdi.Size = new System.Drawing.Size(132, 19);
+            this.rdbKhoangtgdi.TabIndex = 12;
+            this.rdbKhoangtgdi.TabStop = true;
+            this.rdbKhoangtgdi.Text = "Khoảng thời gian đi";
+            this.rdbKhoangtgdi.UseVisualStyleBackColor = true;
+            // 
+            // rdbKhoanggiobay
+            // 
+            this.rdbKhoanggiobay.AutoSize = true;
+            this.rdbKhoanggiobay.Font = new System.Drawing.Font("Arial", 9F);
+            this.rdbKhoanggiobay.ForeColor = System.Drawing.SystemColors.Control;
+            this.rdbKhoanggiobay.Location = new System.Drawing.Point(21, 29);
+            this.rdbKhoanggiobay.Name = "rdbKhoanggiobay";
+            this.rdbKhoanggiobay.Size = new System.Drawing.Size(111, 19);
+            this.rdbKhoanggiobay.TabIndex = 13;
+            this.rdbKhoanggiobay.TabStop = true;
+            this.rdbKhoanggiobay.Text = "Khoảng giờ bay";
+            this.rdbKhoanggiobay.UseVisualStyleBackColor = true;
+            // 
+            // btnTimDaNang
+            // 
+            this.btnTimDaNang.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimDaNang.ForeColor = System.Drawing.Color.Blue;
+            this.btnTimDaNang.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
+            this.btnTimDaNang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimDaNang.Location = new System.Drawing.Point(21, 427);
+            this.btnTimDaNang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimDaNang.Name = "btnTimDaNang";
+            this.btnTimDaNang.Size = new System.Drawing.Size(210, 50);
+            this.btnTimDaNang.TabIndex = 10;
+            this.btnTimDaNang.Text = "Tìm kiếm";
+            this.btnTimDaNang.UseVisualStyleBackColor = true;
+            // 
+            // dgvKhachHang
+            // 
+            this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Aquamarine;
+            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvKhachHang.Location = new System.Drawing.Point(274, 0);
+            this.dgvKhachHang.Name = "dgvKhachHang";
+            this.dgvKhachHang.RowHeadersWidth = 51;
+            this.dgvKhachHang.Size = new System.Drawing.Size(881, 776);
+            this.dgvKhachHang.TabIndex = 13;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightBlue;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(274, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(881, 100);
+            this.panel1.TabIndex = 14;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(0, 106);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::QuanLyBanVeMayBay.Properties.Resources.Staff1;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(202, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(524, 58);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Danh sách khách hàng";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel4.Controls.Add(this.btnXoa);
+            this.panel4.Controls.Add(this.btnTim);
+            this.panel4.Controls.Add(this.txtTim);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(274, 100);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(881, 50);
+            this.panel4.TabIndex = 15;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.AutoSize = false;
+            this.btnXoa.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnXoa.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnXoa.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnXoa.Depth = 0;
+            this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnXoa.HighEmphasis = true;
+            this.btnXoa.Icon = null;
+            this.btnXoa.Location = new System.Drawing.Point(511, 6);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnXoa.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnXoa.Size = new System.Drawing.Size(90, 36);
+            this.btnXoa.TabIndex = 1;
+            this.btnXoa.Text = "Xoá";
+            this.btnXoa.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnXoa.UseAccentColor = false;
+            this.btnXoa.UseVisualStyleBackColor = false;
+            // 
+            // btnTim
+            // 
+            this.btnTim.AutoSize = false;
+            this.btnTim.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTim.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnTim.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnTim.Depth = 0;
+            this.btnTim.HighEmphasis = true;
+            this.btnTim.Icon = null;
+            this.btnTim.Location = new System.Drawing.Point(391, 6);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnTim.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnTim.Name = "btnTim";
+            this.btnTim.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnTim.Size = new System.Drawing.Size(90, 36);
+            this.btnTim.TabIndex = 1;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnTim.UseAccentColor = false;
+            this.btnTim.UseVisualStyleBackColor = false;
+            // 
+            // txtTim
+            // 
+            this.txtTim.AnimateReadOnly = false;
+            this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTim.Depth = 0;
+            this.txtTim.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtTim.LeadingIcon = null;
+            this.txtTim.Location = new System.Drawing.Point(33, 9);
+            this.txtTim.MaxLength = 50;
+            this.txtTim.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTim.Multiline = false;
+            this.txtTim.Name = "txtTim";
+            this.txtTim.Size = new System.Drawing.Size(343, 36);
+            this.txtTim.TabIndex = 0;
+            this.txtTim.Text = "Nhập thông tin vào đây";
+            this.txtTim.TrailingIcon = null;
+            this.txtTim.UseTallSize = false;
+            // 
+            // DanhSachChuyenBay
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1155, 776);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dgvKhachHang);
+            this.Controls.Add(this.panel3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "DanhSachChuyenBay";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.grbKhoangThoiGian.ResumeLayout(false);
+            this.grbKhoangThoiGian.PerformLayout();
+            this.grbKhoanggio.ResumeLayout(false);
+            this.grbKhoanggio.PerformLayout();
+            this.grbBoLocDaNang.ResumeLayout(false);
+            this.grbBoLocDaNang.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rdbMachuyenbay;
+        private System.Windows.Forms.RadioButton rdbNgayDen;
+        private System.Windows.Forms.RadioButton rdbGioBay;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
+        private MaterialSkin.Controls.MaterialButton btnXoa;
+        private MaterialSkin.Controls.MaterialButton btnTim;
+        private MaterialSkin.Controls.MaterialTextBox txtTim;
+        private System.Windows.Forms.RadioButton rdbNgayDi;
+        private System.Windows.Forms.TextBox txtMachuyenbay;
+        private System.Windows.Forms.DateTimePicker dtpNgayden;
+        private System.Windows.Forms.DateTimePicker dtpNgaydi;
+        private System.Windows.Forms.DateTimePicker dtpGioBay;
+        private System.Windows.Forms.Button btnTimKiemThongThuong;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnTimDaNang;
+        private System.Windows.Forms.GroupBox grbBoLocDaNang;
+        private System.Windows.Forms.RadioButton rdbKhoangtgden;
+        private System.Windows.Forms.RadioButton rdbKhoangtgdi;
+        private System.Windows.Forms.RadioButton rdbKhoanggiobay;
+        private System.Windows.Forms.GroupBox grbKhoanggio;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtpGioFrom;
+        private System.Windows.Forms.DateTimePicker dtpGioTo;
+        private System.Windows.Forms.GroupBox grbKhoangThoiGian;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dtpTgTo;
+        private System.Windows.Forms.DateTimePicker dtpTgFrom;
+    }
+}
