@@ -32,19 +32,19 @@ namespace QuanLyBanVeMayBay
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.PanelFunction = new System.Windows.Forms.Panel();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdbDiaChiKhachHang = new System.Windows.Forms.RadioButton();
             this.rdbTenKhachHang = new System.Windows.Forms.RadioButton();
             this.rdbMaKhachHang = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.PanelFunction = new System.Windows.Forms.Panel();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnXoa = new MaterialSkin.Controls.MaterialButton();
@@ -53,8 +53,8 @@ namespace QuanLyBanVeMayBay
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.PanelFunction.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.PanelFunction.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +90,19 @@ namespace QuanLyBanVeMayBay
             this.panel2.Size = new System.Drawing.Size(267, 123);
             this.panel2.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 26F, System.Drawing.FontStyle.Bold);
+            this.label1.Image = global::QuanLyBanVeMayBay.Properties.Resources.Staff1;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(269, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(699, 71);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Danh sách khách hàng";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
@@ -101,78 +114,6 @@ namespace QuanLyBanVeMayBay
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(296, 682);
             this.panel3.TabIndex = 5;
-            // 
-            // PanelFunction
-            // 
-            this.PanelFunction.Controls.Add(this.progressBar2);
-            this.PanelFunction.Controls.Add(this.textBox3);
-            this.PanelFunction.Controls.Add(this.textBox2);
-            this.PanelFunction.Controls.Add(this.textBox1);
-            this.PanelFunction.Controls.Add(this.label3);
-            this.PanelFunction.Controls.Add(this.progressBar1);
-            this.PanelFunction.Controls.Add(this.label2);
-            this.PanelFunction.Location = new System.Drawing.Point(4, 7);
-            this.PanelFunction.Margin = new System.Windows.Forms.Padding(4);
-            this.PanelFunction.Name = "PanelFunction";
-            this.PanelFunction.Size = new System.Drawing.Size(292, 337);
-            this.PanelFunction.TabIndex = 0;
-            this.PanelFunction.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelFunction_Paint);
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.BackColor = System.Drawing.Color.Gainsboro;
-            this.progressBar1.Location = new System.Drawing.Point(24, 115);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(240, 4);
-            this.progressBar1.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Red;
-            this.textBox1.Location = new System.Drawing.Point(63, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 23);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "ADMIN + Nhân viên";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Red;
-            this.textBox2.Location = new System.Drawing.Point(46, 200);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 60);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "• Tìm kiếm thông tin khách hàng";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Red;
-            this.textBox3.Location = new System.Drawing.Point(46, 266);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(243, 60);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "• Tìm kiếm thông tin khách hàng";
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.BackColor = System.Drawing.Color.Gainsboro;
-            this.progressBar2.Location = new System.Drawing.Point(24, 329);
-            this.progressBar2.Margin = new System.Windows.Forms.Padding(4);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(240, 4);
-            this.progressBar2.TabIndex = 8;
             // 
             // groupBox1
             // 
@@ -230,18 +171,68 @@ namespace QuanLyBanVeMayBay
             this.rdbMaKhachHang.Text = "Mã khách hàng";
             this.rdbMaKhachHang.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // PanelFunction
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = global::QuanLyBanVeMayBay.Properties.Resources.Staff1;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(269, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(699, 71);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Danh sách khách hàng";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PanelFunction.Controls.Add(this.progressBar2);
+            this.PanelFunction.Controls.Add(this.textBox3);
+            this.PanelFunction.Controls.Add(this.textBox2);
+            this.PanelFunction.Controls.Add(this.textBox1);
+            this.PanelFunction.Controls.Add(this.label3);
+            this.PanelFunction.Controls.Add(this.progressBar1);
+            this.PanelFunction.Controls.Add(this.label2);
+            this.PanelFunction.Location = new System.Drawing.Point(4, 7);
+            this.PanelFunction.Margin = new System.Windows.Forms.Padding(4);
+            this.PanelFunction.Name = "PanelFunction";
+            this.PanelFunction.Size = new System.Drawing.Size(292, 337);
+            this.PanelFunction.TabIndex = 0;
+            this.PanelFunction.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelFunction_Paint);
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.BackColor = System.Drawing.Color.Gainsboro;
+            this.progressBar2.Location = new System.Drawing.Point(24, 329);
+            this.progressBar2.Margin = new System.Windows.Forms.Padding(4);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(240, 4);
+            this.progressBar2.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.Red;
+            this.textBox3.Location = new System.Drawing.Point(46, 266);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(243, 60);
+            this.textBox3.TabIndex = 3;
+            this.textBox3.Text = "• Tìm kiếm thông tin khách hàng";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Red;
+            this.textBox2.Location = new System.Drawing.Point(46, 200);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(243, 60);
+            this.textBox2.TabIndex = 3;
+            this.textBox2.Text = "• Tìm kiếm thông tin khách hàng";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Red;
+            this.textBox1.Location = new System.Drawing.Point(63, 80);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(229, 23);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "ADMIN + Nhân viên";
             // 
             // label3
             // 
@@ -256,6 +247,15 @@ namespace QuanLyBanVeMayBay
             this.label3.TabIndex = 1;
             this.label3.Text = "Chức năng";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.BackColor = System.Drawing.Color.Gainsboro;
+            this.progressBar1.Location = new System.Drawing.Point(24, 115);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(240, 4);
+            this.progressBar1.TabIndex = 2;
             // 
             // label2
             // 
@@ -362,10 +362,10 @@ namespace QuanLyBanVeMayBay
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.PanelFunction.ResumeLayout(false);
-            this.PanelFunction.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.PanelFunction.ResumeLayout(false);
+            this.PanelFunction.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 

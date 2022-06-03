@@ -88,11 +88,11 @@ namespace QuanLyBanVeMayBay
             this.groupBox1.Controls.Add(this.rdbGioBay);
             this.groupBox1.Font = new System.Drawing.Font("Cherry Swash", 12F);
             this.groupBox1.ForeColor = System.Drawing.Color.Gold;
-            this.groupBox1.Location = new System.Drawing.Point(18, 20);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(24, 25);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(250, 234);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(333, 288);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm thông thường";
@@ -103,10 +103,10 @@ namespace QuanLyBanVeMayBay
             this.btnTimKiemThongThuong.ForeColor = System.Drawing.Color.Blue;
             this.btnTimKiemThongThuong.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
             this.btnTimKiemThongThuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemThongThuong.Location = new System.Drawing.Point(21, 172);
-            this.btnTimKiemThongThuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimKiemThongThuong.Location = new System.Drawing.Point(28, 212);
+            this.btnTimKiemThongThuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiemThongThuong.Name = "btnTimKiemThongThuong";
-            this.btnTimKiemThongThuong.Size = new System.Drawing.Size(210, 47);
+            this.btnTimKiemThongThuong.Size = new System.Drawing.Size(280, 58);
             this.btnTimKiemThongThuong.TabIndex = 10;
             this.btnTimKiemThongThuong.Text = "Tìm kiếm";
             this.btnTimKiemThongThuong.UseVisualStyleBackColor = true;
@@ -116,10 +116,10 @@ namespace QuanLyBanVeMayBay
             this.dtpNgayden.CustomFormat = "dd/mm/yyyy";
             this.dtpNgayden.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpNgayden.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayden.Location = new System.Drawing.Point(134, 102);
-            this.dtpNgayden.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpNgayden.Location = new System.Drawing.Point(179, 126);
+            this.dtpNgayden.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgayden.Name = "dtpNgayden";
-            this.dtpNgayden.Size = new System.Drawing.Size(98, 21);
+            this.dtpNgayden.Size = new System.Drawing.Size(129, 25);
             this.dtpNgayden.TabIndex = 9;
             // 
             // dtpGioBay
@@ -127,11 +127,11 @@ namespace QuanLyBanVeMayBay
             this.dtpGioBay.CustomFormat = "dd/mm/yyyy";
             this.dtpGioBay.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpGioBay.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpGioBay.Location = new System.Drawing.Point(134, 37);
-            this.dtpGioBay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpGioBay.Location = new System.Drawing.Point(179, 46);
+            this.dtpGioBay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpGioBay.Name = "dtpGioBay";
             this.dtpGioBay.ShowUpDown = true;
-            this.dtpGioBay.Size = new System.Drawing.Size(98, 21);
+            this.dtpGioBay.Size = new System.Drawing.Size(129, 25);
             this.dtpGioBay.TabIndex = 8;
             // 
             // dtpNgaydi
@@ -139,19 +139,19 @@ namespace QuanLyBanVeMayBay
             this.dtpNgaydi.CustomFormat = "dd/mm/yyyy";
             this.dtpNgaydi.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpNgaydi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgaydi.Location = new System.Drawing.Point(134, 68);
-            this.dtpNgaydi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpNgaydi.Location = new System.Drawing.Point(179, 84);
+            this.dtpNgaydi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpNgaydi.Name = "dtpNgaydi";
-            this.dtpNgaydi.Size = new System.Drawing.Size(98, 21);
+            this.dtpNgaydi.Size = new System.Drawing.Size(129, 25);
             this.dtpNgaydi.TabIndex = 8;
             // 
             // txtMachuyenbay
             // 
             this.txtMachuyenbay.Font = new System.Drawing.Font("Arial", 9F);
-            this.txtMachuyenbay.Location = new System.Drawing.Point(134, 136);
-            this.txtMachuyenbay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMachuyenbay.Location = new System.Drawing.Point(179, 167);
+            this.txtMachuyenbay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMachuyenbay.Name = "txtMachuyenbay";
-            this.txtMachuyenbay.Size = new System.Drawing.Size(98, 21);
+            this.txtMachuyenbay.Size = new System.Drawing.Size(129, 25);
             this.txtMachuyenbay.TabIndex = 7;
             // 
             // rdbMachuyenbay
@@ -159,9 +159,10 @@ namespace QuanLyBanVeMayBay
             this.rdbMachuyenbay.AutoSize = true;
             this.rdbMachuyenbay.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbMachuyenbay.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbMachuyenbay.Location = new System.Drawing.Point(21, 136);
+            this.rdbMachuyenbay.Location = new System.Drawing.Point(28, 167);
+            this.rdbMachuyenbay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbMachuyenbay.Name = "rdbMachuyenbay";
-            this.rdbMachuyenbay.Size = new System.Drawing.Size(105, 19);
+            this.rdbMachuyenbay.Size = new System.Drawing.Size(126, 21);
             this.rdbMachuyenbay.TabIndex = 4;
             this.rdbMachuyenbay.TabStop = true;
             this.rdbMachuyenbay.Text = "Mã chuyến bay";
@@ -172,9 +173,10 @@ namespace QuanLyBanVeMayBay
             this.rdbNgayDen.AutoSize = true;
             this.rdbNgayDen.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbNgayDen.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbNgayDen.Location = new System.Drawing.Point(21, 102);
+            this.rdbNgayDen.Location = new System.Drawing.Point(28, 126);
+            this.rdbNgayDen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbNgayDen.Name = "rdbNgayDen";
-            this.rdbNgayDen.Size = new System.Drawing.Size(77, 19);
+            this.rdbNgayDen.Size = new System.Drawing.Size(90, 21);
             this.rdbNgayDen.TabIndex = 5;
             this.rdbNgayDen.TabStop = true;
             this.rdbNgayDen.Text = "Ngày đến";
@@ -185,9 +187,10 @@ namespace QuanLyBanVeMayBay
             this.rdbNgayDi.AutoSize = true;
             this.rdbNgayDi.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbNgayDi.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbNgayDi.Location = new System.Drawing.Point(21, 68);
+            this.rdbNgayDi.Location = new System.Drawing.Point(28, 84);
+            this.rdbNgayDi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbNgayDi.Name = "rdbNgayDi";
-            this.rdbNgayDi.Size = new System.Drawing.Size(66, 19);
+            this.rdbNgayDi.Size = new System.Drawing.Size(77, 21);
             this.rdbNgayDi.TabIndex = 6;
             this.rdbNgayDi.TabStop = true;
             this.rdbNgayDi.Text = "Ngày đi";
@@ -198,9 +201,10 @@ namespace QuanLyBanVeMayBay
             this.rdbGioBay.AutoSize = true;
             this.rdbGioBay.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbGioBay.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbGioBay.Location = new System.Drawing.Point(21, 37);
+            this.rdbGioBay.Location = new System.Drawing.Point(28, 46);
+            this.rdbGioBay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbGioBay.Name = "rdbGioBay";
-            this.rdbGioBay.Size = new System.Drawing.Size(67, 19);
+            this.rdbGioBay.Size = new System.Drawing.Size(80, 21);
             this.rdbGioBay.TabIndex = 6;
             this.rdbGioBay.TabStop = true;
             this.rdbGioBay.Text = "Giờ bay";
@@ -213,8 +217,9 @@ namespace QuanLyBanVeMayBay
             this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(274, 776);
+            this.panel3.Size = new System.Drawing.Size(365, 1001);
             this.panel3.TabIndex = 10;
             // 
             // groupBox2
@@ -225,11 +230,11 @@ namespace QuanLyBanVeMayBay
             this.groupBox2.Controls.Add(this.btnTimDaNang);
             this.groupBox2.Font = new System.Drawing.Font("Cherry Swash", 12F);
             this.groupBox2.ForeColor = System.Drawing.Color.Gold;
-            this.groupBox2.Location = new System.Drawing.Point(18, 273);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(24, 336);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(250, 493);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(333, 607);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm kiếm đa năng";
@@ -240,11 +245,11 @@ namespace QuanLyBanVeMayBay
             this.grbKhoangThoiGian.Controls.Add(this.label4);
             this.grbKhoangThoiGian.Controls.Add(this.dtpTgFrom);
             this.grbKhoangThoiGian.Controls.Add(this.label5);
-            this.grbKhoangThoiGian.Location = new System.Drawing.Point(21, 308);
-            this.grbKhoangThoiGian.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbKhoangThoiGian.Location = new System.Drawing.Point(28, 379);
+            this.grbKhoangThoiGian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbKhoangThoiGian.Name = "grbKhoangThoiGian";
-            this.grbKhoangThoiGian.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grbKhoangThoiGian.Size = new System.Drawing.Size(210, 104);
+            this.grbKhoangThoiGian.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbKhoangThoiGian.Size = new System.Drawing.Size(280, 128);
             this.grbKhoangThoiGian.TabIndex = 11;
             this.grbKhoangThoiGian.TabStop = false;
             // 
@@ -253,20 +258,19 @@ namespace QuanLyBanVeMayBay
             this.dtpTgTo.CustomFormat = "dd/mm/yyyy";
             this.dtpTgTo.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpTgTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpTgTo.Location = new System.Drawing.Point(99, 62);
-            this.dtpTgTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTgTo.Location = new System.Drawing.Point(132, 76);
+            this.dtpTgTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpTgTo.Name = "dtpTgTo";
-            this.dtpTgTo.Size = new System.Drawing.Size(98, 21);
+            this.dtpTgTo.Size = new System.Drawing.Size(129, 25);
             this.dtpTgTo.TabIndex = 13;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(10, 62);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(13, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 23);
+            this.label4.Size = new System.Drawing.Size(57, 29);
             this.label4.TabIndex = 17;
             this.label4.Text = "Đến:";
             // 
@@ -275,20 +279,19 @@ namespace QuanLyBanVeMayBay
             this.dtpTgFrom.CustomFormat = "dd/mm/yyyy";
             this.dtpTgFrom.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpTgFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpTgFrom.Location = new System.Drawing.Point(99, 28);
-            this.dtpTgFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTgFrom.Location = new System.Drawing.Point(132, 34);
+            this.dtpTgFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpTgFrom.Name = "dtpTgFrom";
-            this.dtpTgFrom.Size = new System.Drawing.Size(98, 21);
+            this.dtpTgFrom.Size = new System.Drawing.Size(129, 25);
             this.dtpTgFrom.TabIndex = 12;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 24);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(8, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 23);
+            this.label5.Size = new System.Drawing.Size(118, 29);
             this.label5.TabIndex = 17;
             this.label5.Text = "Khoảng từ:";
             // 
@@ -298,11 +301,11 @@ namespace QuanLyBanVeMayBay
             this.grbKhoanggio.Controls.Add(this.label2);
             this.grbKhoanggio.Controls.Add(this.dtpGioFrom);
             this.grbKhoanggio.Controls.Add(this.dtpGioTo);
-            this.grbKhoanggio.Location = new System.Drawing.Point(21, 188);
-            this.grbKhoanggio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbKhoanggio.Location = new System.Drawing.Point(28, 231);
+            this.grbKhoanggio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbKhoanggio.Name = "grbKhoanggio";
-            this.grbKhoanggio.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grbKhoanggio.Size = new System.Drawing.Size(210, 104);
+            this.grbKhoanggio.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbKhoanggio.Size = new System.Drawing.Size(280, 128);
             this.grbKhoanggio.TabIndex = 11;
             this.grbKhoanggio.TabStop = false;
             // 
@@ -310,10 +313,9 @@ namespace QuanLyBanVeMayBay
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(10, 62);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(13, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 23);
+            this.label3.Size = new System.Drawing.Size(57, 29);
             this.label3.TabIndex = 17;
             this.label3.Text = "Đến:";
             // 
@@ -321,10 +323,9 @@ namespace QuanLyBanVeMayBay
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 24);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(8, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 23);
+            this.label2.Size = new System.Drawing.Size(118, 29);
             this.label2.TabIndex = 17;
             this.label2.Text = "Khoảng từ:";
             // 
@@ -333,11 +334,11 @@ namespace QuanLyBanVeMayBay
             this.dtpGioFrom.CustomFormat = "dd/mm/yyyy";
             this.dtpGioFrom.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpGioFrom.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpGioFrom.Location = new System.Drawing.Point(98, 28);
-            this.dtpGioFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpGioFrom.Location = new System.Drawing.Point(131, 34);
+            this.dtpGioFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpGioFrom.Name = "dtpGioFrom";
             this.dtpGioFrom.ShowUpDown = true;
-            this.dtpGioFrom.Size = new System.Drawing.Size(98, 21);
+            this.dtpGioFrom.Size = new System.Drawing.Size(129, 25);
             this.dtpGioFrom.TabIndex = 16;
             // 
             // dtpGioTo
@@ -345,11 +346,11 @@ namespace QuanLyBanVeMayBay
             this.dtpGioTo.CustomFormat = "dd/mm/yyyy";
             this.dtpGioTo.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpGioTo.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpGioTo.Location = new System.Drawing.Point(98, 65);
-            this.dtpGioTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpGioTo.Location = new System.Drawing.Point(131, 80);
+            this.dtpGioTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpGioTo.Name = "dtpGioTo";
             this.dtpGioTo.ShowUpDown = true;
-            this.dtpGioTo.Size = new System.Drawing.Size(98, 21);
+            this.dtpGioTo.Size = new System.Drawing.Size(129, 25);
             this.dtpGioTo.TabIndex = 9;
             // 
             // grbBoLocDaNang
@@ -357,11 +358,11 @@ namespace QuanLyBanVeMayBay
             this.grbBoLocDaNang.Controls.Add(this.rdbKhoangtgden);
             this.grbBoLocDaNang.Controls.Add(this.rdbKhoangtgdi);
             this.grbBoLocDaNang.Controls.Add(this.rdbKhoanggiobay);
-            this.grbBoLocDaNang.Location = new System.Drawing.Point(21, 40);
-            this.grbBoLocDaNang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grbBoLocDaNang.Location = new System.Drawing.Point(28, 49);
+            this.grbBoLocDaNang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grbBoLocDaNang.Name = "grbBoLocDaNang";
-            this.grbBoLocDaNang.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grbBoLocDaNang.Size = new System.Drawing.Size(210, 136);
+            this.grbBoLocDaNang.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grbBoLocDaNang.Size = new System.Drawing.Size(280, 167);
             this.grbBoLocDaNang.TabIndex = 11;
             this.grbBoLocDaNang.TabStop = false;
             // 
@@ -370,9 +371,10 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoangtgden.AutoSize = true;
             this.rdbKhoangtgden.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbKhoangtgden.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbKhoangtgden.Location = new System.Drawing.Point(21, 94);
+            this.rdbKhoangtgden.Location = new System.Drawing.Point(28, 116);
+            this.rdbKhoangtgden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbKhoangtgden.Name = "rdbKhoangtgden";
-            this.rdbKhoangtgden.Size = new System.Drawing.Size(143, 19);
+            this.rdbKhoangtgden.Size = new System.Drawing.Size(167, 21);
             this.rdbKhoangtgden.TabIndex = 11;
             this.rdbKhoangtgden.TabStop = true;
             this.rdbKhoangtgden.Text = "Khoảng thời gian đến";
@@ -383,9 +385,10 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoangtgdi.AutoSize = true;
             this.rdbKhoangtgdi.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbKhoangtgdi.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbKhoangtgdi.Location = new System.Drawing.Point(21, 60);
+            this.rdbKhoangtgdi.Location = new System.Drawing.Point(28, 74);
+            this.rdbKhoangtgdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbKhoangtgdi.Name = "rdbKhoangtgdi";
-            this.rdbKhoangtgdi.Size = new System.Drawing.Size(132, 19);
+            this.rdbKhoangtgdi.Size = new System.Drawing.Size(154, 21);
             this.rdbKhoangtgdi.TabIndex = 12;
             this.rdbKhoangtgdi.TabStop = true;
             this.rdbKhoangtgdi.Text = "Khoảng thời gian đi";
@@ -396,9 +399,10 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoanggiobay.AutoSize = true;
             this.rdbKhoanggiobay.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbKhoanggiobay.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbKhoanggiobay.Location = new System.Drawing.Point(21, 29);
+            this.rdbKhoanggiobay.Location = new System.Drawing.Point(28, 36);
+            this.rdbKhoanggiobay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbKhoanggiobay.Name = "rdbKhoanggiobay";
-            this.rdbKhoanggiobay.Size = new System.Drawing.Size(111, 19);
+            this.rdbKhoanggiobay.Size = new System.Drawing.Size(131, 21);
             this.rdbKhoanggiobay.TabIndex = 13;
             this.rdbKhoanggiobay.TabStop = true;
             this.rdbKhoanggiobay.Text = "Khoảng giờ bay";
@@ -410,10 +414,10 @@ namespace QuanLyBanVeMayBay
             this.btnTimDaNang.ForeColor = System.Drawing.Color.Blue;
             this.btnTimDaNang.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
             this.btnTimDaNang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimDaNang.Location = new System.Drawing.Point(21, 427);
-            this.btnTimDaNang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimDaNang.Location = new System.Drawing.Point(28, 526);
+            this.btnTimDaNang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimDaNang.Name = "btnTimDaNang";
-            this.btnTimDaNang.Size = new System.Drawing.Size(210, 50);
+            this.btnTimDaNang.Size = new System.Drawing.Size(280, 62);
             this.btnTimDaNang.TabIndex = 10;
             this.btnTimDaNang.Text = "Tìm kiếm";
             this.btnTimDaNang.UseVisualStyleBackColor = true;
@@ -423,10 +427,11 @@ namespace QuanLyBanVeMayBay
             this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Aquamarine;
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvKhachHang.Location = new System.Drawing.Point(274, 0);
+            this.dgvKhachHang.Location = new System.Drawing.Point(365, 0);
+            this.dgvKhachHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.RowHeadersWidth = 51;
-            this.dgvKhachHang.Size = new System.Drawing.Size(881, 776);
+            this.dgvKhachHang.Size = new System.Drawing.Size(1194, 1001);
             this.dgvKhachHang.TabIndex = 13;
             // 
             // panel1
@@ -435,26 +440,29 @@ namespace QuanLyBanVeMayBay
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(274, 0);
+            this.panel1.Location = new System.Drawing.Point(365, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(881, 100);
+            this.panel1.Size = new System.Drawing.Size(1194, 123);
             this.panel1.TabIndex = 14;
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(0, 106);
+            this.panel2.Location = new System.Drawing.Point(0, 130);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.Size = new System.Drawing.Size(267, 123);
             this.panel2.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 26F, System.Drawing.FontStyle.Bold);
             this.label1.Image = global::QuanLyBanVeMayBay.Properties.Resources.Staff1;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(202, 20);
+            this.label1.Location = new System.Drawing.Point(269, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(524, 58);
+            this.label1.Size = new System.Drawing.Size(699, 71);
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh sách khách hàng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -466,9 +474,10 @@ namespace QuanLyBanVeMayBay
             this.panel4.Controls.Add(this.btnTim);
             this.panel4.Controls.Add(this.txtTim);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(274, 100);
+            this.panel4.Location = new System.Drawing.Point(365, 123);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(881, 50);
+            this.panel4.Size = new System.Drawing.Size(1194, 62);
             this.panel4.TabIndex = 15;
             // 
             // btnXoa
@@ -481,12 +490,12 @@ namespace QuanLyBanVeMayBay
             this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnXoa.HighEmphasis = true;
             this.btnXoa.Icon = null;
-            this.btnXoa.Location = new System.Drawing.Point(511, 6);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnXoa.Location = new System.Drawing.Point(681, 7);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.btnXoa.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnXoa.Size = new System.Drawing.Size(90, 36);
+            this.btnXoa.Size = new System.Drawing.Size(120, 44);
             this.btnXoa.TabIndex = 1;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -502,12 +511,12 @@ namespace QuanLyBanVeMayBay
             this.btnTim.Depth = 0;
             this.btnTim.HighEmphasis = true;
             this.btnTim.Icon = null;
-            this.btnTim.Location = new System.Drawing.Point(391, 6);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnTim.Location = new System.Drawing.Point(521, 7);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.btnTim.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnTim.Name = "btnTim";
             this.btnTim.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnTim.Size = new System.Drawing.Size(90, 36);
+            this.btnTim.Size = new System.Drawing.Size(120, 44);
             this.btnTim.TabIndex = 1;
             this.btnTim.Text = "Tìm";
             this.btnTim.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -519,14 +528,15 @@ namespace QuanLyBanVeMayBay
             this.txtTim.AnimateReadOnly = false;
             this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTim.Depth = 0;
-            this.txtTim.Font = new System.Drawing.Font("Roboto", 12F);
+            this.txtTim.Font = new System.Drawing.Font("Roboto", 9.6F);
             this.txtTim.LeadingIcon = null;
-            this.txtTim.Location = new System.Drawing.Point(33, 9);
+            this.txtTim.Location = new System.Drawing.Point(44, 11);
+            this.txtTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTim.MaxLength = 50;
             this.txtTim.MouseState = MaterialSkin.MouseState.OUT;
             this.txtTim.Multiline = false;
             this.txtTim.Name = "txtTim";
-            this.txtTim.Size = new System.Drawing.Size(343, 36);
+            this.txtTim.Size = new System.Drawing.Size(457, 36);
             this.txtTim.TabIndex = 0;
             this.txtTim.Text = "Nhập thông tin vào đây";
             this.txtTim.TrailingIcon = null;
@@ -534,17 +544,17 @@ namespace QuanLyBanVeMayBay
             // 
             // DanhSachChuyenBay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 776);
+            this.ClientSize = new System.Drawing.Size(1559, 1001);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvKhachHang);
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DanhSachChuyenBay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\";
+            this.Text = "Danh sách chuyến bay";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel3.ResumeLayout(false);
