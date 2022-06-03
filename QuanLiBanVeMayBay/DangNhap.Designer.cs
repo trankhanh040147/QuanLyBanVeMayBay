@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyBanVeMayBay
 {
-    partial class Form1
+    partial class DangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace QuanLyBanVeMayBay
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
             this.txtMatKhau = new MaterialSkin.Controls.MaterialTextBox();
             this.txtTenDangNhap = new MaterialSkin.Controls.MaterialTextBox();
             this.label2 = new System.Windows.Forms.Label();

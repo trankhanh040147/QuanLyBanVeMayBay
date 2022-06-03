@@ -150,7 +150,7 @@ namespace QuanLyBanVeMayBay
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 26F, System.Drawing.FontStyle.Bold);
             this.label1.Image = global::QuanLyBanVeMayBay.Properties.Resources.Staff1;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(269, 25);

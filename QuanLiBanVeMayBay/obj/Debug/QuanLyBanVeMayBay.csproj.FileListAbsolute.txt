@@ -36,7 +36,6 @@ C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMay
 C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.csproj.AssemblyReference.cache
 C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.DanhSachKhachHang.resources
 C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.DanhSachNhanVien.resources
-C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Form1.resources
 C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Menu.resources
 C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Properties.Resources.resources
 C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.csproj.GenerateResource.cache
@@ -45,3 +44,5 @@ C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMay
 C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.exe
 C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.pdb
 C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.DanhSachChuyenBay.resources
+C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.DanhSachDuongBay.resources
+C:\Users\HP\Desktop\CodeStorage\Vs2019\Winforms\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.DanhSachMayBay.resources
