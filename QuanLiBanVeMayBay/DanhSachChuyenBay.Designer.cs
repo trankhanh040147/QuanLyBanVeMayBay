@@ -64,6 +64,7 @@ namespace QuanLyBanVeMayBay
             this.btnXoa = new MaterialSkin.Controls.MaterialButton();
             this.btnTim = new MaterialSkin.Controls.MaterialButton();
             this.txtTim = new MaterialSkin.Controls.MaterialTextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -73,6 +74,7 @@ namespace QuanLyBanVeMayBay
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -86,7 +88,7 @@ namespace QuanLyBanVeMayBay
             this.groupBox1.Controls.Add(this.rdbNgayDen);
             this.groupBox1.Controls.Add(this.rdbNgayDi);
             this.groupBox1.Controls.Add(this.rdbGioBay);
-            this.groupBox1.Font = new System.Drawing.Font("Cherry Swash", 12F);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.groupBox1.ForeColor = System.Drawing.Color.Gold;
             this.groupBox1.Location = new System.Drawing.Point(24, 25);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -160,7 +162,7 @@ namespace QuanLyBanVeMayBay
             this.rdbMachuyenbay.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbMachuyenbay.ForeColor = System.Drawing.SystemColors.Control;
             this.rdbMachuyenbay.Location = new System.Drawing.Point(28, 167);
-            this.rdbMachuyenbay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbMachuyenbay.Margin = new System.Windows.Forms.Padding(4);
             this.rdbMachuyenbay.Name = "rdbMachuyenbay";
             this.rdbMachuyenbay.Size = new System.Drawing.Size(126, 21);
             this.rdbMachuyenbay.TabIndex = 4;
@@ -174,7 +176,7 @@ namespace QuanLyBanVeMayBay
             this.rdbNgayDen.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbNgayDen.ForeColor = System.Drawing.SystemColors.Control;
             this.rdbNgayDen.Location = new System.Drawing.Point(28, 126);
-            this.rdbNgayDen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbNgayDen.Margin = new System.Windows.Forms.Padding(4);
             this.rdbNgayDen.Name = "rdbNgayDen";
             this.rdbNgayDen.Size = new System.Drawing.Size(90, 21);
             this.rdbNgayDen.TabIndex = 5;
@@ -188,7 +190,7 @@ namespace QuanLyBanVeMayBay
             this.rdbNgayDi.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbNgayDi.ForeColor = System.Drawing.SystemColors.Control;
             this.rdbNgayDi.Location = new System.Drawing.Point(28, 84);
-            this.rdbNgayDi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbNgayDi.Margin = new System.Windows.Forms.Padding(4);
             this.rdbNgayDi.Name = "rdbNgayDi";
             this.rdbNgayDi.Size = new System.Drawing.Size(77, 21);
             this.rdbNgayDi.TabIndex = 6;
@@ -202,7 +204,7 @@ namespace QuanLyBanVeMayBay
             this.rdbGioBay.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbGioBay.ForeColor = System.Drawing.SystemColors.Control;
             this.rdbGioBay.Location = new System.Drawing.Point(28, 46);
-            this.rdbGioBay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbGioBay.Margin = new System.Windows.Forms.Padding(4);
             this.rdbGioBay.Name = "rdbGioBay";
             this.rdbGioBay.Size = new System.Drawing.Size(80, 21);
             this.rdbGioBay.TabIndex = 6;
@@ -217,7 +219,7 @@ namespace QuanLyBanVeMayBay
             this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(365, 1001);
             this.panel3.TabIndex = 10;
@@ -228,7 +230,7 @@ namespace QuanLyBanVeMayBay
             this.groupBox2.Controls.Add(this.grbKhoanggio);
             this.groupBox2.Controls.Add(this.grbBoLocDaNang);
             this.groupBox2.Controls.Add(this.btnTimDaNang);
-            this.groupBox2.Font = new System.Drawing.Font("Cherry Swash", 12F);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.groupBox2.ForeColor = System.Drawing.Color.Gold;
             this.groupBox2.Location = new System.Drawing.Point(24, 336);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -372,7 +374,7 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoangtgden.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbKhoangtgden.ForeColor = System.Drawing.SystemColors.Control;
             this.rdbKhoangtgden.Location = new System.Drawing.Point(28, 116);
-            this.rdbKhoangtgden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbKhoangtgden.Margin = new System.Windows.Forms.Padding(4);
             this.rdbKhoangtgden.Name = "rdbKhoangtgden";
             this.rdbKhoangtgden.Size = new System.Drawing.Size(167, 21);
             this.rdbKhoangtgden.TabIndex = 11;
@@ -386,7 +388,7 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoangtgdi.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbKhoangtgdi.ForeColor = System.Drawing.SystemColors.Control;
             this.rdbKhoangtgdi.Location = new System.Drawing.Point(28, 74);
-            this.rdbKhoangtgdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbKhoangtgdi.Margin = new System.Windows.Forms.Padding(4);
             this.rdbKhoangtgdi.Name = "rdbKhoangtgdi";
             this.rdbKhoangtgdi.Size = new System.Drawing.Size(154, 21);
             this.rdbKhoangtgdi.TabIndex = 12;
@@ -400,7 +402,7 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoanggiobay.Font = new System.Drawing.Font("Arial", 9F);
             this.rdbKhoanggiobay.ForeColor = System.Drawing.SystemColors.Control;
             this.rdbKhoanggiobay.Location = new System.Drawing.Point(28, 36);
-            this.rdbKhoanggiobay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbKhoanggiobay.Margin = new System.Windows.Forms.Padding(4);
             this.rdbKhoanggiobay.Name = "rdbKhoanggiobay";
             this.rdbKhoanggiobay.Size = new System.Drawing.Size(131, 21);
             this.rdbKhoanggiobay.TabIndex = 13;
@@ -428,7 +430,7 @@ namespace QuanLyBanVeMayBay
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvKhachHang.Location = new System.Drawing.Point(365, 0);
-            this.dgvKhachHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.RowHeadersWidth = 51;
             this.dgvKhachHang.Size = new System.Drawing.Size(1194, 1001);
@@ -441,7 +443,7 @@ namespace QuanLyBanVeMayBay
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(365, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1194, 123);
             this.panel1.TabIndex = 14;
@@ -449,7 +451,7 @@ namespace QuanLyBanVeMayBay
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(0, 130);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(267, 123);
             this.panel2.TabIndex = 1;
@@ -475,7 +477,7 @@ namespace QuanLyBanVeMayBay
             this.panel4.Controls.Add(this.txtTim);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(365, 123);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1194, 62);
             this.panel4.TabIndex = 15;
@@ -528,10 +530,10 @@ namespace QuanLyBanVeMayBay
             this.txtTim.AnimateReadOnly = false;
             this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTim.Depth = 0;
-            this.txtTim.Font = new System.Drawing.Font("Roboto", 9.6F);
+            this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
             this.txtTim.LeadingIcon = null;
             this.txtTim.Location = new System.Drawing.Point(44, 11);
-            this.txtTim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTim.Margin = new System.Windows.Forms.Padding(4);
             this.txtTim.MaxLength = 50;
             this.txtTim.MouseState = MaterialSkin.MouseState.OUT;
             this.txtTim.Multiline = false;
@@ -542,11 +544,22 @@ namespace QuanLyBanVeMayBay
             this.txtTim.TrailingIcon = null;
             this.txtTim.UseTallSize = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(421, 222);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1077, 738);
+            this.dataGridView1.TabIndex = 16;
+            // 
             // DanhSachChuyenBay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1559, 1001);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvKhachHang);
@@ -568,6 +581,7 @@ namespace QuanLyBanVeMayBay
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -608,5 +622,6 @@ namespace QuanLyBanVeMayBay
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtpTgTo;
         private System.Windows.Forms.DateTimePicker dtpTgFrom;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
