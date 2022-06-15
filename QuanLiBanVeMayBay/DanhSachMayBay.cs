@@ -19,16 +19,16 @@ namespace QuanLyBanVeMayBay
         }
 
         /* mẫu */
-        //private DemoClass db = new DemoClass();
-        //private DataSet ds = new DataSet();
-        //private void DanhSachMayBay_Load(object sender, EventArgs e)
-        //{
-        //    DataBind();
-        //}
-        //private void DataBind()
-        //{
-        //    ds = db.getMayBays();
-        //    dgvMayBay.DataSource = ds.Tables[0];
-        //}
+        private DemoClass db = new DemoClass();
+        private DataSet ds = new DataSet();
+        private void DanhSachMayBay_Load(object sender, EventArgs e)
+        {
+            DataBind();
+        }
+        private void DataBind()
+        {
+            ds = db.getMayBays();
+            dgvMayBay.DataSource = ds.Tables[0];
+        }
     }
 }
