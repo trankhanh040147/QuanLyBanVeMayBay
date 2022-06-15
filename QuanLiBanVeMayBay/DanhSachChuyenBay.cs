@@ -16,5 +16,10 @@ namespace QuanLyBanVeMayBay
         {
             InitializeComponent();
         }
+
+        private void DanhSachChuyenBay_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

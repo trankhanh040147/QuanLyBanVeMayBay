@@ -59,6 +59,10 @@
     <Compile Include="Migrations\202206150350083_demo2-notImportance.designer.cs">
       <DependentUpon>202206150350083_demo2-notImportance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206151028222_demo3-loi.cs" />
+    <Compile Include="Migrations\202206151028222_demo3-loi.designer.cs">
+      <DependentUpon>202206151028222_demo3-loi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ChuyenBay.cs" />
     <Compile Include="QuanLyVeMayBayContext.cs" />
@@ -83,7 +87,11 @@
     <EmbeddedResource Include="Migrations\202206150350083_demo2-notImportance.resx">
       <DependentUpon>202206150350083_demo2-notImportance.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206151028222_demo3-loi.resx">
+      <DependentUpon>202206151028222_demo3-loi.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

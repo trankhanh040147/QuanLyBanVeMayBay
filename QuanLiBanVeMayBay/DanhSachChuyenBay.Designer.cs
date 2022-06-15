@@ -272,7 +272,7 @@ namespace QuanLyBanVeMayBay
             this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(13, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 29);
+            this.label4.Size = new System.Drawing.Size(55, 28);
             this.label4.TabIndex = 17;
             this.label4.Text = "Đến:";
             // 
@@ -293,7 +293,7 @@ namespace QuanLyBanVeMayBay
             this.label5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(8, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 29);
+            this.label5.Size = new System.Drawing.Size(117, 28);
             this.label5.TabIndex = 17;
             this.label5.Text = "Khoảng từ:";
             // 
@@ -317,7 +317,7 @@ namespace QuanLyBanVeMayBay
             this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(13, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 29);
+            this.label3.Size = new System.Drawing.Size(55, 28);
             this.label3.TabIndex = 17;
             this.label3.Text = "Đến:";
             // 
@@ -327,7 +327,7 @@ namespace QuanLyBanVeMayBay
             this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(8, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 29);
+            this.label2.Size = new System.Drawing.Size(117, 28);
             this.label2.TabIndex = 17;
             this.label2.Text = "Khoảng từ:";
             // 
@@ -568,6 +568,7 @@ namespace QuanLyBanVeMayBay
             this.Name = "DanhSachChuyenBay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách chuyến bay";
+            this.Load += new System.EventHandler(this.DanhSachChuyenBay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel3.ResumeLayout(false);
