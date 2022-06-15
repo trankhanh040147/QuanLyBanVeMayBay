@@ -56,8 +56,9 @@ namespace QuanLyBanVeMayBay
             this.panelMenu.Controls.Add(this.label1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(914, 107);
+            this.panelMenu.Size = new System.Drawing.Size(1219, 132);
             this.panelMenu.TabIndex = 0;
             // 
             // label1
@@ -65,9 +66,10 @@ namespace QuanLyBanVeMayBay
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(329, 29);
+            this.label1.Location = new System.Drawing.Point(439, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 45);
+            this.label1.Size = new System.Drawing.Size(244, 57);
             this.label1.TabIndex = 0;
             this.label1.Text = "Trang chủ";
             // 
@@ -79,9 +81,10 @@ namespace QuanLyBanVeMayBay
             this.panel2.Controls.Add(this.btnTimkiemNhanvien);
             this.panel2.Controls.Add(this.lblTimkiem);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 107);
+            this.panel2.Location = new System.Drawing.Point(0, 132);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 342);
+            this.panel2.Size = new System.Drawing.Size(400, 421);
             this.panel2.TabIndex = 1;
             // 
             // btnTimkiemKhachhang
@@ -90,9 +93,10 @@ namespace QuanLyBanVeMayBay
             this.btnTimkiemKhachhang.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTimkiemKhachhang.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimkiemKhachhang.Image = global::QuanLyBanVeMayBay.Properties.Resources.client3;
-            this.btnTimkiemKhachhang.Location = new System.Drawing.Point(0, 262);
+            this.btnTimkiemKhachhang.Location = new System.Drawing.Point(0, 322);
+            this.btnTimkiemKhachhang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTimkiemKhachhang.Name = "btnTimkiemKhachhang";
-            this.btnTimkiemKhachhang.Size = new System.Drawing.Size(300, 83);
+            this.btnTimkiemKhachhang.Size = new System.Drawing.Size(400, 102);
             this.btnTimkiemKhachhang.TabIndex = 3;
             this.btnTimkiemKhachhang.Text = "Khách hàng";
             this.btnTimkiemKhachhang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -104,9 +108,10 @@ namespace QuanLyBanVeMayBay
             this.btnTimkiemChuyenbay.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTimkiemChuyenbay.Font = new System.Drawing.Font("Candara", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimkiemChuyenbay.Image = global::QuanLyBanVeMayBay.Properties.Resources.ChuyenBay;
-            this.btnTimkiemChuyenbay.Location = new System.Drawing.Point(0, 179);
+            this.btnTimkiemChuyenbay.Location = new System.Drawing.Point(0, 220);
+            this.btnTimkiemChuyenbay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTimkiemChuyenbay.Name = "btnTimkiemChuyenbay";
-            this.btnTimkiemChuyenbay.Size = new System.Drawing.Size(300, 83);
+            this.btnTimkiemChuyenbay.Size = new System.Drawing.Size(400, 102);
             this.btnTimkiemChuyenbay.TabIndex = 2;
             this.btnTimkiemChuyenbay.Text = "Chuyến bay";
             this.btnTimkiemChuyenbay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -119,9 +124,10 @@ namespace QuanLyBanVeMayBay
             this.btnTimkiemNhanvien.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTimkiemNhanvien.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimkiemNhanvien.Image = global::QuanLyBanVeMayBay.Properties.Resources.Staff;
-            this.btnTimkiemNhanvien.Location = new System.Drawing.Point(0, 96);
+            this.btnTimkiemNhanvien.Location = new System.Drawing.Point(0, 118);
+            this.btnTimkiemNhanvien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTimkiemNhanvien.Name = "btnTimkiemNhanvien";
-            this.btnTimkiemNhanvien.Size = new System.Drawing.Size(300, 83);
+            this.btnTimkiemNhanvien.Size = new System.Drawing.Size(400, 102);
             this.btnTimkiemNhanvien.TabIndex = 1;
             this.btnTimkiemNhanvien.Text = "Nhân viên";
             this.btnTimkiemNhanvien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -136,8 +142,9 @@ namespace QuanLyBanVeMayBay
             this.lblTimkiem.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search41;
             this.lblTimkiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblTimkiem.Location = new System.Drawing.Point(0, 0);
+            this.lblTimkiem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTimkiem.Name = "lblTimkiem";
-            this.lblTimkiem.Size = new System.Drawing.Size(300, 96);
+            this.lblTimkiem.Size = new System.Drawing.Size(400, 118);
             this.lblTimkiem.TabIndex = 0;
             this.lblTimkiem.Text = "Tìm kiếm thông tin";
             this.lblTimkiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -148,9 +155,10 @@ namespace QuanLyBanVeMayBay
             this.panel3.Controls.Add(this.btnCapnhathethongChuyenbay);
             this.panel3.Controls.Add(this.lblCapnhathethong);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(614, 107);
+            this.panel3.Location = new System.Drawing.Point(819, 132);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(300, 342);
+            this.panel3.Size = new System.Drawing.Size(400, 421);
             this.panel3.TabIndex = 2;
             // 
             // btnCapnhathethongChuyenbay
@@ -159,9 +167,10 @@ namespace QuanLyBanVeMayBay
             this.btnCapnhathethongChuyenbay.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCapnhathethongChuyenbay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapnhathethongChuyenbay.Image = global::QuanLyBanVeMayBay.Properties.Resources.ChuyenBay;
-            this.btnCapnhathethongChuyenbay.Location = new System.Drawing.Point(0, 96);
+            this.btnCapnhathethongChuyenbay.Location = new System.Drawing.Point(0, 118);
+            this.btnCapnhathethongChuyenbay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCapnhathethongChuyenbay.Name = "btnCapnhathethongChuyenbay";
-            this.btnCapnhathethongChuyenbay.Size = new System.Drawing.Size(300, 83);
+            this.btnCapnhathethongChuyenbay.Size = new System.Drawing.Size(400, 102);
             this.btnCapnhathethongChuyenbay.TabIndex = 3;
             this.btnCapnhathethongChuyenbay.Text = "Chuyến bay";
             this.btnCapnhathethongChuyenbay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -176,8 +185,9 @@ namespace QuanLyBanVeMayBay
             this.lblCapnhathethong.Image = global::QuanLyBanVeMayBay.Properties.Resources.System2;
             this.lblCapnhathethong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblCapnhathethong.Location = new System.Drawing.Point(0, 0);
+            this.lblCapnhathethong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCapnhathethong.Name = "lblCapnhathethong";
-            this.lblCapnhathethong.Size = new System.Drawing.Size(300, 96);
+            this.lblCapnhathethong.Size = new System.Drawing.Size(400, 118);
             this.lblCapnhathethong.TabIndex = 1;
             this.lblCapnhathethong.Text = "Cập nhật hệ thống";
             this.lblCapnhathethong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -190,9 +200,10 @@ namespace QuanLyBanVeMayBay
             this.panel4.Controls.Add(this.btnCapnhatMaybay);
             this.panel4.Controls.Add(this.lblCapnhat);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(300, 107);
+            this.panel4.Location = new System.Drawing.Point(400, 132);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(314, 342);
+            this.panel4.Size = new System.Drawing.Size(419, 421);
             this.panel4.TabIndex = 3;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -202,9 +213,10 @@ namespace QuanLyBanVeMayBay
             this.btnCapnhatNhanvien.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCapnhatNhanvien.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapnhatNhanvien.Image = global::QuanLyBanVeMayBay.Properties.Resources.Staff;
-            this.btnCapnhatNhanvien.Location = new System.Drawing.Point(0, 262);
+            this.btnCapnhatNhanvien.Location = new System.Drawing.Point(0, 322);
+            this.btnCapnhatNhanvien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCapnhatNhanvien.Name = "btnCapnhatNhanvien";
-            this.btnCapnhatNhanvien.Size = new System.Drawing.Size(314, 83);
+            this.btnCapnhatNhanvien.Size = new System.Drawing.Size(419, 102);
             this.btnCapnhatNhanvien.TabIndex = 5;
             this.btnCapnhatNhanvien.Text = "Nhân viên";
             this.btnCapnhatNhanvien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -216,9 +228,10 @@ namespace QuanLyBanVeMayBay
             this.btnCapnhatDuongbay.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCapnhatDuongbay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapnhatDuongbay.Image = global::QuanLyBanVeMayBay.Properties.Resources.DuongBay32;
-            this.btnCapnhatDuongbay.Location = new System.Drawing.Point(0, 179);
+            this.btnCapnhatDuongbay.Location = new System.Drawing.Point(0, 220);
+            this.btnCapnhatDuongbay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCapnhatDuongbay.Name = "btnCapnhatDuongbay";
-            this.btnCapnhatDuongbay.Size = new System.Drawing.Size(314, 83);
+            this.btnCapnhatDuongbay.Size = new System.Drawing.Size(419, 102);
             this.btnCapnhatDuongbay.TabIndex = 4;
             this.btnCapnhatDuongbay.Text = "Đường bay";
             this.btnCapnhatDuongbay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -230,9 +243,10 @@ namespace QuanLyBanVeMayBay
             this.btnCapnhatMaybay.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCapnhatMaybay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapnhatMaybay.Image = global::QuanLyBanVeMayBay.Properties.Resources.Plane;
-            this.btnCapnhatMaybay.Location = new System.Drawing.Point(0, 96);
+            this.btnCapnhatMaybay.Location = new System.Drawing.Point(0, 118);
+            this.btnCapnhatMaybay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCapnhatMaybay.Name = "btnCapnhatMaybay";
-            this.btnCapnhatMaybay.Size = new System.Drawing.Size(314, 83);
+            this.btnCapnhatMaybay.Size = new System.Drawing.Size(419, 102);
             this.btnCapnhatMaybay.TabIndex = 3;
             this.btnCapnhatMaybay.Text = "Máy bay";
             this.btnCapnhatMaybay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -247,24 +261,27 @@ namespace QuanLyBanVeMayBay
             this.lblCapnhat.Image = global::QuanLyBanVeMayBay.Properties.Resources.Update2;
             this.lblCapnhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblCapnhat.Location = new System.Drawing.Point(0, 0);
+            this.lblCapnhat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCapnhat.Name = "lblCapnhat";
-            this.lblCapnhat.Size = new System.Drawing.Size(314, 96);
+            this.lblCapnhat.Size = new System.Drawing.Size(419, 118);
             this.lblCapnhat.TabIndex = 1;
             this.lblCapnhat.Text = "Cập nhật thông tin ";
             this.lblCapnhat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 449);
+            this.ClientSize = new System.Drawing.Size(1219, 553);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang chủ";
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.panel2.ResumeLayout(false);
