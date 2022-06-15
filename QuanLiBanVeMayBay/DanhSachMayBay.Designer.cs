@@ -89,6 +89,7 @@
             this.rdbTenMayBay.TabStop = true;
             this.rdbTenMayBay.Text = "Tên máy bay";
             this.rdbTenMayBay.UseVisualStyleBackColor = true;
+            this.rdbTenMayBay.CheckedChanged += new System.EventHandler(this.rdbTenMayBay_CheckedChanged);
             // 
             // txtMaMayBay
             // 
@@ -236,7 +237,7 @@
             this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(13, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 29);
+            this.label3.Size = new System.Drawing.Size(55, 28);
             this.label3.TabIndex = 17;
             this.label3.Text = "Đến:";
             // 
@@ -246,7 +247,7 @@
             this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(8, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 29);
+            this.label2.Size = new System.Drawing.Size(117, 28);
             this.label2.TabIndex = 17;
             this.label2.Text = "Khoảng từ:";
             // 
