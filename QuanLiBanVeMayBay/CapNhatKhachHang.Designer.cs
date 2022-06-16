@@ -57,6 +57,7 @@ namespace QuanLyBanVeMayBay
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(553, 30);
             this.txtDiaChi.TabIndex = 31;
+            this.txtDiaChi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiaChi_KeyPress);
             // 
             // label4
             // 
@@ -75,6 +76,7 @@ namespace QuanLyBanVeMayBay
             this.txtHoKhachHang.Name = "txtHoKhachHang";
             this.txtHoKhachHang.Size = new System.Drawing.Size(156, 30);
             this.txtHoKhachHang.TabIndex = 33;
+            this.txtHoKhachHang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHoKhachHang_KeyPress);
             // 
             // label2
             // 
@@ -93,7 +95,7 @@ namespace QuanLyBanVeMayBay
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(36, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 29);
+            this.label1.Size = new System.Drawing.Size(311, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cập Nhật Thông Tin Chuyến Bay";
             // 
@@ -120,6 +122,7 @@ namespace QuanLyBanVeMayBay
             this.btnLamMoi.Text = " Làm mới";
             this.btnLamMoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnLuuLai
             // 
@@ -134,6 +137,7 @@ namespace QuanLyBanVeMayBay
             this.btnLuuLai.Text = "  Lưu lại";
             this.btnLuuLai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLuuLai.UseVisualStyleBackColor = false;
+            this.btnLuuLai.Click += new System.EventHandler(this.btnLuuLai_Click);
             // 
             // label3
             // 
@@ -152,6 +156,7 @@ namespace QuanLyBanVeMayBay
             this.txtTenLotKhachHang.Name = "txtTenLotKhachHang";
             this.txtTenLotKhachHang.Size = new System.Drawing.Size(156, 30);
             this.txtTenLotKhachHang.TabIndex = 33;
+            this.txtTenLotKhachHang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenLotKhachHang_KeyPress);
             // 
             // label7
             // 
@@ -170,6 +175,7 @@ namespace QuanLyBanVeMayBay
             this.txtTenKhachHang.Name = "txtTenKhachHang";
             this.txtTenKhachHang.Size = new System.Drawing.Size(156, 30);
             this.txtTenKhachHang.TabIndex = 33;
+            this.txtTenKhachHang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenKhachHang_KeyPress);
             // 
             // label8
             // 
@@ -188,6 +194,7 @@ namespace QuanLyBanVeMayBay
             this.txtMaKhachHang.Name = "txtMaKhachHang";
             this.txtMaKhachHang.Size = new System.Drawing.Size(224, 30);
             this.txtMaKhachHang.TabIndex = 33;
+            this.txtMaKhachHang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaKhachHang_KeyPress);
             // 
             // label9
             // 
@@ -206,6 +213,7 @@ namespace QuanLyBanVeMayBay
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(190, 30);
             this.txtSoDienThoai.TabIndex = 33;
+            this.txtSoDienThoai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoDienThoai_KeyPress);
             // 
             // label10
             // 
@@ -224,6 +232,7 @@ namespace QuanLyBanVeMayBay
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(156, 30);
             this.txtCMND.TabIndex = 33;
+            this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMND_KeyPress);
             // 
             // CapNhatKhachHang
             // 
@@ -252,7 +261,6 @@ namespace QuanLyBanVeMayBay
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CapNhatKhachHang";
             this.Text = "CapNhatKhacHang";
-            this.Load += new System.EventHandler(this.CapNhatKhachHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

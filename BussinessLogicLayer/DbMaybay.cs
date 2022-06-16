@@ -42,6 +42,21 @@ namespace BussinessLogicLayer
             ds.Tables.Add(dt);
             return ds;
         }
+
+        //Check mã máy bay có tồn tại trong cơ sở dữ liệu không
+        public bool checkMayBay(string MaMB)
+        {
+            var dsMayBay = dbs.MayBays.Where(p => p.MaMayBay == MaMB).Select(p => p);
+            int count = 0;
+            foreach (var i in dsMayBay)
+            {
+                count += 1;
+            }
+            if (count > 0)
+                return true;
+            return false;
+        }
+
         //Tìm kiếm thông thường - Lấy máy bay theo mã máy bay hoặc tên máy bay hoặc hãng sãn xuất
         public DataSet normal_Search_MayBay(ref string err, int flag, MayBay mb_search)
         {
