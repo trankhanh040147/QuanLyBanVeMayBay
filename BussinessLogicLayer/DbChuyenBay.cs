@@ -42,7 +42,7 @@ namespace BussinessLogicLayer
             ds.Tables.Add(dt);
             return ds;
         }
-        //Lấy khách hàng theo id khách hàng hoặc tên khách hàng hoặc địa chỉ khách hàng
+        //Tìm kiếm thông thường - Lấy chuyến bay theo mã chuyến bay hoặc giờ bay hoặc ngày đi hoặc ngày đến
         public DataSet searchChuyenBay(ref string err, ChuyenBay cb_search)
         {
             DataSet ds = new DataSet();
@@ -58,6 +58,7 @@ namespace BussinessLogicLayer
             dt.Columns.Add("Giờ bay");
             dt.Columns.Add("Điểm đến");
             dt.Columns.Add("Điểm đi");
+            //Tìm theo mã chuyến bay
             if (cb_search.MaChuyenBay != null)
             {
                 try
@@ -80,6 +81,7 @@ namespace BussinessLogicLayer
                     return ds;
                 }
             }
+            //Tìm theo giờ bay
             else if (cb_search.GioBay != null)
             {
                 try
@@ -101,6 +103,7 @@ namespace BussinessLogicLayer
                     return ds;
                 }
             }
+            //Tìm theo ngày đi
             else if (cb_search.NgayDi != null)
             {
                 try
@@ -122,6 +125,7 @@ namespace BussinessLogicLayer
                     return ds;
                 }
             }
+            //Tìm theo ngày đến
             else if (cb_search.NgayDen != null)
             {
                 try
@@ -146,7 +150,7 @@ namespace BussinessLogicLayer
             return ds;
         }
 
-        //Tìm kiếm nâng cao
+        //Tìm kiếm nâng cao - Lấy chuyến bay theo khoảng giờ bay hoặc khoảng ngày đi hoặc khoảng ngày đến
         public DataSet advanced_Search_ChuyenBay(ref string err, TimeSpan start_hour, TimeSpan end_hour, DateTime start_date, DateTime end_date)
         {
             DataSet ds = new DataSet();
@@ -248,7 +252,7 @@ namespace BussinessLogicLayer
             }
         }
 
-        //Cập nhật thông tin chuyến bay bằng id chuyến bay
+        //Cập nhật thông tin chuyến bay bằng mã chuyến bay
         public bool updateChuyenBay(ref string err, ChuyenBay cb_update)
         {
 
@@ -277,7 +281,7 @@ namespace BussinessLogicLayer
             return false;
         }
 
-        //Xóa chuyến bay bằng id chuyến bay
+        //Xóa chuyến bay bằng mã chuyến bay
         public bool deleteChuyenBay(ref string err, ChuyenBay cb_delete)
         {
             try

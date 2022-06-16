@@ -56,9 +56,12 @@
   <ItemGroup>
     <Compile Include="DbChuyenBay.cs" />
     <Compile Include="DbDuongBay.cs" />
+    <Compile Include="DbHangHoa.cs" />
     <Compile Include="DbKhachHang.cs" />
     <Compile Include="DbMaybay.cs" />
     <Compile Include="DbNhanVien.cs" />
+    <Compile Include="DbThongBao.cs" />
+    <Compile Include="DbThongTinChiTienVe.cs" />
     <Compile Include="DbVeBan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

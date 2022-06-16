@@ -18,6 +18,8 @@ namespace BussinessLogicLayer
             
             Console.WriteLine("Doneee.......");
         }
+
+        //Lấy danh sách tất cả máy bay
         public DataSet getMayBays()
         {
             DataSet ds = new DataSet();
@@ -40,7 +42,7 @@ namespace BussinessLogicLayer
             ds.Tables.Add(dt);
             return ds;
         }
-        //Lấy khách hàng theo id máy bay hoặc tên máy bay hoặc hãng sãn xuất
+        //Tìm kiếm thông thường - Lấy máy bay theo mã máy bay hoặc tên máy bay hoặc hãng sãn xuất
         public DataSet normal_Search_MayBay(ref string err, MayBay mb_search)
         {
             DataSet ds = new DataSet();
@@ -54,6 +56,8 @@ namespace BussinessLogicLayer
             dt.Columns.Add("Số ghế lầu 1");
             dt.Columns.Add("Số ghế lầu 2");
             dt.Columns.Add("Tổng số ghế");
+
+            //Tìm theo mã máy may
             if (mb_search.MaMayBay != null)
             {
                 try
@@ -76,6 +80,7 @@ namespace BussinessLogicLayer
                     return ds;
                 }
             }
+            //Tìm theo hãng sản xuất
             else if (mb_search.HangSanXuat != null)
             {
                 try
@@ -98,6 +103,7 @@ namespace BussinessLogicLayer
                     return ds;
                 }
             }
+            //Tìm theo tên máy bay
             else if (mb_search.TenMayBay != null)
             {
                 try
@@ -123,7 +129,7 @@ namespace BussinessLogicLayer
             return ds;
         }
         
-        //Tìm kiếm nâng cao
+        //Tìm kiếm nâng cao - Lấy máy bay theo khoảng kích thước hoặc số ghế 1 hoặc số ghế 2
         public DataSet advanced_Search_MayBay(ref string err, int start, int end)
         {
             DataSet ds = new DataSet();
@@ -140,7 +146,7 @@ namespace BussinessLogicLayer
             int flag = -1;
             switch (flag)
             {
-                case 0:
+                case 0://Tìm theo kích thước
                     try
                     {
                         var dsMayBay = dbs.MayBays
@@ -160,11 +166,11 @@ namespace BussinessLogicLayer
                         return ds;
                     }
                     break;
-                case 1:
+                case 1://TÌm theo số ghế 1
                     try
                     {
                         var dsMayBay = dbs.MayBays
-                                .Where(r => r.SoGheL1>= start && r.KichThuoc <= end)
+                                .Where(r => r.SoGheL1>= start && r.SoGheL1 <= end)
                                 .Select(r => r);
                         foreach (var i in dsMayBay)
                         {
@@ -180,11 +186,11 @@ namespace BussinessLogicLayer
                         return ds;
                     }
                     break;
-                case 2:
+                case 2://Tim theo số ghế 2
                     try
                     {
                         var dsMayBay = dbs.MayBays
-                                .Where(r => r.SoGheL2 >= start && r.KichThuoc <= end)
+                                .Where(r => r.SoGheL2 >= start && r.SoGheL2 <= end)
                                 .Select(r => r);
                         foreach (var i in dsMayBay)
                         {
@@ -216,7 +222,7 @@ namespace BussinessLogicLayer
             return number;
         }
 
-        //Thêm một khách hàng mới
+        //Thêm một máy bay mới
         public bool insertMayBay(ref string err, MayBay mb)
         {
             try
@@ -233,7 +239,7 @@ namespace BussinessLogicLayer
             }
         }
 
-        //Cập nhật thông tin khách hàng bằng id khách hàng
+        //Cập nhật thông tin máy bay bằng mã máy bay
         public bool updateMayBay(ref string err, MayBay mb_update)
         {
 
@@ -260,7 +266,7 @@ namespace BussinessLogicLayer
             return false;
         }
 
-        //Xóa khách hàng bằng id khách hàng
+        //Xóa máy bay bằng mã máy bay
         public bool deleteMayBay(ref string err, MayBay mb_delete)
         {
             

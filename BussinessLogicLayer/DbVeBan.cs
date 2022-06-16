@@ -17,6 +17,8 @@ namespace BussinessLogicLayer
 
             Console.WriteLine("Doneee.......");
         }
+
+        //Lấy danh sách tất cả vé b
         public DataSet getVeBans()
         {
             DataSet ds = new DataSet();
@@ -42,6 +44,7 @@ namespace BussinessLogicLayer
             return ds;
         }
 
+        //Tính tổng số vé bán
         public int Total_VeBan()
         {
             var dsVeBan = dbs.VeBans.Select(p => p);
@@ -53,6 +56,7 @@ namespace BussinessLogicLayer
             return total;
         }
 
+        //Tính tổng doanh thu
         public int Total_Sales()
         {
             var dsVeBan = dbs.VeBans.Select(p => p);
@@ -63,7 +67,8 @@ namespace BussinessLogicLayer
             }
             return total;
         }
-        //Thêm một nhân viên mới
+
+        //Thêm một vé bán mới
         public bool insertVeBan(ref string err, VeBan vb)
         {
             try
@@ -80,7 +85,7 @@ namespace BussinessLogicLayer
             }
         }
 
-        //Cập nhật thông tin nhân viên bằng id nhân viên
+        //Cập nhật thông tin vé bán bằng mã vé bán
         public bool updateVeBan(ref string err, VeBan vb_update)
         {
 
@@ -109,7 +114,7 @@ namespace BussinessLogicLayer
             return false;
         }
 
-        //Xóa nhân viên bằng id nhân viên
+        //Xóa vé bán bằng mã vé bán
         public bool deleteVeBan(ref string err, VeBan vb_delete)
         {
             try
