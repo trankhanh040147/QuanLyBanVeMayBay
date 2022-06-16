@@ -43,7 +43,7 @@ namespace BussinessLogicLayer
         }
 
         //Lấy khách hàng theo id khách hàng hoặc tên khách hàng hoặc địa chỉ khách hàng
-        public DataSet searchKhachHang(ref string err, KhachHang kh_search)
+        public DataSet searchKhachHang(ref string err, int flag, KhachHang kh_search)
         {
             DataSet ds = new DataSet();
 
@@ -57,73 +57,84 @@ namespace BussinessLogicLayer
             dt.Columns.Add("Địa chỉ");
             dt.Columns.Add("CMND");
 
-            //Tìm theo mã khách hàng
-            if (kh_search.MaKhachHang != null)
+
+            //Lựa chọn phương thức tìm kiếm
+            switch(flag)
             {
-                try
-                {
-                    var dsKhachHang = dbs.KhachHangs
-                        .Where(r => r.MaKhachHang.Equals(kh_search.MaKhachHang))
-                        .Select(r => r);
-                    //Thêm các bộ vào các cột 
-                    foreach (var i in dsKhachHang)
+                case 0:
+                    //Tìm theo mã khách hàng
+                    if (kh_search.MaKhachHang != null)
                     {
-                        dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
-                            i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                        try
+                        {
+                            var dsKhachHang = dbs.KhachHangs
+                                .Where(r => r.MaKhachHang.Equals(kh_search.MaKhachHang))
+                                .Select(r => r);
+                            //Thêm các bộ vào các cột 
+                            foreach (var i in dsKhachHang)
+                            {
+                                dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
+                                    i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
                     }
-                    ds.Tables.Add(dt);
-                    return ds;
-                }
-                catch (Exception ex)
-                {
-                    err = ex.Message;
-                    return ds;
-                }
-            }
-            //Tìm theo tên khách hàng
-            else if(kh_search.TenKhachHang!=null)
-            {
-                try
-                {
-                    var dsKhachHang = dbs.KhachHangs
-                        .Where(r => r.TenKhachHang.Contains(kh_search.TenKhachHang))
-                        .Select(r => r);
-                    foreach (var i in dsKhachHang)
+                    break;
+                case 1:
+                    //Tìm theo tên khách hàng
+                    if (kh_search.TenKhachHang != null)
                     {
-                        dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
-                            i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                        try
+                        {
+                            var dsKhachHang = dbs.KhachHangs
+                                .Where(r => r.TenKhachHang.Contains(kh_search.TenKhachHang))
+                                .Select(r => r);
+                            foreach (var i in dsKhachHang)
+                            {
+                                dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
+                                    i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
                     }
-                    ds.Tables.Add(dt);
-                    return ds;
-                }
-                catch (Exception ex)
-                {
-                    err = ex.Message;
-                    return ds;
-                }
-            }
-            //Tìm theo địa chỉ
-            else if (kh_search.DiaChi != null)
-            {
-                try
-                {
-                    var dsKhachHang = dbs.KhachHangs
-                        .Where(r => r.DiaChi.Contains(kh_search.DiaChi))
-                        .Select(r => r);
-                    foreach (var i in dsKhachHang)
+                    break;
+                case 2:
+                     //Tìm theo địa chỉ
+                    if (kh_search.DiaChi != null)
                     {
-                        dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
-                            i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                        try
+                        {
+                            var dsKhachHang = dbs.KhachHangs
+                                .Where(r => r.DiaChi.Contains(kh_search.DiaChi))
+                                .Select(r => r);
+                            foreach (var i in dsKhachHang)
+                            {
+                                dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
+                                    i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
                     }
-                    ds.Tables.Add(dt);
-                    return ds;
-                }
-                catch (Exception ex)
-                {
-                    err = ex.Message;
-                    return ds;
-                }
-            }
+                    break;
+            }            
             return ds;
         }
         //Thêm một khách hàng mới

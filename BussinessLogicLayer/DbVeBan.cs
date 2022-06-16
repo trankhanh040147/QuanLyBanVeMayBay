@@ -18,7 +18,7 @@ namespace BussinessLogicLayer
             Console.WriteLine("Doneee.......");
         }
 
-        //Lấy danh sách tất cả vé b
+        //Lấy danh sách tất cả vé bán
         public DataSet getVeBans()
         {
             DataSet ds = new DataSet();
