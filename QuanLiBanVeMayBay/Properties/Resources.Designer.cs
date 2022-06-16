@@ -83,6 +83,16 @@ namespace QuanLyBanVeMayBay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BookVe {
+            get {
+                object obj = ResourceManager.GetObject("BookVe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChuyenBay {
             get {
                 object obj = ResourceManager.GetObject("ChuyenBay", resourceCulture);
@@ -96,6 +106,26 @@ namespace QuanLyBanVeMayBay.Properties {
         internal static System.Drawing.Bitmap client3 {
             get {
                 object obj = ResourceManager.GetObject("client3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Coin {
+            get {
+                object obj = ResourceManager.GetObject("Coin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Complete {
+            get {
+                object obj = ResourceManager.GetObject("Complete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +436,16 @@ namespace QuanLyBanVeMayBay.Properties {
         internal static System.Drawing.Bitmap System2 {
             get {
                 object obj = ResourceManager.GetObject("System2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Total33 {
+            get {
+                object obj = ResourceManager.GetObject("Total33", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
