@@ -127,8 +127,14 @@
   <data name="Search2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\Search3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Search42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Search4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reload2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reload2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="System2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\System2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Authorization" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Authorization.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,14 +142,11 @@
   <data name="Plane" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Plane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search42" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\Search4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Function2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\Function.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Search41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\Search4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Plane1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Plane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DuongBay32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +157,8 @@
   <data name="Search3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="System2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\System2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="remove2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Search4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,11 +169,14 @@
   <data name="Search31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="edit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Search1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DuongBay3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Search41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Search4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Function" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Function.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,8 +193,20 @@
   <data name="DuongBay21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\DuongBay2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Search32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Search3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Function2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Function.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DuongBay3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DuongBay31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,7 +223,7 @@
   <data name="Staff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Staff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Plane1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\Plane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="renew30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\renew30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

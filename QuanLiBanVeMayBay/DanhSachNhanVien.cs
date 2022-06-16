@@ -34,5 +34,10 @@ namespace QuanLyBanVeMayBay
         {
             this.txtTim.ResetText();
         }
+
+        private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -53,9 +53,14 @@ namespace QuanLyBanVeMayBay
             this.rdbMaDuongBay = new System.Windows.Forms.RadioButton();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnXoa = new MaterialSkin.Controls.MaterialButton();
             this.btnTim = new MaterialSkin.Controls.MaterialButton();
             this.txtTim = new MaterialSkin.Controls.MaterialTextBox();
+            this.btnReset = new MaterialSkin.Controls.MaterialButton();
+            this.panelCRUD = new System.Windows.Forms.Panel();
+            this.btnReload = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.grbBoLocDaNang.SuspendLayout();
             this.panel1.SuspendLayout();
             this.grbTimKiemDaNang.SuspendLayout();
@@ -64,6 +69,7 @@ namespace QuanLyBanVeMayBay
             this.grbTimKiemThongThuong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.panel4.SuspendLayout();
+            this.panelCRUD.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -352,7 +358,7 @@ namespace QuanLyBanVeMayBay
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel4.Controls.Add(this.btnXoa);
+            this.panel4.Controls.Add(this.btnReset);
             this.panel4.Controls.Add(this.btnTim);
             this.panel4.Controls.Add(this.txtTim);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -361,28 +367,6 @@ namespace QuanLyBanVeMayBay
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1098, 62);
             this.panel4.TabIndex = 20;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.AutoSize = false;
-            this.btnXoa.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnXoa.BackColor = System.Drawing.SystemColors.MenuText;
-            this.btnXoa.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnXoa.Depth = 0;
-            this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnXoa.HighEmphasis = true;
-            this.btnXoa.Icon = null;
-            this.btnXoa.Location = new System.Drawing.Point(681, 7);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btnXoa.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnXoa.Size = new System.Drawing.Size(120, 44);
-            this.btnXoa.TabIndex = 1;
-            this.btnXoa.Text = "Xoá";
-            this.btnXoa.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnXoa.UseAccentColor = false;
-            this.btnXoa.UseVisualStyleBackColor = false;
             // 
             // btnTim
             // 
@@ -424,11 +408,99 @@ namespace QuanLyBanVeMayBay
             this.txtTim.TrailingIcon = null;
             this.txtTim.UseTallSize = false;
             // 
+            // btnReset
+            // 
+            this.btnReset.AutoSize = false;
+            this.btnReset.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnReset.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnReset.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnReset.Depth = 0;
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnReset.HighEmphasis = true;
+            this.btnReset.Icon = null;
+            this.btnReset.Location = new System.Drawing.Point(682, 7);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnReset.Size = new System.Drawing.Size(120, 44);
+            this.btnReset.TabIndex = 2;
+            this.btnReset.Text = "Reset";
+            this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnReset.UseAccentColor = false;
+            this.btnReset.UseVisualStyleBackColor = false;
+            // 
+            // panelCRUD
+            // 
+            this.panelCRUD.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelCRUD.Controls.Add(this.btnReload);
+            this.panelCRUD.Controls.Add(this.btnXoa);
+            this.panelCRUD.Controls.Add(this.btnSua);
+            this.panelCRUD.Controls.Add(this.btnThem);
+            this.panelCRUD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCRUD.Location = new System.Drawing.Point(365, 185);
+            this.panelCRUD.Name = "panelCRUD";
+            this.panelCRUD.Size = new System.Drawing.Size(1098, 46);
+            this.panelCRUD.TabIndex = 21;
+            // 
+            // btnReload
+            // 
+            this.btnReload.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReload.Image = global::QuanLyBanVeMayBay.Properties.Resources.reload2;
+            this.btnReload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReload.Location = new System.Drawing.Point(466, 8);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(112, 31);
+            this.btnReload.TabIndex = 0;
+            this.btnReload.Text = "Reload";
+            this.btnReload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReload.UseVisualStyleBackColor = true;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Image = global::QuanLyBanVeMayBay.Properties.Resources.remove2;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(316, 8);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(112, 31);
+            this.btnXoa.TabIndex = 0;
+            this.btnXoa.Text = "  Xoá";
+            this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Image = global::QuanLyBanVeMayBay.Properties.Resources.edit2;
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(168, 8);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(112, 31);
+            this.btnSua.TabIndex = 0;
+            this.btnSua.Text = "  Sửa";
+            this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Image = global::QuanLyBanVeMayBay.Properties.Resources.add2;
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(21, 8);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(112, 31);
+            this.btnThem.TabIndex = 0;
+            this.btnThem.Text = "  Thêm";
+            this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThem.UseVisualStyleBackColor = true;
+            // 
             // DanhSachDuongBay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1463, 982);
+            this.Controls.Add(this.panelCRUD);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
@@ -447,6 +519,7 @@ namespace QuanLyBanVeMayBay
             this.grbTimKiemThongThuong.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.panel4.ResumeLayout(false);
+            this.panelCRUD.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -477,8 +550,13 @@ namespace QuanLyBanVeMayBay
         private System.Windows.Forms.TextBox txtFrom;
         private System.Windows.Forms.CheckBox chkDangSuDung2;
         private System.Windows.Forms.Panel panel4;
-        private MaterialSkin.Controls.MaterialButton btnXoa;
         private MaterialSkin.Controls.MaterialButton btnTim;
         private MaterialSkin.Controls.MaterialTextBox txtTim;
+        private MaterialSkin.Controls.MaterialButton btnReset;
+        private System.Windows.Forms.Panel panelCRUD;
+        private System.Windows.Forms.Button btnReload;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnThem;
     }
 }
