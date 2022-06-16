@@ -9,7 +9,7 @@ using DataAccessLayer;
 
 namespace BussinessLogicLayer
 {
-    internal class DbKhachHang
+    public class DbKhachHang
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
         static void Main(string[] args)
@@ -40,6 +40,20 @@ namespace BussinessLogicLayer
             }
             ds.Tables.Add(dt);
             return ds;
+        }
+
+        //Check mã khách hàng có tồn tại trong cơ sở dữ liệu không
+        public bool checkKhachHang(string MaKH)
+        {
+            var dsKhachHang = dbs.KhachHangs.Where(p => p.MaKhachHang == MaKH).Select(p => p);
+            int count = 0;
+            foreach (var i in dsKhachHang)
+            {
+                count += 1;
+            }
+            if (count > 0)
+                return true;
+            return false;
         }
 
         //Lấy khách hàng theo id khách hàng hoặc tên khách hàng hoặc địa chỉ khách hàng

@@ -103,3 +103,8 @@ D:\WFProject\QuanLyBanVeMayBay\QuanLiBanVeMayBay\bin\Debug\EntityFramework.SqlSe
 D:\WFProject\QuanLyBanVeMayBay\QuanLiBanVeMayBay\bin\Debug\DataAccessLayer.pdb
 D:\WFProject\QuanLyBanVeMayBay\QuanLiBanVeMayBay\bin\Debug\DataAccessLayer.dll.config
 D:\WFProject\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.csproj.CopyComplete
+D:\WFProject\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.CapNhatChuyenBay.resources
+D:\WFProject\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.CapNhatDuongBay.resources
+D:\WFProject\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.CapNhatKhachHang.resources
+D:\WFProject\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.CapNhatMayBay.resources
+D:\WFProject\QuanLyBanVeMayBay\QuanLiBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.CapNhatNhanVien.resources

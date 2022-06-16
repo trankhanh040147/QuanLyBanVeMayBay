@@ -53,6 +53,7 @@ namespace QuanLyBanVeMayBay
             this.txtViTri.Name = "txtViTri";
             this.txtViTri.Size = new System.Drawing.Size(448, 30);
             this.txtViTri.TabIndex = 31;
+            this.txtViTri.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtViTri_KeyPress);
             // 
             // label4
             // 
@@ -91,6 +92,7 @@ namespace QuanLyBanVeMayBay
             this.txtMaDuongBay.Name = "txtMaDuongBay";
             this.txtMaDuongBay.Size = new System.Drawing.Size(220, 30);
             this.txtMaDuongBay.TabIndex = 32;
+            this.txtMaDuongBay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaDuongBay_KeyPress);
             // 
             // label3
             // 
@@ -109,7 +111,7 @@ namespace QuanLyBanVeMayBay
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(36, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 29);
+            this.label1.Size = new System.Drawing.Size(311, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cập Nhật Thông Tin Chuyến Bay";
             // 
@@ -120,6 +122,7 @@ namespace QuanLyBanVeMayBay
             this.txtChieuDai.Name = "txtChieuDai";
             this.txtChieuDai.Size = new System.Drawing.Size(152, 30);
             this.txtChieuDai.TabIndex = 35;
+            this.txtChieuDai.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtChieuDai_KeyPress);
             // 
             // panel1
             // 
@@ -144,6 +147,7 @@ namespace QuanLyBanVeMayBay
             this.btnLamMoi.Text = " Làm mới";
             this.btnLamMoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnLuuLai
             // 
@@ -158,6 +162,7 @@ namespace QuanLyBanVeMayBay
             this.btnLuuLai.Text = "  Lưu lại";
             this.btnLuuLai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLuuLai.UseVisualStyleBackColor = false;
+            this.btnLuuLai.Click += new System.EventHandler(this.btnLuuLai_Click);
             // 
             // txtChieuRong
             // 
@@ -166,6 +171,7 @@ namespace QuanLyBanVeMayBay
             this.txtChieuRong.Name = "txtChieuRong";
             this.txtChieuRong.Size = new System.Drawing.Size(152, 30);
             this.txtChieuRong.TabIndex = 35;
+            this.txtChieuRong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtChieuRong_KeyPress);
             // 
             // label2
             // 
@@ -188,6 +194,7 @@ namespace QuanLyBanVeMayBay
             this.chkDangSuDung.TabIndex = 36;
             this.chkDangSuDung.Text = "Đang sử dụng";
             this.chkDangSuDung.UseVisualStyleBackColor = true;
+            this.chkDangSuDung.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.chkDangSuDung_KeyPress);
             // 
             // CapNhatDuongBay
             // 

@@ -10,7 +10,7 @@ using DataAccessLayer;
 
 namespace BussinessLogicLayer
 {
-    internal class DbChuyenBay
+    public class DbChuyenBay
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
         static void Main(string[] args)
@@ -42,6 +42,22 @@ namespace BussinessLogicLayer
             ds.Tables.Add(dt);
             return ds;
         }
+
+        //Check mã chuyến bay có tồn tại trong cơ sở dữ liệu không
+        public bool checkChuyenBay(string MaCB)
+        {
+            var dsChuyenBay = dbs.ChuyenBays.Where(p=>p.MaChuyenBay==MaCB).Select(p=>p);
+            int count = 0;
+            foreach (var i in dsChuyenBay)
+            {
+                count += 1;
+            }
+            if (count > 0)
+                return true;
+            return false;
+        }
+    
+
         //Tìm kiếm thông thường - Lấy chuyến bay theo mã chuyến bay hoặc giờ bay hoặc ngày đi hoặc ngày đến
         public DataSet searchChuyenBay(ref string err, int flag, ChuyenBay cb_search)
         {

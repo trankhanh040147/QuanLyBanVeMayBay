@@ -9,7 +9,7 @@ using DataAccessLayer;
 
 namespace BussinessLogicLayer
 {
-    internal class DbNhanVien
+    public class DbNhanVien
     {
 
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
@@ -44,7 +44,22 @@ namespace BussinessLogicLayer
             ds.Tables.Add(dt);
             return ds;
         }
-        
+
+
+        //Check mã nhân viên có tồn tại trong cơ sở dữ liệu không
+        public bool checkNhanVien(string MaNV)
+        {
+            var dsNhanVien = dbs.NhanViens.Where(p => p.MaNhanVien == MaNV).Select(p => p);
+            int count = 0;
+            foreach (var i in dsNhanVien)
+            {
+                count += 1;
+            }
+            if (count > 0)
+                return true;
+            return false;
+        }
+
         //Tìm kiếm nhân viên theo mã khách hàng hoặc tên khách hàng hoặc địa chỉ khách hàng
         public DataSet search_NhanVien(KhachHang kh, int flag)
         {

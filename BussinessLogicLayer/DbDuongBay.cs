@@ -9,7 +9,7 @@ using DataAccessLayer;
 
 namespace BussinessLogicLayer
 {
-    internal class DbDuongBay
+    public class DbDuongBay
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
         static void Main(string[] args)
@@ -36,6 +36,22 @@ namespace BussinessLogicLayer
             ds.Tables.Add(dt);
             return ds;
         }
+
+        //Check mã đường bay có tồn tại trong cơ sở dữ liệu không
+        public bool checkDuongBay(string MaDB)
+        {
+            var dsDuongBay = dbs.DuongBays.Where(p => p.MaDuongBay == MaDB).Select(p => p);
+            int count = 0;
+            foreach (var i in dsDuongBay)
+            {
+                count += 1;
+            }
+            if (count > 0)
+                return true;
+            return false;
+        }
+
+
         //Tìm kiếm thông thường - Lấy đường bay theo mã đường bay hoặc vị trí cùng với tình trạng sử dụng
         public DataSet normal_search_DuongBay(ref string err, int flag, DuongBay db_search)
         {
