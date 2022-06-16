@@ -130,14 +130,14 @@
   <data name="Search42" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DuongBay3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="reload2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reload2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="System2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\System2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Authorization" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\Authorization.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Plane" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Plane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,6 +147,9 @@
   </data>
   <data name="Plane1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Plane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Complete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Complete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DuongBay32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,11 +169,17 @@
   <data name="Update2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Update2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\Search3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BookVe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\BookVe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Authorization" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Authorization.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="edit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Search3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Search1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,8 +214,8 @@
   <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DuongBay3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="renew30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\renew30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DuongBay31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,7 +232,10 @@
   <data name="Staff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Staff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="renew30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\renew30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Total33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Total33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
