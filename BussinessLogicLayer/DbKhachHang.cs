@@ -17,6 +17,8 @@ namespace BussinessLogicLayer
 
             Console.WriteLine("Doneee.......");
         }
+
+        //Lấy tất cả khách hàng
         public DataSet getKhachHangs()
         {
             DataSet ds = new DataSet();
@@ -54,6 +56,8 @@ namespace BussinessLogicLayer
             dt.Columns.Add("Số điện thoại");
             dt.Columns.Add("Địa chỉ");
             dt.Columns.Add("CMND");
+
+            //Tìm theo mã khách hàng
             if (kh_search.MaKhachHang != null)
             {
                 try
@@ -76,6 +80,7 @@ namespace BussinessLogicLayer
                     return ds;
                 }
             }
+            //Tìm theo tên khách hàng
             else if(kh_search.TenKhachHang!=null)
             {
                 try
@@ -97,7 +102,8 @@ namespace BussinessLogicLayer
                     return ds;
                 }
             }
-            else if (kh_search.TenKhachHang != null)
+            //Tìm theo địa chỉ
+            else if (kh_search.DiaChi != null)
             {
                 try
                 {

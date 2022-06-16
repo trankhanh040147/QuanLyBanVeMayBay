@@ -18,6 +18,8 @@ namespace BussinessLogicLayer
 
             Console.WriteLine("Doneee.......");
         }
+        
+        //Lấy danh sách tất cả nhân viên
         public DataSet getNhanViens()
         {
             DataSet ds = new DataSet();
@@ -60,7 +62,7 @@ namespace BussinessLogicLayer
             }
         }
 
-        //Cập nhật thông tin nhân viên bằng id nhân viên
+        //Cập nhật thông tin nhân viên bằng mã nhân viên
         public bool updateNhanVien(ref string err, NhanVien nv_update)
         {
 
@@ -89,7 +91,7 @@ namespace BussinessLogicLayer
             return false;
         }
 
-        //Xóa nhân viên bằng id nhân viên
+        //Xóa nhân viên bằng mã nhân viên
         public bool deleteNhanVien(ref string err, NhanVien nv_delete)
         {
             try

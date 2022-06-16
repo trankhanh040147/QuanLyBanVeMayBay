@@ -402,6 +402,7 @@
             this.btnXoa.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnXoa.UseAccentColor = false;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnTim
             // 
