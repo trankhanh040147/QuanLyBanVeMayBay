@@ -43,7 +43,7 @@ namespace BussinessLogicLayer
             return ds;
         }
         //Tìm kiếm thông thường - Lấy máy bay theo mã máy bay hoặc tên máy bay hoặc hãng sãn xuất
-        public DataSet normal_Search_MayBay(ref string err, MayBay mb_search)
+        public DataSet normal_Search_MayBay(ref string err, int flag, MayBay mb_search)
         {
             DataSet ds = new DataSet();
 
@@ -57,80 +57,91 @@ namespace BussinessLogicLayer
             dt.Columns.Add("Số ghế lầu 2");
             dt.Columns.Add("Tổng số ghế");
 
-            //Tìm theo mã máy may
-            if (mb_search.MaMayBay != null)
+            //Lựa chọn phương thức tìm kiếm
+            switch (flag)
             {
-                try
-                {
-                    var dsMayBay = dbs.MayBays
-                        .Where(r => r.MaMayBay.Equals(mb_search.MaMayBay))
-                        .Select(r => r);
-                    //Thêm các bộ vào các cột 
-                    foreach (var i in dsMayBay)
+                case 0:
+                    //Tìm theo mã máy may
+                    if (mb_search.MaMayBay != null)
                     {
-                        dt.Rows.Add(i.MaMayBay, i.TenMayBay, i.HangSanXuat,
-                            i.KichThuoc, i.SoGheL1, i.SoGheL2, i.Tong);
+                        try
+                        {
+                            var dsMayBay = dbs.MayBays
+                                .Where(r => r.MaMayBay.Equals(mb_search.MaMayBay))
+                                .Select(r => r);
+                            //Thêm các bộ vào các cột 
+                            foreach (var i in dsMayBay)
+                            {
+                                dt.Rows.Add(i.MaMayBay, i.TenMayBay, i.HangSanXuat,
+                                    i.KichThuoc, i.SoGheL1, i.SoGheL2, i.Tong);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
                     }
-                    ds.Tables.Add(dt);
-                    return ds;
-                }
-                catch (Exception ex)
-                {
-                    err = ex.Message;
-                    return ds;
-                }
-            }
-            //Tìm theo hãng sản xuất
-            else if (mb_search.HangSanXuat != null)
-            {
-                try
-                {
-                    var dsMayBay = dbs.MayBays
-                        .Where(r => r.HangSanXuat.Contains(mb_search.HangSanXuat))
-                        .Select(r => r);
-                    //Thêm các bộ vào các cột 
-                    foreach (var i in dsMayBay)
+                    break;
+                case 1:
+                    //Tìm theo hãng sản xuất
+                    if (mb_search.HangSanXuat != null)
                     {
-                        dt.Rows.Add(i.MaMayBay, i.TenMayBay, i.HangSanXuat,
-                            i.KichThuoc, i.SoGheL1, i.SoGheL2, i.Tong);
+                        try
+                        {
+                            var dsMayBay = dbs.MayBays
+                                .Where(r => r.HangSanXuat.Contains(mb_search.HangSanXuat))
+                                .Select(r => r);
+                            //Thêm các bộ vào các cột 
+                            foreach (var i in dsMayBay)
+                            {
+                                dt.Rows.Add(i.MaMayBay, i.TenMayBay, i.HangSanXuat,
+                                    i.KichThuoc, i.SoGheL1, i.SoGheL2, i.Tong);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
                     }
-                    ds.Tables.Add(dt);
-                    return ds;
-                }
-                catch (Exception ex)
-                {
-                    err = ex.Message;
-                    return ds;
-                }
-            }
-            //Tìm theo tên máy bay
-            else if (mb_search.TenMayBay != null)
-            {
-                try
-                {
-                    var dsMayBay = dbs.MayBays
-                        .Where(r => r.TenMayBay.Contains(mb_search.TenMayBay))
-                        .Select(r => r);
-                    //Thêm các bộ vào các cột 
-                    foreach (var i in dsMayBay)
+                    break;
+                case 2:
+                    //Tìm theo tên máy bay
+                    if (mb_search.TenMayBay != null)
                     {
-                        dt.Rows.Add(i.MaMayBay, i.TenMayBay, i.HangSanXuat,
-                            i.KichThuoc, i.SoGheL1, i.SoGheL2, i.Tong);
+                        try
+                        {
+                            var dsMayBay = dbs.MayBays
+                                .Where(r => r.TenMayBay.Contains(mb_search.TenMayBay))
+                                .Select(r => r);
+                            //Thêm các bộ vào các cột 
+                            foreach (var i in dsMayBay)
+                            {
+                                dt.Rows.Add(i.MaMayBay, i.TenMayBay, i.HangSanXuat,
+                                    i.KichThuoc, i.SoGheL1, i.SoGheL2, i.Tong);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
                     }
-                    ds.Tables.Add(dt);
-                    return ds;
-                }
-                catch (Exception ex)
-                {
-                    err = ex.Message;
-                    return ds;
-                }
+                    break;
             }
+           
             return ds;
         }
         
         //Tìm kiếm nâng cao - Lấy máy bay theo khoảng kích thước hoặc số ghế 1 hoặc số ghế 2
-        public DataSet advanced_Search_MayBay(ref string err, int start, int end)
+        public DataSet advanced_Search_MayBay(ref string err, int flag, int start, int end)
         {
             DataSet ds = new DataSet();
 
@@ -143,7 +154,6 @@ namespace BussinessLogicLayer
             dt.Columns.Add("Số ghế lầu 1");
             dt.Columns.Add("Số ghế lầu 2");
             dt.Columns.Add("Tổng số ghế");
-            int flag = -1;
             switch (flag)
             {
                 case 0://Tìm theo kích thước
@@ -165,7 +175,6 @@ namespace BussinessLogicLayer
                         err = ex.Message;
                         return ds;
                     }
-                    break;
                 case 1://TÌm theo số ghế 1
                     try
                     {
@@ -185,7 +194,6 @@ namespace BussinessLogicLayer
                         err = ex.Message;
                         return ds;
                     }
-                    break;
                 case 2://Tim theo số ghế 2
                     try
                     {
@@ -205,7 +213,6 @@ namespace BussinessLogicLayer
                         err = ex.Message;
                         return ds;
                     }
-                    break;
             }
             return ds;
         }

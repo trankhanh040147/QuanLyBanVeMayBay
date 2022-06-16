@@ -43,7 +43,7 @@ namespace BussinessLogicLayer
             return ds;
         }
         //Tìm kiếm thông thường - Lấy chuyến bay theo mã chuyến bay hoặc giờ bay hoặc ngày đi hoặc ngày đến
-        public DataSet searchChuyenBay(ref string err, ChuyenBay cb_search)
+        public DataSet searchChuyenBay(ref string err, int flag, ChuyenBay cb_search)
         {
             DataSet ds = new DataSet();
 
@@ -58,100 +58,89 @@ namespace BussinessLogicLayer
             dt.Columns.Add("Giờ bay");
             dt.Columns.Add("Điểm đến");
             dt.Columns.Add("Điểm đi");
-            //Tìm theo mã chuyến bay
-            if (cb_search.MaChuyenBay != null)
+
+            //Lựa chọn phương thức tìm kiếm
+            switch (flag)
             {
-                try
-                {
-                    var dsChuyenBay = dbs.ChuyenBays
-                        .Where(r => r.MaChuyenBay.Equals(cb_search.MaChuyenBay))
-                        .Select(r => r);
-                    //Thêm các bộ vào các cột 
-                    foreach (var i in dsChuyenBay)
+                case 0:
+                    //Tìm theo mã chuyến bay
+                    if (cb_search.MaChuyenBay != null)
                     {
-                        dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                            i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                        try
+                        {
+                            var dsChuyenBay = dbs.ChuyenBays
+                                .Where(r => r.MaChuyenBay.Equals(cb_search.MaChuyenBay))
+                                .Select(r => r);
+                            //Thêm các bộ vào các cột 
+                            foreach (var i in dsChuyenBay)
+                            {
+                                dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
                     }
-                    ds.Tables.Add(dt);
-                    return ds;
-                }
-                catch (Exception ex)
-                {
-                    err = ex.Message;
-                    return ds;
-                }
-            }
-            //Tìm theo giờ bay
-            else if (cb_search.GioBay != null)
-            {
-                try
-                {
-                    var dsChuyenBay = dbs.ChuyenBays
-                        .Where(r => r.GioBay == cb_search.GioBay)
-                        .Select(r => r);
-                    foreach (var i in dsChuyenBay)
+                    break;
+                case 1:
+                    //Tìm theo giờ bay
+                    if (cb_search.GioBay != null)
                     {
-                        dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                            i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                        try
+                        {
+                            var dsChuyenBay = dbs.ChuyenBays
+                                .Where(r => r.GioBay == cb_search.GioBay)
+                                .Select(r => r);
+                            foreach (var i in dsChuyenBay)
+                            {
+                                dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
                     }
-                    ds.Tables.Add(dt);
-                    return ds;
-                }
-                catch (Exception ex)
-                {
-                    err = ex.Message;
-                    return ds;
-                }
-            }
-            //Tìm theo ngày đi
-            else if (cb_search.NgayDi != null)
-            {
-                try
-                {
-                    var dsChuyenBay = dbs.ChuyenBays
-                        .Where(r => r.NgayDi==cb_search.NgayDi)
-                        .Select(r => r);
-                    foreach (var i in dsChuyenBay)
+                    break;
+                case 2:
+                    //Tìm theo ngày đến
+                    if (cb_search.NgayDen != null)
                     {
-                        dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                            i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                        try
+                        {
+                            var dsChuyenBay = dbs.ChuyenBays
+                                .Where(r => r.NgayDen == cb_search.NgayDen)
+                                .Select(r => r);
+                            foreach (var i in dsChuyenBay)
+                            {
+                                dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
                     }
-                    ds.Tables.Add(dt);
-                    return ds;
-                }
-                catch (Exception ex)
-                {
-                    err = ex.Message;
-                    return ds;
-                }
-            }
-            //Tìm theo ngày đến
-            else if (cb_search.NgayDen != null)
-            {
-                try
-                {
-                    var dsChuyenBay = dbs.ChuyenBays
-                        .Where(r => r.NgayDen == cb_search.NgayDen)
-                        .Select(r => r);
-                    foreach (var i in dsChuyenBay)
-                    {
-                        dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                            i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
-                    }
-                    ds.Tables.Add(dt);
-                    return ds;
-                }
-                catch (Exception ex)
-                {
-                    err = ex.Message;
-                    return ds;
-                }
+                    break;
             }
             return ds;
         }
 
         //Tìm kiếm nâng cao - Lấy chuyến bay theo khoảng giờ bay hoặc khoảng ngày đi hoặc khoảng ngày đến
-        public DataSet advanced_Search_ChuyenBay(ref string err, TimeSpan start_hour, TimeSpan end_hour, DateTime start_date, DateTime end_date)
+        public DataSet advanced_Search_ChuyenBay(ref string err, int flag, TimeSpan start_hour, TimeSpan end_hour, DateTime start_date, DateTime end_date)
         {
             DataSet ds = new DataSet();
 
@@ -166,7 +155,6 @@ namespace BussinessLogicLayer
             dt.Columns.Add("Giờ bay");
             dt.Columns.Add("Điểm đến");
             dt.Columns.Add("Điểm đi");
-            int flag = -1;
             switch (flag)
             {
                 case 0://Tìm theo giờ bay
@@ -188,7 +176,6 @@ namespace BussinessLogicLayer
                         err = ex.Message;
                         return ds;
                     }
-                    break;
                 case 1://Tìm  theo ngày đi
                     try
                     {
@@ -208,7 +195,6 @@ namespace BussinessLogicLayer
                         err = ex.Message;
                         return ds;
                     }
-                    break;
                 case 2: //Tìm theo ngày đến
                     try
                     {
@@ -228,7 +214,6 @@ namespace BussinessLogicLayer
                         err = ex.Message;
                         return ds;
                     }
-                    break;
             }
             return ds;
         }

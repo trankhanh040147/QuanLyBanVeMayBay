@@ -45,6 +45,60 @@ namespace BussinessLogicLayer
             return ds;
         }
         
+        //Tìm kiếm nhân viên theo mã khách hàng hoặc tên khách hàng hoặc địa chỉ khách hàng
+        public DataSet search_NhanVien(KhachHang kh, int flag)
+        {
+            DataSet ds = new DataSet();
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Mã nhân viên");
+            dt.Columns.Add("Tên nhân viên");
+            dt.Columns.Add("Họ nhân viên");
+            dt.Columns.Add("Tên lót nhân viên");
+            dt.Columns.Add("Địa chỉ");
+            dt.Columns.Add("Số điện thoại");
+            dt.Columns.Add("Chức vụ");
+            dt.Columns.Add("Tên đăng nhập");
+            dt.Columns.Add("Mật khẩu");
+
+            //Lựa chọn phương thức tìm kiếm
+            switch(flag)
+            {
+                case 0://Tim bang ma khach hang
+                    var dsVB = dbs.VeBans.Where(p => p.MaKhachHang == kh.MaKhachHang).Select(p => p);
+                    var dsNV = dbs.NhanViens.Where(t => t.VeBans.Equals(dsVB)).Select(t => t);
+                    foreach (var i in dsNV)
+                    {
+                        dt.Rows.Add(i.MaNhanVien, i.TenNhanVien, i.HoNhanVien, i.TenLotNhanVien,
+                              i.DiaChi, i.SoDienThoai, i.ChucVu, i.TenDangNhap, i.MatKhau);
+                    }
+                    break;
+                case 1://tim bang ten khach hang
+                    var dsKH1 = dbs.KhachHangs.Where(p => p.TenKhachHang.Contains(kh.TenKhachHang)).Select(p=>p);
+                    var dsVB1 = dbs.VeBans.Where(t => t.MaKhachHang.Equals(dsKH1)).Select(t => t);
+                    var dsNV1 = dbs.NhanViens.Where(x => x.VeBans.Equals(dsVB1)).Select(x => x);
+                    foreach (var i in dsNV1)
+                    {
+                        dt.Rows.Add(i.MaNhanVien, i.TenNhanVien, i.HoNhanVien, i.TenLotNhanVien,
+                              i.DiaChi, i.SoDienThoai, i.ChucVu, i.TenDangNhap, i.MatKhau);
+                    }
+                    break;
+                case 2://Tim theo dia chi
+                    var dsKH2 = dbs.KhachHangs.Where(p => p.DiaChi.Contains(kh.DiaChi)).Select(p => p);
+                    var dsVB2 = dbs.VeBans.Where(t => t.MaKhachHang.Equals(dsKH2)).Select(t => t);
+                    var dsNV2 = dbs.NhanViens.Where(x => x.VeBans.Equals(dsVB2)).Select(x => x);
+                    foreach (var i in dsNV2)
+                    {
+                        dt.Rows.Add(i.MaNhanVien, i.TenNhanVien, i.HoNhanVien, i.TenLotNhanVien,
+                              i.DiaChi, i.SoDienThoai, i.ChucVu, i.TenDangNhap, i.MatKhau);
+                    }
+                    break;
+            }
+            ds.Tables.Add(dt);
+            return ds;
+        }
+
+
         //Thêm một nhân viên mới
         public bool insertNhanVien(ref string err, NhanVien nv)
         {
