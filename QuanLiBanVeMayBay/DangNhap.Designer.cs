@@ -29,7 +29,6 @@ namespace QuanLyBanVeMayBay
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
             this.txtMatKhau = new MaterialSkin.Controls.MaterialTextBox();
             this.txtTenDangNhap = new MaterialSkin.Controls.MaterialTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,24 +36,27 @@ namespace QuanLyBanVeMayBay
             this.btnDangNhap = new MaterialSkin.Controls.MaterialButton();
             this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.btnThoat = new MaterialSkin.Controls.MaterialButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtMatKhau
             // 
             this.txtMatKhau.AnimateReadOnly = false;
+            this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMatKhau.Depth = 0;
-            this.txtMatKhau.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtMatKhau.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtMatKhau.LeadingIcon = null;
-            this.txtMatKhau.Location = new System.Drawing.Point(214, 70);
+            this.txtMatKhau.Location = new System.Drawing.Point(214, 74);
             this.txtMatKhau.MaxLength = 50;
             this.txtMatKhau.MouseState = MaterialSkin.MouseState.OUT;
             this.txtMatKhau.Multiline = false;
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Password = true;
             this.txtMatKhau.ShowSelectionMargin = true;
             this.txtMatKhau.Size = new System.Drawing.Size(202, 36);
             this.txtMatKhau.TabIndex = 1;
@@ -67,8 +69,9 @@ namespace QuanLyBanVeMayBay
             // 
             this.txtTenDangNhap.AnimateReadOnly = false;
             this.txtTenDangNhap.BackColor = System.Drawing.Color.Yellow;
+            this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTenDangNhap.Depth = 0;
-            this.txtTenDangNhap.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtTenDangNhap.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtTenDangNhap.LeadingIcon = null;
             this.txtTenDangNhap.Location = new System.Drawing.Point(214, 18);
@@ -88,9 +91,9 @@ namespace QuanLyBanVeMayBay
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 77);
+            this.label2.Location = new System.Drawing.Point(47, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 22);
+            this.label2.Size = new System.Drawing.Size(111, 27);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mật khẩu";
             // 
@@ -98,9 +101,9 @@ namespace QuanLyBanVeMayBay
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 25);
+            this.label1.Location = new System.Drawing.Point(21, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 22);
+            this.label1.Size = new System.Drawing.Size(176, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập";
             // 
@@ -167,15 +170,6 @@ namespace QuanLyBanVeMayBay
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QuanLyBanVeMayBay.Properties.Resources.loginPage;
-            this.pictureBox1.Location = new System.Drawing.Point(460, -5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(123, 104);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnThoat);
@@ -186,29 +180,49 @@ namespace QuanLyBanVeMayBay
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtMatKhau);
             this.panel1.Controls.Add(this.txtTenDangNhap);
-            this.panel1.Location = new System.Drawing.Point(30, 12);
+            this.panel1.Location = new System.Drawing.Point(28, 97);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(598, 218);
             this.panel1.TabIndex = 1;
             // 
-            // Form1
+            // pictureBox1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
+            this.pictureBox1.Image = global::QuanLyBanVeMayBay.Properties.Resources.loginPage;
+            this.pictureBox1.Location = new System.Drawing.Point(460, -5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(123, 104);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(69, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(532, 36);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "PHẦN MỀM QUẢN LÝ ĐẶT VÉ MÁY BAY";
+            // 
+            // DangNhap
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(636, 246);
+            this.ClientSize = new System.Drawing.Size(649, 353);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -222,6 +236,7 @@ namespace QuanLyBanVeMayBay
         private MaterialSkin.Controls.MaterialButton btnReset;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -13,10 +13,26 @@ namespace QuanLyBanVeMayBay
 {
     public partial class DanhSachMayBay : Form
     {
-        
+        public bool QuyenCRUD;
         public DanhSachMayBay()
         {
             InitializeComponent();
+        }
+
+        public DanhSachMayBay(bool quyenCRUD)
+        {
+            this.QuyenCRUD = quyenCRUD;
+            InitializeComponent();
+        }
+
+        public void CapNhatQuyen(bool quyenCRUD)
+        {
+            if (!quyenCRUD)
+            {
+                btnThem.Enabled = false;
+                btnSua.Enabled = false;
+                btnXoa.Enabled = false;
+            }
         }
 
         /* mẫu */
@@ -24,6 +40,7 @@ namespace QuanLyBanVeMayBay
         private DataSet ds = new DataSet();
         private void DanhSachMayBay_Load(object sender, EventArgs e)
         {
+            CapNhatQuyen(this.QuyenCRUD);
             DataBind();
         }
         private void DataBind()

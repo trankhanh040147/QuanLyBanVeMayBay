@@ -53,10 +53,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.btnTim = new MaterialSkin.Controls.MaterialButton();
             this.txtTim = new MaterialSkin.Controls.MaterialTextBox();
             this.dgvMayBay = new System.Windows.Forms.DataGridView();
-            this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.panelCRUD = new System.Windows.Forms.Panel();
             this.btnReload = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -387,6 +387,28 @@
             this.panel4.Size = new System.Drawing.Size(1276, 62);
             this.panel4.TabIndex = 26;
             // 
+            // btnReset
+            // 
+            this.btnReset.AutoSize = false;
+            this.btnReset.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnReset.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnReset.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnReset.Depth = 0;
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnReset.HighEmphasis = true;
+            this.btnReset.Icon = null;
+            this.btnReset.Location = new System.Drawing.Point(681, 7);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnReset.Size = new System.Drawing.Size(120, 44);
+            this.btnReset.TabIndex = 2;
+            this.btnReset.Text = "Reset";
+            this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnReset.UseAccentColor = false;
+            this.btnReset.UseVisualStyleBackColor = false;
+            // 
             // btnTim
             // 
             this.btnTim.AutoSize = false;
@@ -439,28 +461,6 @@
             this.dgvMayBay.Size = new System.Drawing.Size(1641, 918);
             this.dgvMayBay.TabIndex = 22;
             // 
-            // btnReset
-            // 
-            this.btnReset.AutoSize = false;
-            this.btnReset.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnReset.BackColor = System.Drawing.SystemColors.MenuText;
-            this.btnReset.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnReset.Depth = 0;
-            this.btnReset.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnReset.HighEmphasis = true;
-            this.btnReset.Icon = null;
-            this.btnReset.Location = new System.Drawing.Point(681, 7);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnReset.Name = "btnReset";
-            this.btnReset.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnReset.Size = new System.Drawing.Size(120, 44);
-            this.btnReset.TabIndex = 2;
-            this.btnReset.Text = "Reset";
-            this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnReset.UseAccentColor = false;
-            this.btnReset.UseVisualStyleBackColor = false;
-            // 
             // panelCRUD
             // 
             this.panelCRUD.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -471,7 +471,7 @@
             this.panelCRUD.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCRUD.Location = new System.Drawing.Point(365, 185);
             this.panelCRUD.Name = "panelCRUD";
-            this.panelCRUD.Size = new System.Drawing.Size(1276, 46);
+            this.panelCRUD.Size = new System.Drawing.Size(1276, 65);
             this.panelCRUD.TabIndex = 27;
             // 
             // btnReload
@@ -479,11 +479,12 @@
             this.btnReload.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReload.Image = global::QuanLyBanVeMayBay.Properties.Resources.reload2;
             this.btnReload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReload.Location = new System.Drawing.Point(466, 8);
+            this.btnReload.Location = new System.Drawing.Point(489, 16);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(112, 31);
-            this.btnReload.TabIndex = 0;
-            this.btnReload.Text = "Reload";
+            this.btnReload.Size = new System.Drawing.Size(140, 42);
+            this.btnReload.TabIndex = 1;
+            this.btnReload.Text = "RELOAD";
+            this.btnReload.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReload.UseVisualStyleBackColor = true;
             // 
@@ -492,11 +493,12 @@
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = global::QuanLyBanVeMayBay.Properties.Resources.remove2;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(316, 8);
+            this.btnXoa.Location = new System.Drawing.Point(339, 16);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(112, 31);
-            this.btnXoa.TabIndex = 0;
-            this.btnXoa.Text = "  Xoá";
+            this.btnXoa.Size = new System.Drawing.Size(126, 42);
+            this.btnXoa.TabIndex = 2;
+            this.btnXoa.Text = "  XOÁ";
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
@@ -505,11 +507,12 @@
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = global::QuanLyBanVeMayBay.Properties.Resources.edit2;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(168, 8);
+            this.btnSua.Location = new System.Drawing.Point(191, 16);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(112, 31);
-            this.btnSua.TabIndex = 0;
-            this.btnSua.Text = "  Sửa";
+            this.btnSua.Size = new System.Drawing.Size(126, 42);
+            this.btnSua.TabIndex = 3;
+            this.btnSua.Text = "  SỬA";
+            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSua.UseVisualStyleBackColor = true;
             // 
@@ -518,11 +521,12 @@
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = global::QuanLyBanVeMayBay.Properties.Resources.add2;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(21, 8);
+            this.btnThem.Location = new System.Drawing.Point(44, 16);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(112, 31);
-            this.btnThem.TabIndex = 0;
-            this.btnThem.Text = "  Thêm";
+            this.btnThem.Size = new System.Drawing.Size(126, 42);
+            this.btnThem.TabIndex = 4;
+            this.btnThem.Text = "  THÊM";
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThem.UseVisualStyleBackColor = true;
             // 

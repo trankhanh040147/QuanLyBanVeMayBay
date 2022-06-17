@@ -17,10 +17,28 @@ namespace QuanLyBanVeMayBay
             InitializeComponent();
         }
 
+        public bool KiemTraQuyen(string tendangnhap, string matkhau)
+        {
+            if (true) //Kiểm tra điều kiện tài khoản AD
+            {
+
+                // Code kiểm tra tài có quyền AD hay không
+
+                return true;//Quyền tài khoản AD
+            }
+
+            return false; //Quyền tài khoản nhân viên
+        }
+
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            if (false)
-                { }
+            if (true)
+                {
+                Menu formMenu = new Menu(this.KiemTraQuyen(txtTenDangNhap.Text, txtMatKhau.Text));
+                this.Hide();
+                formMenu.Closed += (s, args) => this.Close();
+                formMenu.Show();
+            }
             else
                 MessageBox.Show("Tên đăng nhập và mật khẩu không hợp lệ!",
                     "Lỗi đăng nhập",
