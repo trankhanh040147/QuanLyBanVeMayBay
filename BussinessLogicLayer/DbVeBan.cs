@@ -9,7 +9,7 @@ using DataAccessLayer;
 
 namespace BussinessLogicLayer
 {
-    internal class DbVeBan
+    public class DbVeBan
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
         static void Main(string[] args)

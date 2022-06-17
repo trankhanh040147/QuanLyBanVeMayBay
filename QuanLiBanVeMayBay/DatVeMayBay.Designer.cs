@@ -30,9 +30,12 @@ namespace QuanLyBanVeMayBay
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtTongTien = new System.Windows.Forms.RichTextBox();
+            this.btnHoanTat = new System.Windows.Forms.Button();
             this.btnTinhTongTien = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.rdbEmBe = new System.Windows.Forms.RadioButton();
@@ -97,17 +100,14 @@ namespace QuanLyBanVeMayBay
             this.label26 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.cbMaChuyenBay = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnHoanTat = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -121,13 +121,22 @@ namespace QuanLyBanVeMayBay
             this.panel1.Size = new System.Drawing.Size(1401, 90);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::QuanLyBanVeMayBay.Properties.Resources.BookVe;
+            this.pictureBox2.Location = new System.Drawing.Point(513, 20);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 25.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(614, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(316, 51);
+            this.label1.Size = new System.Drawing.Size(307, 49);
             this.label1.TabIndex = 0;
             this.label1.Text = "Đặt vé máy bay";
             // 
@@ -155,6 +164,15 @@ namespace QuanLyBanVeMayBay
             this.panel2.Size = new System.Drawing.Size(332, 685);
             this.panel2.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QuanLyBanVeMayBay.Properties.Resources.Coin;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 504);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(61, 58);
+            this.pictureBox1.TabIndex = 65;
+            this.pictureBox1.TabStop = false;
+            // 
             // txtTongTien
             // 
             this.txtTongTien.ForeColor = System.Drawing.Color.Red;
@@ -163,6 +181,22 @@ namespace QuanLyBanVeMayBay
             this.txtTongTien.Size = new System.Drawing.Size(237, 38);
             this.txtTongTien.TabIndex = 64;
             this.txtTongTien.Text = "";
+            // 
+            // btnHoanTat
+            // 
+            this.btnHoanTat.BackColor = System.Drawing.Color.SpringGreen;
+            this.btnHoanTat.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.btnHoanTat.ForeColor = System.Drawing.Color.Blue;
+            this.btnHoanTat.Image = global::QuanLyBanVeMayBay.Properties.Resources.Complete;
+            this.btnHoanTat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoanTat.Location = new System.Drawing.Point(27, 588);
+            this.btnHoanTat.Name = "btnHoanTat";
+            this.btnHoanTat.Size = new System.Drawing.Size(279, 59);
+            this.btnHoanTat.TabIndex = 63;
+            this.btnHoanTat.Text = "    Hoàn tất đặt vé";
+            this.btnHoanTat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHoanTat.UseVisualStyleBackColor = false;
+            this.btnHoanTat.Click += new System.EventHandler(this.btnHoanTat_Click);
             // 
             // btnTinhTongTien
             // 
@@ -178,6 +212,7 @@ namespace QuanLyBanVeMayBay
             this.btnTinhTongTien.Text = " Tính tổng tiền thanh toán";
             this.btnTinhTongTien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTinhTongTien.UseVisualStyleBackColor = false;
+            this.btnTinhTongTien.Click += new System.EventHandler(this.btnTinhTongTien_Click);
             // 
             // label36
             // 
@@ -470,6 +505,7 @@ namespace QuanLyBanVeMayBay
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(224, 26);
             this.listBox2.TabIndex = 57;
+            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // txtVeLoai1ConLai
             // 
@@ -842,39 +878,7 @@ namespace QuanLyBanVeMayBay
             this.cbMaChuyenBay.Size = new System.Drawing.Size(279, 30);
             this.cbMaChuyenBay.TabIndex = 57;
             this.cbMaChuyenBay.Text = "Chọn chuyến bay";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QuanLyBanVeMayBay.Properties.Resources.Coin;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 504);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(61, 58);
-            this.pictureBox1.TabIndex = 65;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnHoanTat
-            // 
-            this.btnHoanTat.BackColor = System.Drawing.Color.SpringGreen;
-            this.btnHoanTat.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.btnHoanTat.ForeColor = System.Drawing.Color.Blue;
-            this.btnHoanTat.Image = global::QuanLyBanVeMayBay.Properties.Resources.Complete;
-            this.btnHoanTat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoanTat.Location = new System.Drawing.Point(27, 588);
-            this.btnHoanTat.Name = "btnHoanTat";
-            this.btnHoanTat.Size = new System.Drawing.Size(279, 59);
-            this.btnHoanTat.TabIndex = 63;
-            this.btnHoanTat.Text = "    Hoàn tất đặt vé";
-            this.btnHoanTat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHoanTat.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::QuanLyBanVeMayBay.Properties.Resources.BookVe;
-            this.pictureBox2.Location = new System.Drawing.Point(513, 20);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.cbMaChuyenBay.SelectedIndexChanged += new System.EventHandler(this.cbMaChuyenBay_SelectedIndexChanged);
             // 
             // DatVeMayBay
             // 
@@ -900,10 +904,13 @@ namespace QuanLyBanVeMayBay
             this.Name = "DatVeMayBay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DatVe";
+            this.Load += new System.EventHandler(this.DatVeMayBay_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -912,8 +919,6 @@ namespace QuanLyBanVeMayBay
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

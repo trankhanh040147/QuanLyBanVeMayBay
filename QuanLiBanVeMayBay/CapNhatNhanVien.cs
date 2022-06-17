@@ -60,7 +60,7 @@ namespace QuanLyBanVeMayBay
                     nv.SoDienThoai = txtSoDienThoai.Text;
                     nv.ChucVu = txtChucVu.Text;
                     nv.DiaChi = txtDiaChi.Text;
-                    if (!dbnv.updateNhanVien(ref err, nv))
+                    if (!dbnv.insertNhanVien(ref err, nv))
                         MessageBox.Show("Thất bại!!!");
                     else
                     {

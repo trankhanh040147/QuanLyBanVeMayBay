@@ -60,7 +60,7 @@ namespace QuanLyBanVeMayBay
                     kh.SoDienThoai = txtSoDienThoai.Text;
                     kh.DiaChi = txtDiaChi.Text;
                     kh.CMND = txtCMND.Text;
-                    if (!dbkh.updateKhachHang(ref err, kh))
+                    if (!dbkh.insertKhachHang(ref err, kh))
                         MessageBox.Show("Thất bại!!!");
                     else
                     {
