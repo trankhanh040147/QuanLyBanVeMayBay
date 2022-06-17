@@ -60,7 +60,7 @@ namespace QuanLyBanVeMayBay
                     mb.SoGheL1 = int.Parse(txtSoGheLoai1.Text);
                     mb.SoGheL2 = int.Parse(txtSoGheLoai2.Text);
                     mb.Tong = int.Parse(txtTong.Text);
-                    if (!dbmb.updateMayBay(ref err, mb))
+                    if (!dbmb.insertMayBay(ref err, mb))
                         MessageBox.Show("Thất bại!!!");
                     else
                     {
