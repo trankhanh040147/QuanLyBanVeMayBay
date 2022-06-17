@@ -38,7 +38,7 @@ namespace QuanLyBanVeMayBay
             this.txtMaNhanVien = new System.Windows.Forms.TextBox();
             this.rdbDiaChiNhanVien = new System.Windows.Forms.RadioButton();
             this.rdbTenNhanVien = new System.Windows.Forms.RadioButton();
-            this.MaNhanVien = new System.Windows.Forms.RadioButton();
+            this.rdbMaNhanVien = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -97,6 +97,7 @@ namespace QuanLyBanVeMayBay
             this.btnTImKiem.TabIndex = 12;
             this.btnTImKiem.Text = "Tìm kiếm";
             this.btnTImKiem.UseVisualStyleBackColor = true;
+            this.btnTImKiem.Click += new System.EventHandler(this.btnTImKiem_Click);
             // 
             // groupBox1
             // 
@@ -105,8 +106,8 @@ namespace QuanLyBanVeMayBay
             this.groupBox1.Controls.Add(this.txtMaNhanVien);
             this.groupBox1.Controls.Add(this.rdbDiaChiNhanVien);
             this.groupBox1.Controls.Add(this.rdbTenNhanVien);
-            this.groupBox1.Controls.Add(this.MaNhanVien);
-            this.groupBox1.Font = new System.Drawing.Font("Cherry Swash", 15.75F);
+            this.groupBox1.Controls.Add(this.rdbMaNhanVien);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.groupBox1.ForeColor = System.Drawing.Color.Gold;
             this.groupBox1.Location = new System.Drawing.Point(12, 23);
             this.groupBox1.Name = "groupBox1";
@@ -152,6 +153,7 @@ namespace QuanLyBanVeMayBay
             this.rdbDiaChiNhanVien.TabStop = true;
             this.rdbDiaChiNhanVien.Text = "Địa chỉ nhân viên";
             this.rdbDiaChiNhanVien.UseVisualStyleBackColor = true;
+            this.rdbDiaChiNhanVien.CheckedChanged += new System.EventHandler(this.rdbDiaChiNhanVien_CheckedChanged);
             // 
             // rdbTenNhanVien
             // 
@@ -166,20 +168,22 @@ namespace QuanLyBanVeMayBay
             this.rdbTenNhanVien.TabStop = true;
             this.rdbTenNhanVien.Text = "Tên nhân viên";
             this.rdbTenNhanVien.UseVisualStyleBackColor = true;
+            this.rdbTenNhanVien.CheckedChanged += new System.EventHandler(this.rdbTenNhanVien_CheckedChanged);
             // 
-            // MaNhanVien
+            // rdbMaNhanVien
             // 
-            this.MaNhanVien.AutoSize = true;
-            this.MaNhanVien.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaNhanVien.ForeColor = System.Drawing.SystemColors.Control;
-            this.MaNhanVien.Location = new System.Drawing.Point(36, 68);
-            this.MaNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.MaNhanVien.Name = "MaNhanVien";
-            this.MaNhanVien.Size = new System.Drawing.Size(146, 27);
-            this.MaNhanVien.TabIndex = 6;
-            this.MaNhanVien.TabStop = true;
-            this.MaNhanVien.Text = "Mã nhân viên";
-            this.MaNhanVien.UseVisualStyleBackColor = true;
+            this.rdbMaNhanVien.AutoSize = true;
+            this.rdbMaNhanVien.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbMaNhanVien.ForeColor = System.Drawing.SystemColors.Control;
+            this.rdbMaNhanVien.Location = new System.Drawing.Point(36, 68);
+            this.rdbMaNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbMaNhanVien.Name = "rdbMaNhanVien";
+            this.rdbMaNhanVien.Size = new System.Drawing.Size(146, 27);
+            this.rdbMaNhanVien.TabIndex = 6;
+            this.rdbMaNhanVien.TabStop = true;
+            this.rdbMaNhanVien.Text = "Mã nhân viên";
+            this.rdbMaNhanVien.UseVisualStyleBackColor = true;
+            this.rdbMaNhanVien.CheckedChanged += new System.EventHandler(this.rdbMaNhanVien_CheckedChanged);
             // 
             // panel1
             // 
@@ -248,6 +252,7 @@ namespace QuanLyBanVeMayBay
             this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnReset.UseAccentColor = false;
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnTim
             // 
@@ -275,7 +280,7 @@ namespace QuanLyBanVeMayBay
             this.txtTim.AnimateReadOnly = false;
             this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTim.Depth = 0;
-            this.txtTim.Font = new System.Drawing.Font("Roboto", 9.6F);
+            this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
             this.txtTim.LeadingIcon = null;
             this.txtTim.Location = new System.Drawing.Point(38, 11);
             this.txtTim.Margin = new System.Windows.Forms.Padding(4);
@@ -314,6 +319,7 @@ namespace QuanLyBanVeMayBay
             this.btnReload.Text = "Reload";
             this.btnReload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // btnXoa
             // 
@@ -327,6 +333,7 @@ namespace QuanLyBanVeMayBay
             this.btnXoa.Text = "  Xoá";
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
             // 
             // btnSua
             // 
@@ -386,7 +393,7 @@ namespace QuanLyBanVeMayBay
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdbDiaChiNhanVien;
         private System.Windows.Forms.RadioButton rdbTenNhanVien;
-        private System.Windows.Forms.RadioButton MaNhanVien;
+        private System.Windows.Forms.RadioButton rdbMaNhanVien;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
