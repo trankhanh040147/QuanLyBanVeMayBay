@@ -13,11 +13,7 @@ namespace BussinessLogicLayer
     {
 
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
-        static void Main(string[] args)
-        {
-
-            Console.WriteLine("Doneee.......");
-        }
+        
         
         //Lấy danh sách tất cả nhân viên
         public DataSet getNhanViens()

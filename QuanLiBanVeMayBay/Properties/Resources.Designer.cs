@@ -83,16 +83,6 @@ namespace QuanLyBanVeMayBay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Authorization1 {
-            get {
-                object obj = ResourceManager.GetObject("Authorization1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap BookVe {
             get {
                 object obj = ResourceManager.GetObject("BookVe", resourceCulture);
@@ -116,16 +106,6 @@ namespace QuanLyBanVeMayBay.Properties {
         internal static System.Drawing.Bitmap ChuyenBay {
             get {
                 object obj = ResourceManager.GetObject("ChuyenBay", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ChuyenBay1 {
-            get {
-                object obj = ResourceManager.GetObject("ChuyenBay1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

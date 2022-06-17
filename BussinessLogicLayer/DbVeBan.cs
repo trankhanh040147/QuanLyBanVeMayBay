@@ -12,12 +12,7 @@ namespace BussinessLogicLayer
     internal class DbVeBan
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
-        static void Main(string[] args)
-        {
-
-            Console.WriteLine("Doneee.......");
-        }
-
+        
         //Lấy danh sách tất cả vé bán
         public DataSet getVeBans()
         {

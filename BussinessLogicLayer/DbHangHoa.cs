@@ -13,11 +13,7 @@ namespace BussinessLogicLayer
     internal class DbHangHoa
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
-        static void Main(string[] args)
-        {
-
-            Console.WriteLine("Doneee.......");
-        }
+        
 
         //Lấy tất cả hàng hóa
         public DataSet getHangHoas()

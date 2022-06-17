@@ -13,11 +13,7 @@ namespace BussinessLogicLayer
     public class DbChuyenBay
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
-        static void Main(string[] args)
-        {
 
-            Console.WriteLine("Doneee.......");
-        }
         public DataSet getChuyenBays()
         {
             DataSet ds = new DataSet();
@@ -37,7 +33,7 @@ namespace BussinessLogicLayer
             foreach (var i in dsChuyenBay)
             {
                 dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                    i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
             }
             ds.Tables.Add(dt);
             return ds;
@@ -46,7 +42,7 @@ namespace BussinessLogicLayer
         //Check mã chuyến bay có tồn tại trong cơ sở dữ liệu không
         public bool checkChuyenBay(string MaCB)
         {
-            var dsChuyenBay = dbs.ChuyenBays.Where(p=>p.MaChuyenBay==MaCB).Select(p=>p);
+            var dsChuyenBay = dbs.ChuyenBays.Where(p => p.MaChuyenBay == MaCB).Select(p => p);
             int count = 0;
             foreach (var i in dsChuyenBay)
             {
@@ -56,7 +52,7 @@ namespace BussinessLogicLayer
                 return true;
             return false;
         }
-    
+
 
         //Tìm kiếm thông thường - Lấy chuyến bay theo mã chuyến bay hoặc giờ bay hoặc ngày đi hoặc ngày đến
         public DataSet searchChuyenBay(ref string err, int flag, ChuyenBay cb_search)
@@ -91,7 +87,7 @@ namespace BussinessLogicLayer
                             foreach (var i in dsChuyenBay)
                             {
                                 dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                    i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                             }
                             ds.Tables.Add(dt);
                             return ds;
@@ -115,7 +111,7 @@ namespace BussinessLogicLayer
                             foreach (var i in dsChuyenBay)
                             {
                                 dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                    i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                             }
                             ds.Tables.Add(dt);
                             return ds;
@@ -134,12 +130,36 @@ namespace BussinessLogicLayer
                         try
                         {
                             var dsChuyenBay = dbs.ChuyenBays
-                                .Where(r => r.NgayDen == cb_search.NgayDen)
+                                .Where(r => r.NgayDen == cb_search.NgayDen.Date)
                                 .Select(r => r);
                             foreach (var i in dsChuyenBay)
                             {
                                 dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                    i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
+                    }
+                    break;
+                case 3:
+                    //Tìm theo ngày đi
+                    if (cb_search.NgayDi != null)
+                    {
+                        try
+                        {
+                            var dsChuyenBay = dbs.ChuyenBays
+                                .Where(r => r.NgayDi == cb_search.NgayDi.Date)
+                                .Select(r => r);
+                            foreach (var i in dsChuyenBay)
+                            {
+                                dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                                    i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                             }
                             ds.Tables.Add(dt);
                             return ds;
@@ -182,7 +202,7 @@ namespace BussinessLogicLayer
                         foreach (var i in dsChuyenBay)
                         {
                             dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                         }
                         ds.Tables.Add(dt);
                         return ds;
@@ -196,12 +216,12 @@ namespace BussinessLogicLayer
                     try
                     {
                         var dsChuyenBay = dbs.ChuyenBays
-                                .Where(r => r.NgayDi >= start_date && r.NgayDi <= end_date)
+                                .Where(r => r.NgayDi >= start_date.Date && r.NgayDi <= end_date.Date)
                                 .Select(r => r);
                         foreach (var i in dsChuyenBay)
                         {
                             dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                         }
                         ds.Tables.Add(dt);
                         return ds;
@@ -215,12 +235,12 @@ namespace BussinessLogicLayer
                     try
                     {
                         var dsChuyenBay = dbs.ChuyenBays
-                                  .Where(r => r.NgayDen >= start_date && r.NgayDen <= end_date)
+                                  .Where(r => r.NgayDen >= start_date.Date && r.NgayDen <= end_date.Date)
                                   .Select(r => r);
                         foreach (var i in dsChuyenBay)
                         {
                             dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                         }
                         ds.Tables.Add(dt);
                         return ds;
@@ -234,8 +254,88 @@ namespace BussinessLogicLayer
             return ds;
         }
 
+        //Tìm kiếm tổng quát - tìm kiếm theo tất cả thuộc tính 
+        public DataSet general_Search_ChuyenBay(ref string err, ChuyenBay cb_search)
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Mã chuyến bay");
+            dt.Columns.Add("Mã đường bay");
+            dt.Columns.Add("Mã máy bay");
+            dt.Columns.Add("Ngày đến");
+            dt.Columns.Add("Ghi chú");
+            dt.Columns.Add("Ngày đi");
+            dt.Columns.Add("Giờ bay");
+            dt.Columns.Add("Điểm đến");
+            dt.Columns.Add("Điểm đi");
 
-
+            try
+            {
+                //Tìm theo mã chuyến bay
+                var dsChuyenBay = dbs.ChuyenBays
+                        .Where(r => r.MaChuyenBay.Contains(cb_search.MaChuyenBay))
+                        .Select(r => r);
+                foreach (var i in dsChuyenBay)
+                {
+                    dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                        i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
+                }
+                //Tìm theo mã đường bay
+                dsChuyenBay = dbs.ChuyenBays
+                        .Where(r => r.MaDuongBay.Contains(cb_search.MaDuongBay))
+                        .Select(r => r);
+                foreach (var i in dsChuyenBay)
+                {
+                    dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                        i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
+                }
+                //Tìm theo Mã máy bay
+                dsChuyenBay = dbs.ChuyenBays
+                        .Where(r => r.MaMayBay.Contains(cb_search.MaMayBay))
+                        .Select(r => r);
+                foreach (var i in dsChuyenBay)
+                {
+                    dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                        i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
+                }
+                //Tìm theo Ghi Chú
+                dsChuyenBay = dbs.ChuyenBays
+                        .Where(r => r.GhiChu.Contains(cb_search.GhiChu))
+                        .Select(r => r);
+                foreach (var i in dsChuyenBay)
+                {
+                    dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                        i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
+                }
+                //Tìm theo điểm đến
+                dsChuyenBay = dbs.ChuyenBays
+                        .Where(r => r.DiemDen.Contains(cb_search.DiemDen))
+                        .Select(r => r);
+                foreach (var i in dsChuyenBay)
+                {
+                    dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                        i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
+                }
+                //Tìm theo điểm điểm đi
+                dsChuyenBay = dbs.ChuyenBays
+                        .Where(r => r.DiemDi.Contains(cb_search.DiemDi))
+                        .Select(r => r);
+                foreach (var i in dsChuyenBay)
+                {
+                    dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                        i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
+                }
+                //Thêm vào dataset
+                ds.Tables.Add(dt);
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                err = ex.Message;
+                return ds;
+            }
+        }
+        
         //Thêm một chuyến bay mới
         public bool insertChuyenBay(ref string err, ChuyenBay cb)
         {

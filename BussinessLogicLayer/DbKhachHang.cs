@@ -12,12 +12,7 @@ namespace BussinessLogicLayer
     public class DbKhachHang
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
-        static void Main(string[] args)
-        {
-
-            Console.WriteLine("Doneee.......");
-        }
-
+        
         //Lấy tất cả khách hàng
         public DataSet getKhachHangs()
         {

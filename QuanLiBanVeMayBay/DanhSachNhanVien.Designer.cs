@@ -299,7 +299,7 @@ namespace QuanLyBanVeMayBay
             this.panelCRUD.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCRUD.Location = new System.Drawing.Point(296, 185);
             this.panelCRUD.Name = "panelCRUD";
-            this.panelCRUD.Size = new System.Drawing.Size(1116, 60);
+            this.panelCRUD.Size = new System.Drawing.Size(1116, 46);
             this.panelCRUD.TabIndex = 17;
             // 
             // btnReload
@@ -307,12 +307,11 @@ namespace QuanLyBanVeMayBay
             this.btnReload.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReload.Image = global::QuanLyBanVeMayBay.Properties.Resources.reload2;
             this.btnReload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReload.Location = new System.Drawing.Point(483, 7);
+            this.btnReload.Location = new System.Drawing.Point(466, 8);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(140, 42);
-            this.btnReload.TabIndex = 1;
-            this.btnReload.Text = "RELOAD";
-            this.btnReload.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReload.Size = new System.Drawing.Size(112, 31);
+            this.btnReload.TabIndex = 0;
+            this.btnReload.Text = "Reload";
             this.btnReload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReload.UseVisualStyleBackColor = true;
             // 
@@ -321,12 +320,11 @@ namespace QuanLyBanVeMayBay
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = global::QuanLyBanVeMayBay.Properties.Resources.remove2;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(333, 7);
+            this.btnXoa.Location = new System.Drawing.Point(316, 8);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(126, 42);
-            this.btnXoa.TabIndex = 2;
-            this.btnXoa.Text = "  XOÁ";
-            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXoa.Size = new System.Drawing.Size(112, 31);
+            this.btnXoa.TabIndex = 0;
+            this.btnXoa.Text = "  Xoá";
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
@@ -335,12 +333,11 @@ namespace QuanLyBanVeMayBay
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = global::QuanLyBanVeMayBay.Properties.Resources.edit2;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(185, 7);
+            this.btnSua.Location = new System.Drawing.Point(168, 8);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(126, 42);
-            this.btnSua.TabIndex = 3;
-            this.btnSua.Text = "  SỬA";
-            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSua.Size = new System.Drawing.Size(112, 31);
+            this.btnSua.TabIndex = 0;
+            this.btnSua.Text = "  Sửa";
             this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSua.UseVisualStyleBackColor = true;
             // 
@@ -349,12 +346,11 @@ namespace QuanLyBanVeMayBay
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = global::QuanLyBanVeMayBay.Properties.Resources.add2;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(38, 7);
+            this.btnThem.Location = new System.Drawing.Point(21, 8);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(126, 42);
-            this.btnThem.TabIndex = 4;
-            this.btnThem.Text = "  THÊM";
-            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThem.Size = new System.Drawing.Size(112, 31);
+            this.btnThem.TabIndex = 0;
+            this.btnThem.Text = "  Thêm";
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThem.UseVisualStyleBackColor = true;
             // 
@@ -399,13 +395,13 @@ namespace QuanLyBanVeMayBay
         private MaterialSkin.Controls.MaterialTextBox txtTim;
         private MaterialSkin.Controls.MaterialButton btnReset;
         private System.Windows.Forms.Panel panelCRUD;
-        private System.Windows.Forms.TextBox txtMaNhanVien;
-        private System.Windows.Forms.TextBox txtDiaChiNhanVien;
-        private System.Windows.Forms.TextBox txtTenNhanVien;
-        private System.Windows.Forms.Button btnTImKiem;
         private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.TextBox txtMaNhanVien;
+        private System.Windows.Forms.TextBox txtDiaChiNhanVien;
+        private System.Windows.Forms.TextBox txtTenNhanVien;
+        private System.Windows.Forms.Button btnTImKiem;
     }
 }

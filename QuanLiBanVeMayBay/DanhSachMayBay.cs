@@ -13,6 +13,7 @@ namespace QuanLyBanVeMayBay
 {
     public partial class DanhSachMayBay : Form
     {
+
         public bool QuyenCRUD;
         public DanhSachMayBay()
         {
@@ -40,8 +41,8 @@ namespace QuanLyBanVeMayBay
         private DataSet ds = new DataSet();
         private void DanhSachMayBay_Load(object sender, EventArgs e)
         {
-            CapNhatQuyen(this.QuyenCRUD);
             DataBind();
+            CapNhatQuyen(this.QuyenCRUD);
         }
         private void DataBind()
         {
