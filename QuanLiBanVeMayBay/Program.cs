@@ -16,7 +16,7 @@ namespace QuanLyBanVeMayBay
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DanhSachKhachHang());
+            Application.Run(new DanhSachMayBay());
         }
     }
 }

@@ -121,6 +121,7 @@
             this.rdbMaMayBay.TabStop = true;
             this.rdbMaMayBay.Text = "Mã máy bay";
             this.rdbMaMayBay.UseVisualStyleBackColor = true;
+            this.rdbMaMayBay.CheckedChanged += new System.EventHandler(this.rdbMaMayBay_CheckedChanged);
             // 
             // grbTimKiemThongThuong
             // 
@@ -156,6 +157,7 @@
             this.btnTimThongThuong.TabIndex = 10;
             this.btnTimThongThuong.Text = "Tìm kiếm";
             this.btnTimThongThuong.UseVisualStyleBackColor = true;
+            this.btnTimThongThuong.Click += new System.EventHandler(this.btnTimThongThuong_Click);
             // 
             // txtHangSX
             // 
@@ -180,6 +182,7 @@
             this.rdbHangSX.TabStop = true;
             this.rdbHangSX.Text = "Hãng sản xuất";
             this.rdbHangSX.UseVisualStyleBackColor = true;
+            this.rdbHangSX.CheckedChanged += new System.EventHandler(this.rdbHangSX_CheckedChanged);
             // 
             // panel3
             // 
@@ -225,7 +228,6 @@
             // 
             // txtTo
             // 
-            this.txtTo.Enabled = false;
             this.txtTo.Font = new System.Drawing.Font("Arial", 11F);
             this.txtTo.Location = new System.Drawing.Point(141, 76);
             this.txtTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -235,7 +237,6 @@
             // 
             // txtFrom
             // 
-            this.txtFrom.Enabled = false;
             this.txtFrom.Font = new System.Drawing.Font("Arial", 11F);
             this.txtFrom.Location = new System.Drawing.Point(141, 32);
             this.txtFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -335,7 +336,6 @@
             // 
             // btnTimDaNang
             // 
-            this.btnTimDaNang.Enabled = false;
             this.btnTimDaNang.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimDaNang.ForeColor = System.Drawing.Color.Blue;
             this.btnTimDaNang.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
@@ -347,6 +347,7 @@
             this.btnTimDaNang.TabIndex = 10;
             this.btnTimDaNang.Text = "Tìm kiếm";
             this.btnTimDaNang.UseVisualStyleBackColor = true;
+            this.btnTimDaNang.Click += new System.EventHandler(this.btnTimDaNang_Click);
             // 
             // panel1
             // 
@@ -415,6 +416,7 @@
             this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnReset.UseAccentColor = false;
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnTim
             // 
@@ -436,6 +438,7 @@
             this.btnTim.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnTim.UseAccentColor = false;
             this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // txtTim
             // 
@@ -492,6 +495,7 @@
             this.btnReload.Text = "Reload";
             this.btnReload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // btnXoa
             // 
@@ -506,6 +510,7 @@
             this.btnXoa.Text = "  Xoá";
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
             // 
             // btnSua
             // 

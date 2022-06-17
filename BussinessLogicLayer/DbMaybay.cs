@@ -224,10 +224,85 @@ namespace BussinessLogicLayer
                         err = ex.Message;
                         return ds;
                     }
+                case 3://Tim theo tổng số ghế
+                    try
+                    {
+                        var dsMayBay = dbs.MayBays
+                                .Where(r => r.Tong >= start && r.Tong <= end)
+                                .Select(r => r);
+                        foreach (var i in dsMayBay)
+                        {
+                            dt.Rows.Add(i.MaMayBay, i.TenMayBay, i.HangSanXuat,
+                                i.KichThuoc, i.SoGheL1, i.SoGheL2, i.Tong);
+                        }
+                        ds.Tables.Add(dt);
+                        return ds;
+                    }
+                    catch (Exception ex)
+                    {
+                        err = ex.Message;
+                        return ds;
+                    }
             }
             return ds;
         }
+        //Tìm kiếm tổng quát - trên tất cả thuộc tính có thể
+        public DataSet general_search_MayBay(ref string err, MayBay mb_search)
+        {
+            DataSet ds = new DataSet();
 
+            DataTable dt = new DataTable();
+            //Thêm các cột vào dt
+            dt.Columns.Add("Mã máy bay");
+            dt.Columns.Add("Tên máy bay");
+            dt.Columns.Add("Hãng sản xuất");
+            dt.Columns.Add("Kích thước");
+            dt.Columns.Add("Số ghế lầu 1");
+            dt.Columns.Add("Số ghế lầu 2");
+            dt.Columns.Add("Tổng số ghế");
+
+            try
+            {
+                //Tìm kiếm theo mã
+                var dsMayBay = dbs.MayBays
+                    .Where(r => r.MaMayBay.Contains(mb_search.MaMayBay))
+                    .Select(r => r);
+                //Thêm các bộ vào các cột 
+                foreach (var i in dsMayBay)
+                {
+                    dt.Rows.Add(i.MaMayBay, i.TenMayBay, i.HangSanXuat,
+                        i.KichThuoc, i.SoGheL1, i.SoGheL2, i.Tong);
+                }
+                //Tìm kiếm theo tên
+                dsMayBay = dbs.MayBays
+                    .Where(r => r.TenMayBay.Contains(mb_search.TenMayBay))
+                    .Select(r => r);
+                //Thêm các bộ vào các cột 
+                foreach (var i in dsMayBay)
+                {
+                    dt.Rows.Add(i.MaMayBay, i.TenMayBay, i.HangSanXuat,
+                        i.KichThuoc, i.SoGheL1, i.SoGheL2, i.Tong);
+                }
+                //Tìm kiếm theo Hãng sản xuất
+                dsMayBay = dbs.MayBays
+                    .Where(r => r.HangSanXuat.Contains(mb_search.HangSanXuat))
+                    .Select(r => r);
+                //Thêm các bộ vào các cột 
+                foreach (var i in dsMayBay)
+                {
+                    dt.Rows.Add(i.MaMayBay, i.TenMayBay, i.HangSanXuat,
+                        i.KichThuoc, i.SoGheL1, i.SoGheL2, i.Tong);
+                }
+
+                ds.Tables.Add(dt);
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                err = ex.Message;
+                return ds;
+            }
+        }
         //Đếm số máy bay hiện có
         public int number_MayBay()
         {
