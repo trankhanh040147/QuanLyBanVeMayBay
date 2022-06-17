@@ -39,6 +39,7 @@ namespace QuanLyBanVeMayBay
         {
             ds = db.getDuongBays();
             dgvDuongBay.DataSource = ds.Tables[0];
+            txtTim.DataBindings.Add("Text", ds.Tables[0], "Mã đường bay");
         }
 
         public DanhSachDuongBay()

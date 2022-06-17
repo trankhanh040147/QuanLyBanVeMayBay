@@ -365,7 +365,10 @@ namespace BussinessLogicLayer
             
             try
             {
-                var mb = dbs.MayBays.OfType<MayBay>().Where(p => p.MaMayBay == mb_delete.MaMayBay).Include(t => t.ChuyenBays).FirstOrDefault();
+                var mb = dbs.MayBays
+                    .OfType<MayBay>()
+                    .Where(p => p.MaMayBay == mb_delete.MaMayBay)
+                    .Include(t => t.ChuyenBays).FirstOrDefault();
                 if (mb != null)
                 {
                     dbs.MayBays.Remove(mb);

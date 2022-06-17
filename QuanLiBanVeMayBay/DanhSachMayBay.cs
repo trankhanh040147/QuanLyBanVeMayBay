@@ -42,6 +42,7 @@ namespace QuanLyBanVeMayBay
         {
             ds = db.getMayBays();
             dgvMayBay.DataSource = ds.Tables[0];
+            txtTim.DataBindings.Add("Text", ds.Tables[0], "Mã Máy Bay");
         }
 
         private void rdbTenMayBay_CheckedChanged(object sender, EventArgs e)
@@ -178,11 +179,6 @@ namespace QuanLyBanVeMayBay
             ds = db.general_search_MayBay(ref err, mb);
 
             dgvMayBay.DataSource = ds.Tables[0];
-        }
-
-        private void btnXoa_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

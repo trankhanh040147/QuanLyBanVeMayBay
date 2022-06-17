@@ -33,6 +33,7 @@ namespace QuanLyBanVeMayBay
         {
             ds = db.getKhachHangs();
             dgvKhachHang.DataSource = ds.Tables[0];
+            txtTim.DataBindings.Add("Text", ds.Tables[0], "Mã khách hàng");
         }      
 
         private void DanhSachKhachHang_Load(object sender, EventArgs e)

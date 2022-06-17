@@ -499,7 +499,6 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Enabled = false;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = global::QuanLyBanVeMayBay.Properties.Resources.remove2;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -510,7 +509,7 @@
             this.btnXoa.Text = "  Xoá";
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
