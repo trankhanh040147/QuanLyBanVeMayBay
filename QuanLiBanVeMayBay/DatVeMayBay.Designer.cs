@@ -100,6 +100,10 @@ namespace QuanLyBanVeMayBay
             this.label26 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.cbMaChuyenBay = new System.Windows.Forms.ComboBox();
+            this.txtSoVeDat = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.txtSoHangHoa = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -499,7 +503,7 @@ namespace QuanLyBanVeMayBay
             // 
             this.lstLoaiVe.FormattingEnabled = true;
             this.lstLoaiVe.ItemHeight = 22;
-            this.lstLoaiVe.Location = new System.Drawing.Point(411, 61);
+            this.lstLoaiVe.Location = new System.Drawing.Point(388, 61);
             this.lstLoaiVe.Name = "lstLoaiVe";
             this.lstLoaiVe.Size = new System.Drawing.Size(224, 26);
             this.lstLoaiVe.TabIndex = 57;
@@ -567,7 +571,7 @@ namespace QuanLyBanVeMayBay
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(407, 20);
+            this.label25.Location = new System.Drawing.Point(384, 20);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(180, 22);
             this.label25.TabIndex = 41;
@@ -878,12 +882,52 @@ namespace QuanLyBanVeMayBay
             this.cbMaChuyenBay.Text = "Chọn chuyến bay";
             this.cbMaChuyenBay.SelectedIndexChanged += new System.EventHandler(this.cbMaChuyenBay_SelectedIndexChanged);
             // 
+            // txtSoVeDat
+            // 
+            this.txtSoVeDat.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.txtSoVeDat.Location = new System.Drawing.Point(816, 261);
+            this.txtSoVeDat.Name = "txtSoVeDat";
+            this.txtSoVeDat.Size = new System.Drawing.Size(204, 30);
+            this.txtSoVeDat.TabIndex = 58;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(637, 264);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(167, 22);
+            this.label35.TabIndex = 57;
+            this.label35.Text = "Số lượng vé cần đặt";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(637, 312);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(156, 22);
+            this.label38.TabIndex = 59;
+            this.label38.Text = "Số lượng hàng hóa";
+            // 
+            // txtSoHangHoa
+            // 
+            this.txtSoHangHoa.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.txtSoHangHoa.Location = new System.Drawing.Point(816, 309);
+            this.txtSoHangHoa.Name = "txtSoHangHoa";
+            this.txtSoHangHoa.Size = new System.Drawing.Size(204, 30);
+            this.txtSoHangHoa.TabIndex = 60;
+            // 
             // DatVeMayBay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1401, 775);
+            this.Controls.Add(this.label38);
+            this.Controls.Add(this.txtSoHangHoa);
+            this.Controls.Add(this.label35);
+            this.Controls.Add(this.txtSoVeDat);
             this.Controls.Add(this.cbMaChuyenBay);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel6);
@@ -995,5 +1039,9 @@ namespace QuanLyBanVeMayBay
         private System.Windows.Forms.Button btnHoanTat;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txtSoVeDat;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox txtSoHangHoa;
     }
 }
