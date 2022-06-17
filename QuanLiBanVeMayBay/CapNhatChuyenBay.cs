@@ -66,7 +66,7 @@ namespace QuanLyBanVeMayBay
                     cb.NgayDen = dtpNgayden.Value;
                     cb.GioBay = dtpGioBay.Value.TimeOfDay;
                     cb.GhiChu = txtGhiChu.Text;
-                    if (!dbcb.updateChuyenBay(ref err, cb))
+                    if (!dbcb.insertChuyenBay(ref err, cb))
                         MessageBox.Show("Thất bại!!!");
                     else
                     {

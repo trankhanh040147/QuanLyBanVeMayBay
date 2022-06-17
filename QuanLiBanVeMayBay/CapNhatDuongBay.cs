@@ -55,7 +55,7 @@ namespace QuanLyBanVeMayBay
                     db.ChieuDai = int.Parse(txtChieuDai.Text);
                     db.ChieuRong = int.Parse(txtChieuRong.Text);
                     db.TinhTrang = chkDangSuDung.Checked.ToString();
-                    if (!dbdb.updateDuongBay(ref err, db))
+                    if (!dbdb.insertDuongBay(ref err, db))
                         MessageBox.Show("Thất bại!!!");
                     else
                     {
