@@ -63,7 +63,7 @@ namespace QuanLyBanVeMayBay
             this.label13 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.lstLoaiVe = new System.Windows.Forms.ListBox();
             this.txtVeLoai1ConLai = new System.Windows.Forms.TextBox();
             this.txtGiaVe = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -482,7 +482,7 @@ namespace QuanLyBanVeMayBay
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.listBox2);
+            this.panel5.Controls.Add(this.lstLoaiVe);
             this.panel5.Controls.Add(this.txtVeLoai1ConLai);
             this.panel5.Controls.Add(this.txtGiaVe);
             this.panel5.Controls.Add(this.label11);
@@ -495,15 +495,16 @@ namespace QuanLyBanVeMayBay
             this.panel5.Size = new System.Drawing.Size(988, 109);
             this.panel5.TabIndex = 3;
             // 
-            // listBox2
+            // lstLoaiVe
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 22;
-            this.listBox2.Location = new System.Drawing.Point(411, 61);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(224, 26);
-            this.listBox2.TabIndex = 57;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            this.lstLoaiVe.FormattingEnabled = true;
+            this.lstLoaiVe.ItemHeight = 22;
+            this.lstLoaiVe.Location = new System.Drawing.Point(411, 61);
+            this.lstLoaiVe.Name = "lstLoaiVe";
+            this.lstLoaiVe.Size = new System.Drawing.Size(224, 26);
+            this.lstLoaiVe.TabIndex = 57;
+            this.lstLoaiVe.Tag = "";
+            this.lstLoaiVe.SelectedIndexChanged += new System.EventHandler(this.lstLoaiVe_SelectedIndexChanged);
             // 
             // txtVeLoai1ConLai
             // 
@@ -946,7 +947,7 @@ namespace QuanLyBanVeMayBay
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtVeLoai2ConLai;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox lstLoaiVe;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtGiaVe;
         private System.Windows.Forms.Label label20;

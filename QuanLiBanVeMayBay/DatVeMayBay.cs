@@ -46,7 +46,7 @@ namespace QuanLyBanVeMayBay
                 if (dbkh.insertKhachHang(ref err, kh))
                 {
                     var kh1 = dbs.KhachHangs.FirstOrDefault(p => p.CMND == txtCMND.Text);
-                    var ThongTinVe = dbs.ThongTinChiTietVes.Where(p => p.LoaiVe.Contains(listBox2.SelectedItem.ToString())).FirstOrDefault();
+                    var ThongTinVe = dbs.ThongTinChiTietVes.Where(p => p.LoaiVe.Contains(lstLoaiVe.SelectedItem.ToString())).FirstOrDefault();
                     var NhanVien = dbs.NhanViens.FirstOrDefault(p => p.TenNhanVien.Contains(lblNhanvienHoTro.Text));
                     if (kh1 == null)
                     {
@@ -74,7 +74,7 @@ namespace QuanLyBanVeMayBay
             else
             {
                 var kh1 = dbs.KhachHangs.FirstOrDefault(p => p.CMND == txtCMND.Text);
-                var ThongTinVe = dbs.ThongTinChiTietVes.Where(p => p.LoaiVe.Contains(listBox2.SelectedItem.ToString())).FirstOrDefault();
+                var ThongTinVe = dbs.ThongTinChiTietVes.Where(p => p.LoaiVe.Contains(lstLoaiVe.SelectedItem.ToString())).FirstOrDefault();
                 var NhanVien = dbs.NhanViens.FirstOrDefault(p=>p.TenNhanVien.Contains(lblNhanvienHoTro.Text));
                 if (kh1 == null)
                 {
@@ -113,8 +113,8 @@ namespace QuanLyBanVeMayBay
             {
                 cbMaChuyenBay.Items.Add(i.MaChuyenBay);
             }
-            listBox2.Items.Add("Loai 1");
-            listBox2.Items.Add("Loai 2");
+            lstLoaiVe.Items.Add("Loai 1");
+            lstLoaiVe.Items.Add("Loai 2");
             cbKhuyenMai.Items.Add("5");
             cbKhuyenMai.Items.Add("7");
             cbKhuyenMai.Items.Add("10");
@@ -142,9 +142,10 @@ namespace QuanLyBanVeMayBay
             txtGhiChu.Text = ChuyenBay.GhiChu;
         }
 
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void lstLoaiVe_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var ThongTinVe = dbs.ThongTinChiTietVes.Where(p => p.LoaiVe.Contains(listBox2.SelectedItem.ToString())).FirstOrDefault();
+
+            var ThongTinVe = dbs.ThongTinChiTietVes.Where(p => p.LoaiVe.Contains(lstLoaiVe.SelectedItem.ToString())).FirstOrDefault();
             txtGiaVe.Text = ThongTinVe.Gia.ToString();
         }
     }
