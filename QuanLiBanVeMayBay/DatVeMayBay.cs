@@ -56,8 +56,8 @@ namespace QuanLyBanVeMayBay
                         vb.ThoiGianBan = DateTime.Now;
                         vb.ThoiGianThanhToan = DateTime.Now;
                         vb.MaNhanVien = NhanVien.MaNhanVien;
-                        vb.SoLuongHangHoa = 1; //mặc định là 1
-                        vb.SLVeBan = 1; //mặc định là 1
+                        vb.SoLuongHangHoa = int.Parse(txtSoHangHoa.Text);
+                        vb.SLVeBan = int.Parse(txtSoVeDat.Text);
                         if (!dbvb.insertVeBan(ref err, vb))
                             MessageBox.Show("Thất bại!!!");
                         else
@@ -84,8 +84,8 @@ namespace QuanLyBanVeMayBay
                     vb.ThoiGianBan = DateTime.Now;
                     vb.ThoiGianThanhToan = DateTime.Now;
                     vb.MaNhanVien = NhanVien.MaNhanVien;
-                    vb.SoLuongHangHoa = 1; //mặc định là 1
-                    vb.SLVeBan = 1; //mặc định là 1
+                    vb.SoLuongHangHoa = int.Parse(txtSoHangHoa.Text);
+                    vb.SLVeBan = int.Parse(txtSoVeDat.Text); 
                     if (!dbvb.insertVeBan(ref err, vb))
                         MessageBox.Show("Thất bại!!!");
                     else
@@ -101,11 +101,11 @@ namespace QuanLyBanVeMayBay
         {
             float KhuyenMai = float.Parse(cbKhuyenMai.SelectedItem.ToString());
             float GiaVe = float.Parse(txtGiaVe.Text);
+            float SoVeDat = float.Parse(txtSoVeDat.Text);
             float VAT = float.Parse(txtThueVAT.Text);
-            float TongTien = GiaVe + GiaVe * VAT / 100 - GiaVe * KhuyenMai / 100;
+            float TongTien = (GiaVe + GiaVe * VAT / 100 - GiaVe * KhuyenMai / 100)*SoVeDat;
             txtTongTien.Text = TongTien.ToString();
         }
-
         private void DatVeMayBay_Load(object sender, EventArgs e)
         {
             var dsChuyenBay = dbs.ChuyenBays.Select(p => p);
