@@ -201,8 +201,26 @@ namespace QuanLyBanVeMayBay
 
         private void btnTim_Click(object sender, EventArgs e)
         {
+            
+            string err = "";
             ChuyenBay cb = new ChuyenBay();
+            cb.MaMayBay = txtTim.Text;
+            cb.MaDuongBay = txtTim.Text;
+            cb.MaChuyenBay = txtTim.Text;
+            cb.GhiChu = txtTim.Text;
+            cb.DiemDen = txtTim.Text;
+            cb.DiemDi = txtTim.Text;
+            try
+            {
+                ds = db.general_Search_ChuyenBay(ref err, cb);
 
+                dgvChuyenBay.DataSource = ds.Tables[0];
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(err);
+            }
+            
         }
     }
 }
