@@ -28,6 +28,7 @@ namespace QuanLyBanVeMayBay
         //Reset
         const byte RES_TKTT = 1;
         const byte RES_TKNC = 2;
+        const byte RES_TKTQ = 3;
         byte RES_flag = 0;
             
         public DanhSachChuyenBay()
@@ -124,9 +125,13 @@ namespace QuanLyBanVeMayBay
             {
                 btnTimKiemThongThuong_Click(sender, e);
             }  
-            else
+            else if (RES_flag == RES_TKNC)
             {
                 btnTimDaNang_Click(sender, e);
+            }    
+            else if (RES_flag == RES_TKTQ)
+            {
+                btnTim_Click(sender, e);
             }    
         }
 
@@ -215,6 +220,8 @@ namespace QuanLyBanVeMayBay
                 ds = db.general_Search_ChuyenBay(ref err, cb);
 
                 dgvChuyenBay.DataSource = ds.Tables[0];
+
+                RES_flag = RES_TKTQ;
             }
             catch (Exception)
             {
