@@ -102,6 +102,12 @@
     <Compile Include="CapNhatNhanVien.Designer.cs">
       <DependentUpon>CapNhatNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhSachChuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapNhatNhanVien.resx">
       <DependentUpon>CapNhatNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhSachChuyenBay.resx">
       <DependentUpon>DanhSachChuyenBay.cs</DependentUpon>

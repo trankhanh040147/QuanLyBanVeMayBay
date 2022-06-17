@@ -30,7 +30,6 @@ namespace QuanLyBanVeMayBay
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnTimKiemThongThuong = new System.Windows.Forms.Button();
             this.dtpNgayden = new System.Windows.Forms.DateTimePicker();
             this.dtpGioBay = new System.Windows.Forms.DateTimePicker();
             this.dtpNgaydi = new System.Windows.Forms.DateTimePicker();
@@ -55,11 +54,9 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoangtgden = new System.Windows.Forms.RadioButton();
             this.rdbKhoangtgdi = new System.Windows.Forms.RadioButton();
             this.rdbKhoanggiobay = new System.Windows.Forms.RadioButton();
-            this.btnTimDaNang = new System.Windows.Forms.Button();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.btnTim = new MaterialSkin.Controls.MaterialButton();
@@ -69,6 +66,9 @@ namespace QuanLyBanVeMayBay
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnTimDaNang = new System.Windows.Forms.Button();
+            this.btnTimKiemThongThuong = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -102,20 +102,6 @@ namespace QuanLyBanVeMayBay
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm thông thường";
-            // 
-            // btnTimKiemThongThuong
-            // 
-            this.btnTimKiemThongThuong.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiemThongThuong.ForeColor = System.Drawing.Color.Blue;
-            this.btnTimKiemThongThuong.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
-            this.btnTimKiemThongThuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiemThongThuong.Location = new System.Drawing.Point(28, 212);
-            this.btnTimKiemThongThuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTimKiemThongThuong.Name = "btnTimKiemThongThuong";
-            this.btnTimKiemThongThuong.Size = new System.Drawing.Size(280, 58);
-            this.btnTimKiemThongThuong.TabIndex = 10;
-            this.btnTimKiemThongThuong.Text = "Tìm kiếm";
-            this.btnTimKiemThongThuong.UseVisualStyleBackColor = true;
             // 
             // dtpNgayden
             // 
@@ -414,30 +400,16 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoanggiobay.Text = "Khoảng giờ bay";
             this.rdbKhoanggiobay.UseVisualStyleBackColor = true;
             // 
-            // btnTimDaNang
-            // 
-            this.btnTimDaNang.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimDaNang.ForeColor = System.Drawing.Color.Blue;
-            this.btnTimDaNang.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
-            this.btnTimDaNang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimDaNang.Location = new System.Drawing.Point(28, 526);
-            this.btnTimDaNang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTimDaNang.Name = "btnTimDaNang";
-            this.btnTimDaNang.Size = new System.Drawing.Size(280, 62);
-            this.btnTimDaNang.TabIndex = 10;
-            this.btnTimDaNang.Text = "Tìm kiếm";
-            this.btnTimDaNang.UseVisualStyleBackColor = true;
-            // 
             // dgvKhachHang
             // 
             this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Aquamarine;
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvKhachHang.Location = new System.Drawing.Point(365, 231);
+            this.dgvKhachHang.Location = new System.Drawing.Point(365, 238);
             this.dgvKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.RowHeadersWidth = 51;
-            this.dgvKhachHang.Size = new System.Drawing.Size(1194, 770);
+            this.dgvKhachHang.Size = new System.Drawing.Size(1194, 763);
             this.dgvKhachHang.TabIndex = 13;
             // 
             // panel1
@@ -459,19 +431,6 @@ namespace QuanLyBanVeMayBay
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(267, 123);
             this.panel2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 26F, System.Drawing.FontStyle.Bold);
-            this.label1.Image = global::QuanLyBanVeMayBay.Properties.Resources.Staff1;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(269, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(699, 71);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Danh sách khách hàng";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
@@ -558,7 +517,7 @@ namespace QuanLyBanVeMayBay
             this.panelCRUD.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCRUD.Location = new System.Drawing.Point(365, 185);
             this.panelCRUD.Name = "panelCRUD";
-            this.panelCRUD.Size = new System.Drawing.Size(1194, 46);
+            this.panelCRUD.Size = new System.Drawing.Size(1194, 53);
             this.panelCRUD.TabIndex = 16;
             // 
             // btnReload
@@ -566,11 +525,12 @@ namespace QuanLyBanVeMayBay
             this.btnReload.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReload.Image = global::QuanLyBanVeMayBay.Properties.Resources.reload2;
             this.btnReload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReload.Location = new System.Drawing.Point(466, 8);
+            this.btnReload.Location = new System.Drawing.Point(466, 4);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(112, 31);
+            this.btnReload.Size = new System.Drawing.Size(140, 42);
             this.btnReload.TabIndex = 0;
-            this.btnReload.Text = "Reload";
+            this.btnReload.Text = "RELOAD";
+            this.btnReload.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReload.UseVisualStyleBackColor = true;
             // 
@@ -579,11 +539,12 @@ namespace QuanLyBanVeMayBay
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = global::QuanLyBanVeMayBay.Properties.Resources.remove2;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(316, 8);
+            this.btnXoa.Location = new System.Drawing.Point(316, 4);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(112, 31);
+            this.btnXoa.Size = new System.Drawing.Size(126, 42);
             this.btnXoa.TabIndex = 0;
-            this.btnXoa.Text = "  Xoá";
+            this.btnXoa.Text = "  XOÁ";
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
@@ -592,11 +553,12 @@ namespace QuanLyBanVeMayBay
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = global::QuanLyBanVeMayBay.Properties.Resources.edit2;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(168, 8);
+            this.btnSua.Location = new System.Drawing.Point(168, 4);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(112, 31);
+            this.btnSua.Size = new System.Drawing.Size(126, 42);
             this.btnSua.TabIndex = 0;
-            this.btnSua.Text = "  Sửa";
+            this.btnSua.Text = "  SỬA";
+            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSua.UseVisualStyleBackColor = true;
             // 
@@ -605,13 +567,55 @@ namespace QuanLyBanVeMayBay
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = global::QuanLyBanVeMayBay.Properties.Resources.add2;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(21, 8);
+            this.btnThem.Location = new System.Drawing.Point(21, 4);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(112, 31);
+            this.btnThem.Size = new System.Drawing.Size(126, 42);
             this.btnThem.TabIndex = 0;
-            this.btnThem.Text = "  Thêm";
+            this.btnThem.Text = "  THÊM";
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThem.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 26F, System.Drawing.FontStyle.Bold);
+            this.label1.Image = global::QuanLyBanVeMayBay.Properties.Resources.ChuyenBay1;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label1.Location = new System.Drawing.Point(269, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(699, 71);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Danh sách chuyến bay";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnTimDaNang
+            // 
+            this.btnTimDaNang.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimDaNang.ForeColor = System.Drawing.Color.Blue;
+            this.btnTimDaNang.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
+            this.btnTimDaNang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimDaNang.Location = new System.Drawing.Point(28, 526);
+            this.btnTimDaNang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimDaNang.Name = "btnTimDaNang";
+            this.btnTimDaNang.Size = new System.Drawing.Size(280, 62);
+            this.btnTimDaNang.TabIndex = 10;
+            this.btnTimDaNang.Text = "Tìm kiếm";
+            this.btnTimDaNang.UseVisualStyleBackColor = true;
+            // 
+            // btnTimKiemThongThuong
+            // 
+            this.btnTimKiemThongThuong.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiemThongThuong.ForeColor = System.Drawing.Color.Blue;
+            this.btnTimKiemThongThuong.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
+            this.btnTimKiemThongThuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiemThongThuong.Location = new System.Drawing.Point(28, 212);
+            this.btnTimKiemThongThuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimKiemThongThuong.Name = "btnTimKiemThongThuong";
+            this.btnTimKiemThongThuong.Size = new System.Drawing.Size(280, 58);
+            this.btnTimKiemThongThuong.TabIndex = 10;
+            this.btnTimKiemThongThuong.Text = "Tìm kiếm";
+            this.btnTimKiemThongThuong.UseVisualStyleBackColor = true;
             // 
             // DanhSachChuyenBay
             // 
