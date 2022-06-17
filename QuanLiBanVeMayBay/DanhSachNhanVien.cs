@@ -66,11 +66,6 @@ namespace QuanLyBanVeMayBay
             dgvNhanVien.DataSource = ds.Tables[0];
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            this.txtTim.ResetText();
-        }
-
         private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
