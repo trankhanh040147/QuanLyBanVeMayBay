@@ -114,6 +114,30 @@ namespace BussinessLogicLayer
                         }
                     }
                     break;
+                case 2:
+                    //Tìm theo tình trạng đường bay
+                    if (db_search.TinhTrang != null)
+                    {
+                        try
+                        {
+                            var dsDuongBay = dbs.DuongBays
+                                .Where(r => r.TinhTrang.Contains(db_search.TinhTrang))
+                                .Select(r => r);
+                            foreach (var i in dsDuongBay)
+                            {
+                                dt.Rows.Add(i.MaDuongBay, i.ViTri,
+                                    i.ChieuDai, i.ChieuRong, i.TinhTrang);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
+                    }
+                    break;
 
             } 
             return ds;
@@ -170,11 +194,104 @@ namespace BussinessLogicLayer
                     {
                         err = ex.Message;
                         return ds;
-                    }               
+                    }
+                    break;
+                case 2:
+                    //Tìm theo tình trạng đường bay
+                    if (db_search.TinhTrang != null)
+                    {
+                        try
+                        {
+                            var dsDuongBay = dbs.DuongBays
+                                .Where(r => r.TinhTrang.Contains(db_search.TinhTrang))
+                                .Select(r => r);
+                            foreach (var i in dsDuongBay)
+                            {
+                                dt.Rows.Add(i.MaDuongBay, i.ViTri,
+                                    i.ChieuDai, i.ChieuRong, i.TinhTrang);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
+                    }
+                    break;
             }
             return ds;
         }
+        //Tìm kiếm tổng quát - tìm kiếm theo tất cả thuộc tính có thể 
+        public DataSet general_search_DuongBay(ref string err, DuongBay db_search)
+        {
+            DataSet ds = new DataSet();
 
+            DataTable dt = new DataTable();
+            //Thêm các cột vào dt
+            dt.Columns.Add("Mã đường bay");
+            dt.Columns.Add("Vị trí");
+            dt.Columns.Add("Chiều dài");
+            dt.Columns.Add("Chiều rộng");
+            dt.Columns.Add("Tình trạng");
+            try
+            {
+                //Tìm theo Mã đường bay
+                var dsDuongBay = dbs.DuongBays
+                        .Where(r => r.MaDuongBay.Contains(db_search.MaDuongBay))
+                        .Select(r => r);
+                foreach (var i in dsDuongBay)
+                {
+                    dt.Rows.Add(i.MaDuongBay, i.ViTri,
+                        i.ChieuDai, i.ChieuRong, i.TinhTrang);
+                }
+                //Tìm theo Vị trí
+                dsDuongBay = dbs.DuongBays
+                        .Where(r => r.ViTri.Contains(db_search.ViTri))
+                        .Select(r => r);
+                foreach (var i in dsDuongBay)
+                {
+                    dt.Rows.Add(i.MaDuongBay, i.ViTri,
+                        i.ChieuDai, i.ChieuRong, i.TinhTrang);
+                }
+                ////Tìm theo Chiều dài
+                //dsDuongBay = dbs.DuongBays
+                //        .Where(r => r.ChieuDai == db_search.ChieuDai)
+                //        .Select(r => r);
+                //foreach (var i in dsDuongBay)
+                //{
+                //    dt.Rows.Add(i.MaDuongBay, i.ViTri,
+                //        i.ChieuDai, i.ChieuRong, i.TinhTrang);
+                //}
+                ////Tìm theo chiều rộng
+                //dsDuongBay = dbs.DuongBays
+                //        .Where(r => r.ChieuRong == db_search.ChieuRong)
+                //        .Select(r => r);
+                //foreach (var i in dsDuongBay)
+                //{
+                //    dt.Rows.Add(i.MaDuongBay, i.ViTri,
+                //        i.ChieuDai, i.ChieuRong, i.TinhTrang);
+                //}
+                //Tìm theo Tình trạng
+                dsDuongBay = dbs.DuongBays
+                        .Where(r => r.TinhTrang.Contains(db_search.TinhTrang))
+                        .Select(r => r);
+                foreach (var i in dsDuongBay)
+                {
+                    dt.Rows.Add(i.MaDuongBay, i.ViTri,
+                        i.ChieuDai, i.ChieuRong, i.TinhTrang);
+                }
+                //Thêm vào dataset
+                ds.Tables.Add(dt);
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                err = ex.Message;
+                return ds;
+            }
+        }
 
         //Thêm một đường bay mới
         public bool insertDuongBay(ref string err, DuongBay db)

@@ -37,7 +37,6 @@ namespace QuanLyBanVeMayBay
         }
         DbChuyenBay db = new DbChuyenBay();
         DataSet ds = new DataSet();
-        DataSet reset_ds = new DataSet();
         private void DataBind()
         {
             ds = db.getChuyenBays();

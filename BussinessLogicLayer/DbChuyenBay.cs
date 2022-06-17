@@ -254,7 +254,7 @@ namespace BussinessLogicLayer
             return ds;
         }
 
-        //Tìm kiếm tổng quát - tìm kiếm theo tất cả thuộc tính 
+        //Tìm kiếm tổng quát - tìm kiếm theo tất cả thuộc tính có thể 
         public DataSet general_Search_ChuyenBay(ref string err, ChuyenBay cb_search)
         {
             DataSet ds = new DataSet();

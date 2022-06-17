@@ -491,7 +491,7 @@ namespace QuanLyBanVeMayBay
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(699, 71);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Danh Sách Chuyến Bay";
+            this.label1.Text = "Danh sách chuyến bay";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4

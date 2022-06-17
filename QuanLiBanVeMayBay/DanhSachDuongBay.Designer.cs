@@ -48,14 +48,14 @@ namespace QuanLyBanVeMayBay
             this.chkDangSuDung1 = new System.Windows.Forms.CheckBox();
             this.btnTimThongThuong = new System.Windows.Forms.Button();
             this.txtViTri = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdbVitri = new System.Windows.Forms.RadioButton();
             this.txtMaDuongBay = new System.Windows.Forms.TextBox();
             this.rdbMaDuongBay = new System.Windows.Forms.RadioButton();
-            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.dgvDuongBay = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.btnTim = new MaterialSkin.Controls.MaterialButton();
             this.txtTim = new MaterialSkin.Controls.MaterialTextBox();
-            this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.panelCRUD = new System.Windows.Forms.Panel();
             this.btnReload = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -67,7 +67,7 @@ namespace QuanLyBanVeMayBay
             this.grbKhoanggio.SuspendLayout();
             this.panel3.SuspendLayout();
             this.grbTimKiemThongThuong.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDuongBay)).BeginInit();
             this.panel4.SuspendLayout();
             this.panelCRUD.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +117,7 @@ namespace QuanLyBanVeMayBay
             this.rdbChieuRong.TabStop = true;
             this.rdbChieuRong.Text = "Theo chiều rộng";
             this.rdbChieuRong.UseVisualStyleBackColor = true;
+            this.rdbChieuRong.CheckedChanged += new System.EventHandler(this.rdbChieuRong_CheckedChanged);
             // 
             // rdbChieuDai
             // 
@@ -131,6 +132,7 @@ namespace QuanLyBanVeMayBay
             this.rdbChieuDai.TabStop = true;
             this.rdbChieuDai.Text = "Theo chiều dài";
             this.rdbChieuDai.UseVisualStyleBackColor = true;
+            this.rdbChieuDai.CheckedChanged += new System.EventHandler(this.rdbChieuDai_CheckedChanged);
             // 
             // panel1
             // 
@@ -162,7 +164,7 @@ namespace QuanLyBanVeMayBay
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(699, 71);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Danh sách khách hàng";
+            this.label1.Text = "Danh sách đường bay";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // grbTimKiemDaNang
@@ -171,7 +173,7 @@ namespace QuanLyBanVeMayBay
             this.grbTimKiemDaNang.Controls.Add(this.grbKhoanggio);
             this.grbTimKiemDaNang.Controls.Add(this.grbBoLocDaNang);
             this.grbTimKiemDaNang.Controls.Add(this.btnTimDaNang);
-            this.grbTimKiemDaNang.Font = new System.Drawing.Font("Cherry Swash", 12F);
+            this.grbTimKiemDaNang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.grbTimKiemDaNang.ForeColor = System.Drawing.Color.Gold;
             this.grbTimKiemDaNang.Location = new System.Drawing.Point(24, 363);
             this.grbTimKiemDaNang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -185,6 +187,7 @@ namespace QuanLyBanVeMayBay
             // chkDangSuDung2
             // 
             this.chkDangSuDung2.AutoSize = true;
+            this.chkDangSuDung2.Enabled = false;
             this.chkDangSuDung2.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkDangSuDung2.ForeColor = System.Drawing.Color.Lime;
             this.chkDangSuDung2.Location = new System.Drawing.Point(28, 359);
@@ -193,6 +196,7 @@ namespace QuanLyBanVeMayBay
             this.chkDangSuDung2.TabIndex = 12;
             this.chkDangSuDung2.Text = "Đang sử dụng";
             this.chkDangSuDung2.UseVisualStyleBackColor = true;
+            this.chkDangSuDung2.CheckedChanged += new System.EventHandler(this.chkDangSuDung2_CheckedChanged);
             // 
             // grbKhoanggio
             // 
@@ -210,6 +214,7 @@ namespace QuanLyBanVeMayBay
             // 
             // txtTo
             // 
+            this.txtTo.Enabled = false;
             this.txtTo.Font = new System.Drawing.Font("Arial", 11F);
             this.txtTo.Location = new System.Drawing.Point(142, 76);
             this.txtTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -219,6 +224,7 @@ namespace QuanLyBanVeMayBay
             // 
             // txtFrom
             // 
+            this.txtFrom.Enabled = false;
             this.txtFrom.Font = new System.Drawing.Font("Arial", 11F);
             this.txtFrom.Location = new System.Drawing.Point(142, 32);
             this.txtFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -228,6 +234,7 @@ namespace QuanLyBanVeMayBay
             // 
             // btnTimDaNang
             // 
+            this.btnTimDaNang.Enabled = false;
             this.btnTimDaNang.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimDaNang.ForeColor = System.Drawing.Color.Blue;
             this.btnTimDaNang.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
@@ -239,6 +246,7 @@ namespace QuanLyBanVeMayBay
             this.btnTimDaNang.TabIndex = 10;
             this.btnTimDaNang.Text = "Tìm kiếm";
             this.btnTimDaNang.UseVisualStyleBackColor = true;
+            this.btnTimDaNang.Click += new System.EventHandler(this.btnTimDaNang_Click);
             // 
             // panel3
             // 
@@ -257,10 +265,10 @@ namespace QuanLyBanVeMayBay
             this.grbTimKiemThongThuong.Controls.Add(this.chkDangSuDung1);
             this.grbTimKiemThongThuong.Controls.Add(this.btnTimThongThuong);
             this.grbTimKiemThongThuong.Controls.Add(this.txtViTri);
-            this.grbTimKiemThongThuong.Controls.Add(this.radioButton1);
+            this.grbTimKiemThongThuong.Controls.Add(this.rdbVitri);
             this.grbTimKiemThongThuong.Controls.Add(this.txtMaDuongBay);
             this.grbTimKiemThongThuong.Controls.Add(this.rdbMaDuongBay);
-            this.grbTimKiemThongThuong.Font = new System.Drawing.Font("Cherry Swash", 12F);
+            this.grbTimKiemThongThuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.grbTimKiemThongThuong.ForeColor = System.Drawing.Color.Gold;
             this.grbTimKiemThongThuong.Location = new System.Drawing.Point(24, 25);
             this.grbTimKiemThongThuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -282,9 +290,11 @@ namespace QuanLyBanVeMayBay
             this.chkDangSuDung1.TabIndex = 11;
             this.chkDangSuDung1.Text = "Đang sử dụng";
             this.chkDangSuDung1.UseVisualStyleBackColor = true;
+            this.chkDangSuDung1.CheckedChanged += new System.EventHandler(this.chkDangSuDung1_CheckedChanged);
             // 
             // btnTimThongThuong
             // 
+            this.btnTimThongThuong.Enabled = false;
             this.btnTimThongThuong.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimThongThuong.ForeColor = System.Drawing.Color.Blue;
             this.btnTimThongThuong.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
@@ -296,9 +306,11 @@ namespace QuanLyBanVeMayBay
             this.btnTimThongThuong.TabIndex = 10;
             this.btnTimThongThuong.Text = "Tìm kiếm";
             this.btnTimThongThuong.UseVisualStyleBackColor = true;
+            this.btnTimThongThuong.Click += new System.EventHandler(this.btnTimThongThuong_Click);
             // 
             // txtViTri
             // 
+            this.txtViTri.Enabled = false;
             this.txtViTri.Font = new System.Drawing.Font("Arial", 11F);
             this.txtViTri.Location = new System.Drawing.Point(56, 150);
             this.txtViTri.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -306,22 +318,24 @@ namespace QuanLyBanVeMayBay
             this.txtViTri.Size = new System.Drawing.Size(264, 29);
             this.txtViTri.TabIndex = 7;
             // 
-            // radioButton1
+            // rdbVitri
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Arial", 11F);
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.Control;
-            this.radioButton1.Location = new System.Drawing.Point(28, 118);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(70, 26);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Vị trí";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbVitri.AutoSize = true;
+            this.rdbVitri.Font = new System.Drawing.Font("Arial", 11F);
+            this.rdbVitri.ForeColor = System.Drawing.SystemColors.Control;
+            this.rdbVitri.Location = new System.Drawing.Point(28, 118);
+            this.rdbVitri.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbVitri.Name = "rdbVitri";
+            this.rdbVitri.Size = new System.Drawing.Size(70, 26);
+            this.rdbVitri.TabIndex = 4;
+            this.rdbVitri.TabStop = true;
+            this.rdbVitri.Text = "Vị trí";
+            this.rdbVitri.UseVisualStyleBackColor = true;
+            this.rdbVitri.CheckedChanged += new System.EventHandler(this.rdbVitri_CheckedChanged);
             // 
             // txtMaDuongBay
             // 
+            this.txtMaDuongBay.Enabled = false;
             this.txtMaDuongBay.Font = new System.Drawing.Font("Arial", 11F);
             this.txtMaDuongBay.Location = new System.Drawing.Point(56, 75);
             this.txtMaDuongBay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -342,18 +356,18 @@ namespace QuanLyBanVeMayBay
             this.rdbMaDuongBay.TabStop = true;
             this.rdbMaDuongBay.Text = "Mã đường bay";
             this.rdbMaDuongBay.UseVisualStyleBackColor = true;
+            this.rdbMaDuongBay.CheckedChanged += new System.EventHandler(this.rdbMaDuongBay_CheckedChanged);
             // 
-            // dgvKhachHang
+            // dgvDuongBay
             // 
-            this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Aquamarine;
-            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvKhachHang.Location = new System.Drawing.Point(0, 0);
-            this.dgvKhachHang.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvKhachHang.Name = "dgvKhachHang";
-            this.dgvKhachHang.RowHeadersWidth = 51;
-            this.dgvKhachHang.Size = new System.Drawing.Size(1463, 982);
-            this.dgvKhachHang.TabIndex = 17;
+            this.dgvDuongBay.BackgroundColor = System.Drawing.Color.Aquamarine;
+            this.dgvDuongBay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDuongBay.Location = new System.Drawing.Point(364, 231);
+            this.dgvDuongBay.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDuongBay.Name = "dgvDuongBay";
+            this.dgvDuongBay.RowHeadersWidth = 51;
+            this.dgvDuongBay.Size = new System.Drawing.Size(1099, 751);
+            this.dgvDuongBay.TabIndex = 17;
             // 
             // panel4
             // 
@@ -367,46 +381,6 @@ namespace QuanLyBanVeMayBay
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1098, 62);
             this.panel4.TabIndex = 20;
-            // 
-            // btnTim
-            // 
-            this.btnTim.AutoSize = false;
-            this.btnTim.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnTim.BackColor = System.Drawing.SystemColors.MenuText;
-            this.btnTim.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnTim.Depth = 0;
-            this.btnTim.HighEmphasis = true;
-            this.btnTim.Icon = null;
-            this.btnTim.Location = new System.Drawing.Point(521, 7);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btnTim.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnTim.Name = "btnTim";
-            this.btnTim.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnTim.Size = new System.Drawing.Size(120, 44);
-            this.btnTim.TabIndex = 1;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnTim.UseAccentColor = false;
-            this.btnTim.UseVisualStyleBackColor = false;
-            // 
-            // txtTim
-            // 
-            this.txtTim.AnimateReadOnly = false;
-            this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTim.Depth = 0;
-            this.txtTim.Font = new System.Drawing.Font("Roboto", 9.6F);
-            this.txtTim.LeadingIcon = null;
-            this.txtTim.Location = new System.Drawing.Point(44, 11);
-            this.txtTim.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTim.MaxLength = 50;
-            this.txtTim.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtTim.Multiline = false;
-            this.txtTim.Name = "txtTim";
-            this.txtTim.Size = new System.Drawing.Size(457, 36);
-            this.txtTim.TabIndex = 0;
-            this.txtTim.Text = "Nhập thông tin vào đây";
-            this.txtTim.TrailingIcon = null;
-            this.txtTim.UseTallSize = false;
             // 
             // btnReset
             // 
@@ -429,6 +403,48 @@ namespace QuanLyBanVeMayBay
             this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnReset.UseAccentColor = false;
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // btnTim
+            // 
+            this.btnTim.AutoSize = false;
+            this.btnTim.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTim.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnTim.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnTim.Depth = 0;
+            this.btnTim.HighEmphasis = true;
+            this.btnTim.Icon = null;
+            this.btnTim.Location = new System.Drawing.Point(521, 7);
+            this.btnTim.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btnTim.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnTim.Name = "btnTim";
+            this.btnTim.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnTim.Size = new System.Drawing.Size(120, 44);
+            this.btnTim.TabIndex = 1;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnTim.UseAccentColor = false;
+            this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
+            // 
+            // txtTim
+            // 
+            this.txtTim.AnimateReadOnly = false;
+            this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTim.Depth = 0;
+            this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
+            this.txtTim.LeadingIcon = null;
+            this.txtTim.Location = new System.Drawing.Point(44, 11);
+            this.txtTim.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTim.MaxLength = 50;
+            this.txtTim.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtTim.Multiline = false;
+            this.txtTim.Name = "txtTim";
+            this.txtTim.Size = new System.Drawing.Size(457, 36);
+            this.txtTim.TabIndex = 0;
+            this.txtTim.Text = "Nhập thông tin vào đây";
+            this.txtTim.TrailingIcon = null;
+            this.txtTim.UseTallSize = false;
             // 
             // panelCRUD
             // 
@@ -455,9 +471,11 @@ namespace QuanLyBanVeMayBay
             this.btnReload.Text = "Reload";
             this.btnReload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // btnXoa
             // 
+            this.btnXoa.Enabled = false;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = global::QuanLyBanVeMayBay.Properties.Resources.remove2;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -471,6 +489,7 @@ namespace QuanLyBanVeMayBay
             // 
             // btnSua
             // 
+            this.btnSua.Enabled = false;
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = global::QuanLyBanVeMayBay.Properties.Resources.edit2;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -484,6 +503,7 @@ namespace QuanLyBanVeMayBay
             // 
             // btnThem
             // 
+            this.btnThem.Enabled = false;
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = global::QuanLyBanVeMayBay.Properties.Resources.add2;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -504,9 +524,10 @@ namespace QuanLyBanVeMayBay
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.dgvKhachHang);
+            this.Controls.Add(this.dgvDuongBay);
             this.Name = "DanhSachDuongBay";
             this.Text = "DanhSachDuongBay";
+            this.Load += new System.EventHandler(this.DanhSachDuongBay_Load);
             this.grbBoLocDaNang.ResumeLayout(false);
             this.grbBoLocDaNang.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -517,7 +538,7 @@ namespace QuanLyBanVeMayBay
             this.panel3.ResumeLayout(false);
             this.grbTimKiemThongThuong.ResumeLayout(false);
             this.grbTimKiemThongThuong.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDuongBay)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panelCRUD.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -540,9 +561,9 @@ namespace QuanLyBanVeMayBay
         private System.Windows.Forms.Button btnTimThongThuong;
         private System.Windows.Forms.TextBox txtMaDuongBay;
         private System.Windows.Forms.RadioButton rdbMaDuongBay;
-        private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.DataGridView dgvDuongBay;
         private System.Windows.Forms.TextBox txtViTri;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdbVitri;
         private System.Windows.Forms.CheckBox chkDangSuDung1;
         private System.Windows.Forms.RadioButton rdbChieuRong;
         private System.Windows.Forms.RadioButton rdbChieuDai;
