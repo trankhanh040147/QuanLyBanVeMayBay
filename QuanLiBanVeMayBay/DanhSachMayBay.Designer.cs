@@ -53,10 +53,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.btnTim = new MaterialSkin.Controls.MaterialButton();
             this.txtTim = new MaterialSkin.Controls.MaterialTextBox();
             this.dgvMayBay = new System.Windows.Forms.DataGridView();
-            this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.panelCRUD = new System.Windows.Forms.Panel();
             this.btnReload = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -75,6 +75,7 @@
             // 
             // txtTenMayBay
             // 
+            this.txtTenMayBay.Enabled = false;
             this.txtTenMayBay.Font = new System.Drawing.Font("Arial", 11F);
             this.txtTenMayBay.Location = new System.Drawing.Point(56, 150);
             this.txtTenMayBay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -99,6 +100,7 @@
             // 
             // txtMaMayBay
             // 
+            this.txtMaMayBay.Enabled = false;
             this.txtMaMayBay.Font = new System.Drawing.Font("Arial", 11F);
             this.txtMaMayBay.Location = new System.Drawing.Point(56, 75);
             this.txtMaMayBay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -142,6 +144,7 @@
             // 
             // btnTimThongThuong
             // 
+            this.btnTimThongThuong.Enabled = false;
             this.btnTimThongThuong.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimThongThuong.ForeColor = System.Drawing.Color.Blue;
             this.btnTimThongThuong.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
@@ -156,6 +159,7 @@
             // 
             // txtHangSX
             // 
+            this.txtHangSX.Enabled = false;
             this.txtHangSX.Font = new System.Drawing.Font("Arial", 11F);
             this.txtHangSX.Location = new System.Drawing.Point(56, 224);
             this.txtHangSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -221,6 +225,7 @@
             // 
             // txtTo
             // 
+            this.txtTo.Enabled = false;
             this.txtTo.Font = new System.Drawing.Font("Arial", 11F);
             this.txtTo.Location = new System.Drawing.Point(141, 76);
             this.txtTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -230,6 +235,7 @@
             // 
             // txtFrom
             // 
+            this.txtFrom.Enabled = false;
             this.txtFrom.Font = new System.Drawing.Font("Arial", 11F);
             this.txtFrom.Location = new System.Drawing.Point(141, 32);
             this.txtFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -329,6 +335,7 @@
             // 
             // btnTimDaNang
             // 
+            this.btnTimDaNang.Enabled = false;
             this.btnTimDaNang.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimDaNang.ForeColor = System.Drawing.Color.Blue;
             this.btnTimDaNang.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
@@ -387,6 +394,28 @@
             this.panel4.Size = new System.Drawing.Size(1276, 62);
             this.panel4.TabIndex = 26;
             // 
+            // btnReset
+            // 
+            this.btnReset.AutoSize = false;
+            this.btnReset.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnReset.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnReset.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnReset.Depth = 0;
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnReset.HighEmphasis = true;
+            this.btnReset.Icon = null;
+            this.btnReset.Location = new System.Drawing.Point(681, 7);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnReset.Size = new System.Drawing.Size(120, 44);
+            this.btnReset.TabIndex = 2;
+            this.btnReset.Text = "Reset";
+            this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnReset.UseAccentColor = false;
+            this.btnReset.UseVisualStyleBackColor = false;
+            // 
             // btnTim
             // 
             this.btnTim.AutoSize = false;
@@ -413,7 +442,7 @@
             this.txtTim.AnimateReadOnly = false;
             this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTim.Depth = 0;
-            this.txtTim.Font = new System.Drawing.Font("Roboto", 9.6F);
+            this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
             this.txtTim.LeadingIcon = null;
             this.txtTim.Location = new System.Drawing.Point(44, 11);
             this.txtTim.Margin = new System.Windows.Forms.Padding(4);
@@ -431,35 +460,12 @@
             // 
             this.dgvMayBay.BackgroundColor = System.Drawing.Color.Aquamarine;
             this.dgvMayBay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMayBay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvMayBay.Location = new System.Drawing.Point(0, 0);
+            this.dgvMayBay.Location = new System.Drawing.Point(364, 231);
             this.dgvMayBay.Margin = new System.Windows.Forms.Padding(4);
             this.dgvMayBay.Name = "dgvMayBay";
             this.dgvMayBay.RowHeadersWidth = 51;
-            this.dgvMayBay.Size = new System.Drawing.Size(1641, 918);
+            this.dgvMayBay.Size = new System.Drawing.Size(1277, 687);
             this.dgvMayBay.TabIndex = 22;
-            // 
-            // btnReset
-            // 
-            this.btnReset.AutoSize = false;
-            this.btnReset.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnReset.BackColor = System.Drawing.SystemColors.MenuText;
-            this.btnReset.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnReset.Depth = 0;
-            this.btnReset.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnReset.HighEmphasis = true;
-            this.btnReset.Icon = null;
-            this.btnReset.Location = new System.Drawing.Point(681, 7);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnReset.Name = "btnReset";
-            this.btnReset.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnReset.Size = new System.Drawing.Size(120, 44);
-            this.btnReset.TabIndex = 2;
-            this.btnReset.Text = "Reset";
-            this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnReset.UseAccentColor = false;
-            this.btnReset.UseVisualStyleBackColor = false;
             // 
             // panelCRUD
             // 
@@ -489,6 +495,7 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.Enabled = false;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = global::QuanLyBanVeMayBay.Properties.Resources.remove2;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -502,6 +509,7 @@
             // 
             // btnSua
             // 
+            this.btnSua.Enabled = false;
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = global::QuanLyBanVeMayBay.Properties.Resources.edit2;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -515,6 +523,7 @@
             // 
             // btnThem
             // 
+            this.btnThem.Enabled = false;
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = global::QuanLyBanVeMayBay.Properties.Resources.add2;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -534,8 +543,8 @@
             this.Controls.Add(this.panelCRUD);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.dgvMayBay);
+            this.Controls.Add(this.panel3);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DanhSachMayBay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

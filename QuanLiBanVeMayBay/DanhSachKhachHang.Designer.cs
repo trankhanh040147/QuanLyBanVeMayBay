@@ -47,9 +47,9 @@ namespace QuanLyBanVeMayBay
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.btnTim = new MaterialSkin.Controls.MaterialButton();
             this.txtTim = new MaterialSkin.Controls.MaterialTextBox();
-            this.btnReset = new MaterialSkin.Controls.MaterialButton();
             this.panelCRUD = new System.Windows.Forms.Panel();
             this.btnReload = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -68,12 +68,11 @@ namespace QuanLyBanVeMayBay
             // 
             this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Aquamarine;
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvKhachHang.Location = new System.Drawing.Point(296, 123);
+            this.dgvKhachHang.Location = new System.Drawing.Point(292, 231);
             this.dgvKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.RowHeadersWidth = 51;
-            this.dgvKhachHang.Size = new System.Drawing.Size(1139, 559);
+            this.dgvKhachHang.Size = new System.Drawing.Size(1143, 451);
             this.dgvKhachHang.TabIndex = 6;
             // 
             // panel1
@@ -126,7 +125,7 @@ namespace QuanLyBanVeMayBay
             this.groupBox1.Controls.Add(this.rdbDiaChiKhachHang);
             this.groupBox1.Controls.Add(this.rdbTenKhachHang);
             this.groupBox1.Controls.Add(this.rdbMaKhachHang);
-            this.groupBox1.Font = new System.Drawing.Font("Cherry Swash", 15.75F);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.groupBox1.ForeColor = System.Drawing.Color.Gold;
             this.groupBox1.Location = new System.Drawing.Point(28, 371);
             this.groupBox1.Name = "groupBox1";
@@ -290,6 +289,28 @@ namespace QuanLyBanVeMayBay
             this.panel4.Size = new System.Drawing.Size(1139, 62);
             this.panel4.TabIndex = 8;
             // 
+            // btnReset
+            // 
+            this.btnReset.AutoSize = false;
+            this.btnReset.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnReset.BackColor = System.Drawing.SystemColors.MenuText;
+            this.btnReset.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnReset.Depth = 0;
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnReset.HighEmphasis = true;
+            this.btnReset.Icon = null;
+            this.btnReset.Location = new System.Drawing.Point(681, 7);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnReset.Name = "btnReset";
+            this.btnReset.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnReset.Size = new System.Drawing.Size(120, 44);
+            this.btnReset.TabIndex = 2;
+            this.btnReset.Text = "Reset";
+            this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnReset.UseAccentColor = false;
+            this.btnReset.UseVisualStyleBackColor = false;
+            // 
             // btnTim
             // 
             this.btnTim.AutoSize = false;
@@ -316,7 +337,7 @@ namespace QuanLyBanVeMayBay
             this.txtTim.AnimateReadOnly = false;
             this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTim.Depth = 0;
-            this.txtTim.Font = new System.Drawing.Font("Roboto", 9.6F);
+            this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
             this.txtTim.LeadingIcon = null;
             this.txtTim.Location = new System.Drawing.Point(44, 11);
             this.txtTim.Margin = new System.Windows.Forms.Padding(4);
@@ -329,28 +350,6 @@ namespace QuanLyBanVeMayBay
             this.txtTim.Text = "Nhập thông tin vào đây";
             this.txtTim.TrailingIcon = null;
             this.txtTim.UseTallSize = false;
-            // 
-            // btnReset
-            // 
-            this.btnReset.AutoSize = false;
-            this.btnReset.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnReset.BackColor = System.Drawing.SystemColors.MenuText;
-            this.btnReset.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnReset.Depth = 0;
-            this.btnReset.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnReset.HighEmphasis = true;
-            this.btnReset.Icon = null;
-            this.btnReset.Location = new System.Drawing.Point(681, 7);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
-            this.btnReset.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnReset.Name = "btnReset";
-            this.btnReset.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnReset.Size = new System.Drawing.Size(120, 44);
-            this.btnReset.TabIndex = 2;
-            this.btnReset.Text = "Reset";
-            this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnReset.UseAccentColor = false;
-            this.btnReset.UseVisualStyleBackColor = false;
             // 
             // panelCRUD
             // 
