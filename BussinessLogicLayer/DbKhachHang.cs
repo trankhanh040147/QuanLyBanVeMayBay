@@ -146,6 +146,103 @@ namespace BussinessLogicLayer
             }            
             return ds;
         }
+        
+        //Tìm theo tổng quát - trên tất cả thuộc tính có thể
+        public DataSet general_search_KhachHang(ref string err, KhachHang kh_search)
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
+            //Thêm các cột vào dt
+            dt.Columns.Add("Mã khách hàng");
+            dt.Columns.Add("Họ khách hàng");
+            dt.Columns.Add("Tên khách hàng");
+            dt.Columns.Add("Tên lót khách hàng");
+            dt.Columns.Add("Số điện thoại");
+            dt.Columns.Add("Địa chỉ");
+            dt.Columns.Add("CMND");
+            try
+            {
+                //Tìm theo mã
+                var dsKhachHang = dbs.KhachHangs
+                                .Where(r => r.MaKhachHang.Equals(kh_search.MaKhachHang))
+                                .Select(r => r);
+                //Thêm các bộ vào các cột 
+                foreach (var i in dsKhachHang)
+                {
+                    dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
+                        i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                }
+                //Tìm theo họ
+                dsKhachHang = dbs.KhachHangs
+                                .Where(r => r.HoKhachHang.Contains(kh_search.HoKhachHang))
+                                .Select(r => r);
+                //Thêm các bộ vào các cột 
+                foreach (var i in dsKhachHang)
+                {
+                    dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
+                        i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                }
+                //Tìm theo Tên 
+                dsKhachHang = dbs.KhachHangs
+                                .Where(r => r.TenKhachHang.Contains(kh_search.TenKhachHang))
+                                .Select(r => r);
+                //Thêm các bộ vào các cột 
+                foreach (var i in dsKhachHang)
+                {
+                    dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
+                        i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                }
+                //Tìm theo Tên lót
+                dsKhachHang = dbs.KhachHangs
+                                .Where(r => r.TenLotKhachHang.Contains(kh_search.TenLotKhachHang))
+                                .Select(r => r);
+                //Thêm các bộ vào các cột 
+                foreach (var i in dsKhachHang)
+                {
+                    dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
+                        i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                }
+                //Tìm theo SĐT
+                dsKhachHang = dbs.KhachHangs
+                                .Where(r => r.SoDienThoai.Equals(kh_search.SoDienThoai))
+                                .Select(r => r);
+                //Thêm các bộ vào các cột 
+                foreach (var i in dsKhachHang)
+                {
+                    dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
+                        i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                }
+                //Tìm theo Địa Chỉ
+                dsKhachHang = dbs.KhachHangs
+                                .Where(r => r.DiaChi.Contains(kh_search.DiaChi))
+                                .Select(r => r);
+                //Thêm các bộ vào các cột 
+                foreach (var i in dsKhachHang)
+                {
+                    dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
+                        i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                }
+                //Tìm theo CMND
+                dsKhachHang = dbs.KhachHangs
+                                .Where(r => r.CMND.Equals(kh_search.CMND))
+                                .Select(r => r);
+                //Thêm các bộ vào các cột 
+                foreach (var i in dsKhachHang)
+                {
+                    dt.Rows.Add(i.MaKhachHang, i.HoKhachHang, i.TenKhachHang,
+                        i.TenLotKhachHang, i.SoDienThoai, i.DiaChi, i.CMND);
+                }
+
+                ds.Tables.Add(dt);
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                err = ex.Message;
+                return ds;
+            }
+        }
+        
         //Thêm một khách hàng mới
         public bool insertKhachHang(ref string err, KhachHang kh)
         {

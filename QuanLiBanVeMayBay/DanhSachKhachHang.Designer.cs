@@ -34,7 +34,11 @@ namespace QuanLyBanVeMayBay
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtDiaChiKhachHang = new System.Windows.Forms.TextBox();
+            this.txtTenKhachHang = new System.Windows.Forms.TextBox();
+            this.txtMaKhachHang = new System.Windows.Forms.TextBox();
             this.rdbDiaChiKhachHang = new System.Windows.Forms.RadioButton();
             this.rdbTenKhachHang = new System.Windows.Forms.RadioButton();
             this.rdbMaKhachHang = new System.Windows.Forms.RadioButton();
@@ -68,11 +72,11 @@ namespace QuanLyBanVeMayBay
             // 
             this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Aquamarine;
             this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhachHang.Location = new System.Drawing.Point(292, 231);
+            this.dgvKhachHang.Location = new System.Drawing.Point(296, 231);
             this.dgvKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.RowHeadersWidth = 51;
-            this.dgvKhachHang.Size = new System.Drawing.Size(1143, 451);
+            this.dgvKhachHang.Size = new System.Drawing.Size(1139, 591);
             this.dgvKhachHang.TabIndex = 6;
             // 
             // panel1
@@ -111,17 +115,37 @@ namespace QuanLyBanVeMayBay
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel3.Controls.Add(this.btnTimKiem);
             this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Controls.Add(this.PanelFunction);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(296, 682);
+            this.panel3.Size = new System.Drawing.Size(296, 822);
             this.panel3.TabIndex = 5;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Enabled = false;
+            this.btnTimKiem.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.ForeColor = System.Drawing.Color.Blue;
+            this.btnTimKiem.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(28, 745);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(250, 50);
+            this.btnTimKiem.TabIndex = 14;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTImKiem_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtDiaChiKhachHang);
+            this.groupBox1.Controls.Add(this.txtTenKhachHang);
+            this.groupBox1.Controls.Add(this.txtMaKhachHang);
             this.groupBox1.Controls.Add(this.rdbDiaChiKhachHang);
             this.groupBox1.Controls.Add(this.rdbTenKhachHang);
             this.groupBox1.Controls.Add(this.rdbMaKhachHang);
@@ -129,52 +153,82 @@ namespace QuanLyBanVeMayBay
             this.groupBox1.ForeColor = System.Drawing.Color.Gold;
             this.groupBox1.Location = new System.Drawing.Point(28, 371);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(250, 262);
+            this.groupBox1.Size = new System.Drawing.Size(250, 353);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm theo";
+            // 
+            // txtDiaChiKhachHang
+            // 
+            this.txtDiaChiKhachHang.Enabled = false;
+            this.txtDiaChiKhachHang.Font = new System.Drawing.Font("Arial", 12F);
+            this.txtDiaChiKhachHang.Location = new System.Drawing.Point(22, 297);
+            this.txtDiaChiKhachHang.Name = "txtDiaChiKhachHang";
+            this.txtDiaChiKhachHang.Size = new System.Drawing.Size(195, 30);
+            this.txtDiaChiKhachHang.TabIndex = 11;
+            // 
+            // txtTenKhachHang
+            // 
+            this.txtTenKhachHang.Enabled = false;
+            this.txtTenKhachHang.Font = new System.Drawing.Font("Arial", 12F);
+            this.txtTenKhachHang.Location = new System.Drawing.Point(22, 197);
+            this.txtTenKhachHang.Name = "txtTenKhachHang";
+            this.txtTenKhachHang.Size = new System.Drawing.Size(195, 30);
+            this.txtTenKhachHang.TabIndex = 12;
+            // 
+            // txtMaKhachHang
+            // 
+            this.txtMaKhachHang.Enabled = false;
+            this.txtMaKhachHang.Font = new System.Drawing.Font("Arial", 12F);
+            this.txtMaKhachHang.Location = new System.Drawing.Point(22, 96);
+            this.txtMaKhachHang.Name = "txtMaKhachHang";
+            this.txtMaKhachHang.Size = new System.Drawing.Size(195, 30);
+            this.txtMaKhachHang.TabIndex = 13;
             // 
             // rdbDiaChiKhachHang
             // 
             this.rdbDiaChiKhachHang.AutoSize = true;
             this.rdbDiaChiKhachHang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbDiaChiKhachHang.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbDiaChiKhachHang.Location = new System.Drawing.Point(36, 210);
+            this.rdbDiaChiKhachHang.Location = new System.Drawing.Point(22, 254);
             this.rdbDiaChiKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.rdbDiaChiKhachHang.Name = "rdbDiaChiKhachHang";
             this.rdbDiaChiKhachHang.Size = new System.Drawing.Size(195, 27);
-            this.rdbDiaChiKhachHang.TabIndex = 4;
+            this.rdbDiaChiKhachHang.TabIndex = 8;
             this.rdbDiaChiKhachHang.TabStop = true;
             this.rdbDiaChiKhachHang.Text = "Địa chỉ khách hàng";
             this.rdbDiaChiKhachHang.UseVisualStyleBackColor = true;
+            this.rdbDiaChiKhachHang.CheckedChanged += new System.EventHandler(this.rdbDiaChiKhachHang_CheckedChanged);
             // 
             // rdbTenKhachHang
             // 
             this.rdbTenKhachHang.AutoSize = true;
             this.rdbTenKhachHang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbTenKhachHang.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbTenKhachHang.Location = new System.Drawing.Point(36, 139);
+            this.rdbTenKhachHang.Location = new System.Drawing.Point(22, 152);
             this.rdbTenKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.rdbTenKhachHang.Name = "rdbTenKhachHang";
             this.rdbTenKhachHang.Size = new System.Drawing.Size(169, 27);
-            this.rdbTenKhachHang.TabIndex = 5;
+            this.rdbTenKhachHang.TabIndex = 9;
             this.rdbTenKhachHang.TabStop = true;
             this.rdbTenKhachHang.Text = "Tên khách hàng";
             this.rdbTenKhachHang.UseVisualStyleBackColor = true;
+            this.rdbTenKhachHang.CheckedChanged += new System.EventHandler(this.rdbTenKhachHang_CheckedChanged);
             // 
             // rdbMaKhachHang
             // 
             this.rdbMaKhachHang.AutoSize = true;
             this.rdbMaKhachHang.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbMaKhachHang.ForeColor = System.Drawing.SystemColors.Control;
-            this.rdbMaKhachHang.Location = new System.Drawing.Point(36, 68);
+            this.rdbMaKhachHang.Location = new System.Drawing.Point(22, 52);
             this.rdbMaKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.rdbMaKhachHang.Name = "rdbMaKhachHang";
             this.rdbMaKhachHang.Size = new System.Drawing.Size(164, 27);
-            this.rdbMaKhachHang.TabIndex = 6;
+            this.rdbMaKhachHang.TabIndex = 10;
             this.rdbMaKhachHang.TabStop = true;
             this.rdbMaKhachHang.Text = "Mã khách hàng";
             this.rdbMaKhachHang.UseVisualStyleBackColor = true;
+            this.rdbMaKhachHang.CheckedChanged += new System.EventHandler(this.rdbMaKhachHang_CheckedChanged);
             // 
             // PanelFunction
             // 
@@ -188,9 +242,8 @@ namespace QuanLyBanVeMayBay
             this.PanelFunction.Location = new System.Drawing.Point(4, 7);
             this.PanelFunction.Margin = new System.Windows.Forms.Padding(4);
             this.PanelFunction.Name = "PanelFunction";
-            this.PanelFunction.Size = new System.Drawing.Size(292, 337);
+            this.PanelFunction.Size = new System.Drawing.Size(292, 341);
             this.PanelFunction.TabIndex = 0;
-            this.PanelFunction.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelFunction_Paint);
             // 
             // progressBar2
             // 
@@ -310,6 +363,7 @@ namespace QuanLyBanVeMayBay
             this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnReset.UseAccentColor = false;
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnTim
             // 
@@ -331,6 +385,7 @@ namespace QuanLyBanVeMayBay
             this.btnTim.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnTim.UseAccentColor = false;
             this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // txtTim
             // 
@@ -376,6 +431,7 @@ namespace QuanLyBanVeMayBay
             this.btnReload.Text = "Reload";
             this.btnReload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // btnXoa
             // 
@@ -420,7 +476,7 @@ namespace QuanLyBanVeMayBay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1435, 682);
+            this.ClientSize = new System.Drawing.Size(1435, 822);
             this.Controls.Add(this.panelCRUD);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.dgvKhachHang);
@@ -430,6 +486,7 @@ namespace QuanLyBanVeMayBay
             this.Name = "DanhSachKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách khách hàng";
+            this.Load += new System.EventHandler(this.DanhSachKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -459,9 +516,6 @@ namespace QuanLyBanVeMayBay
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rdbDiaChiKhachHang;
-        private System.Windows.Forms.RadioButton rdbTenKhachHang;
-        private System.Windows.Forms.RadioButton rdbMaKhachHang;
         private System.Windows.Forms.Panel panel4;
         private MaterialSkin.Controls.MaterialButton btnTim;
         private MaterialSkin.Controls.MaterialTextBox txtTim;
@@ -471,5 +525,12 @@ namespace QuanLyBanVeMayBay
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.TextBox txtDiaChiKhachHang;
+        private System.Windows.Forms.TextBox txtTenKhachHang;
+        private System.Windows.Forms.TextBox txtMaKhachHang;
+        private System.Windows.Forms.RadioButton rdbDiaChiKhachHang;
+        private System.Windows.Forms.RadioButton rdbTenKhachHang;
+        private System.Windows.Forms.RadioButton rdbMaKhachHang;
+        private System.Windows.Forms.Button btnTimKiem;
     }
 }
