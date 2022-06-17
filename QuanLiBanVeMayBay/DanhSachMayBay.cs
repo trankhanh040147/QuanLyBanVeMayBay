@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BussinessLogicLayer;
+using DataAccessLayer;
 namespace QuanLyBanVeMayBay
 {
     public partial class DanhSachMayBay : Form
@@ -19,16 +20,40 @@ namespace QuanLyBanVeMayBay
         }
 
         /* mẫu */
-        //private DemoClass db = new DemoClass();
-        //private DataSet ds = new DataSet();
-        //private void DanhSachMayBay_Load(object sender, EventArgs e)
-        //{
-        //    DataBind();
-        //}
-        //private void DataBind()
-        //{
-        //    ds = db.getMayBays();
-        //    dgvMayBay.DataSource = ds.Tables[0];
-        //}
+        private DbMaybay db = new DbMaybay();
+        private DataSet ds = new DataSet();
+        private void DanhSachMayBay_Load(object sender, EventArgs e)
+        {
+            DataBind();
+        }
+        private void DataBind()
+        {
+            ds = db.getMayBays();
+            dgvMayBay.DataSource = ds.Tables[0];
+        }
+
+        private void rdbTenMayBay_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult tl = MessageBox.Show("Bạn muốn xóa máy bay khỏi CSDL?", "Xóa",
+                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (tl == DialogResult.Yes)
+            {
+                MayBay mb = new MayBay();
+                string err = "";
+                mb.MaMayBay = txtTim.Text;
+                if (!db.deleteMayBay(ref err, mb))
+                    MessageBox.Show("Loi");
+                else
+                {
+                    MessageBox.Show("Thành công!!!"); 
+                }
+            }
+            DataBind();
+        }
     }
 }

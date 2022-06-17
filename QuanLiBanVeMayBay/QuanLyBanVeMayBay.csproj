@@ -39,6 +39,12 @@
     <Reference Include="BussinessLogicLayer">
       <HintPath>..\BussinessLogicLayer\bin\Debug\BussinessLogicLayer.dll</HintPath>
     </Reference>
+    <Reference Include="DataAccessLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataAccessLayer\bin\Debug\DataAccessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -66,6 +72,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapNhatChuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatChuyenBay.Designer.cs">
+      <DependentUpon>CapNhatChuyenBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhatDuongBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatDuongBay.Designer.cs">
+      <DependentUpon>CapNhatDuongBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhatKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatKhachHang.Designer.cs">
+      <DependentUpon>CapNhatKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhatMayBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatMayBay.Designer.cs">
+      <DependentUpon>CapNhatMayBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhatNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatNhanVien.Designer.cs">
+      <DependentUpon>CapNhatNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhSachChuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +132,12 @@
     <Compile Include="DanhSachNhanVien.Designer.cs">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatVeMayBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatVeMayBay.Designer.cs">
+      <DependentUpon>DatVeMayBay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +146,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CapNhatChuyenBay.resx">
+      <DependentUpon>CapNhatChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhatDuongBay.resx">
+      <DependentUpon>CapNhatDuongBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhatKhachHang.resx">
+      <DependentUpon>CapNhatKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhatMayBay.resx">
+      <DependentUpon>CapNhatMayBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhatNhanVien.resx">
+      <DependentUpon>CapNhatNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhSachChuyenBay.resx">
       <DependentUpon>DanhSachChuyenBay.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhSachNhanVien.resx">
       <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatVeMayBay.resx">
+      <DependentUpon>DatVeMayBay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -202,6 +262,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\assets\img\Function11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renew30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\BookVe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Complete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Total33.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
