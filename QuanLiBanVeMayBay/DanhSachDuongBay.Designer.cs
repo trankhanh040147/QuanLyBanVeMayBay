@@ -78,7 +78,7 @@ namespace QuanLyBanVeMayBay
             this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(13, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 29);
+            this.label3.Size = new System.Drawing.Size(55, 28);
             this.label3.TabIndex = 17;
             this.label3.Text = "Đến:";
             // 
@@ -88,7 +88,7 @@ namespace QuanLyBanVeMayBay
             this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(8, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 29);
+            this.label2.Size = new System.Drawing.Size(117, 28);
             this.label2.TabIndex = 17;
             this.label2.Text = "Khoảng từ:";
             // 
@@ -171,7 +171,7 @@ namespace QuanLyBanVeMayBay
             this.grbTimKiemDaNang.Controls.Add(this.grbKhoanggio);
             this.grbTimKiemDaNang.Controls.Add(this.grbBoLocDaNang);
             this.grbTimKiemDaNang.Controls.Add(this.btnTimDaNang);
-            this.grbTimKiemDaNang.Font = new System.Drawing.Font("Cherry Swash", 12F);
+            this.grbTimKiemDaNang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.grbTimKiemDaNang.ForeColor = System.Drawing.Color.Gold;
             this.grbTimKiemDaNang.Location = new System.Drawing.Point(24, 363);
             this.grbTimKiemDaNang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -260,7 +260,7 @@ namespace QuanLyBanVeMayBay
             this.grbTimKiemThongThuong.Controls.Add(this.radioButton1);
             this.grbTimKiemThongThuong.Controls.Add(this.txtMaDuongBay);
             this.grbTimKiemThongThuong.Controls.Add(this.rdbMaDuongBay);
-            this.grbTimKiemThongThuong.Font = new System.Drawing.Font("Cherry Swash", 12F);
+            this.grbTimKiemThongThuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.grbTimKiemThongThuong.ForeColor = System.Drawing.Color.Gold;
             this.grbTimKiemThongThuong.Location = new System.Drawing.Point(24, 25);
             this.grbTimKiemThongThuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -410,13 +410,14 @@ namespace QuanLyBanVeMayBay
             this.btnTim.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnTim.UseAccentColor = false;
             this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // txtTim
             // 
             this.txtTim.AnimateReadOnly = false;
             this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTim.Depth = 0;
-            this.txtTim.Font = new System.Drawing.Font("Roboto", 9.6F);
+            this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
             this.txtTim.LeadingIcon = null;
             this.txtTim.Location = new System.Drawing.Point(44, 11);
             this.txtTim.Margin = new System.Windows.Forms.Padding(4);

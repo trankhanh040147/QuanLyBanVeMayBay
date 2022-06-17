@@ -44,5 +44,15 @@ namespace QuanLyBanVeMayBay
         {
             CapNhatQuyen(this.QuyenCRUD);
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

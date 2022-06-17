@@ -126,7 +126,7 @@ namespace QuanLyBanVeMayBay
             this.groupBox1.Controls.Add(this.rdbDiaChiKhachHang);
             this.groupBox1.Controls.Add(this.rdbTenKhachHang);
             this.groupBox1.Controls.Add(this.rdbMaKhachHang);
-            this.groupBox1.Font = new System.Drawing.Font("Cherry Swash", 15.75F);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.groupBox1.ForeColor = System.Drawing.Color.Gold;
             this.groupBox1.Location = new System.Drawing.Point(28, 371);
             this.groupBox1.Name = "groupBox1";
@@ -311,6 +311,7 @@ namespace QuanLyBanVeMayBay
             this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnReset.UseAccentColor = false;
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnTim
             // 
@@ -332,13 +333,14 @@ namespace QuanLyBanVeMayBay
             this.btnTim.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnTim.UseAccentColor = false;
             this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // txtTim
             // 
             this.txtTim.AnimateReadOnly = false;
             this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTim.Depth = 0;
-            this.txtTim.Font = new System.Drawing.Font("Roboto", 9.6F);
+            this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
             this.txtTim.LeadingIcon = null;
             this.txtTim.Location = new System.Drawing.Point(44, 11);
             this.txtTim.Margin = new System.Windows.Forms.Padding(4);

@@ -37,5 +37,10 @@ namespace QuanLyBanVeMayBay
         {
             CapNhatQuyen(this.QuyenCRUD);
         }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

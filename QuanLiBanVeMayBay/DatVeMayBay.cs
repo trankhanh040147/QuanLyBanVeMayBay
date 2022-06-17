@@ -21,21 +21,6 @@ namespace QuanLyBanVeMayBay
         private QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
         private DbVeBan dbvb = new DbVeBan();
         private DbKhachHang dbkh = new DbKhachHang();
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpGioBay_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnHoanTat_Click(object sender, EventArgs e)
         {
             VeBan vb = new VeBan();
@@ -68,7 +53,9 @@ namespace QuanLyBanVeMayBay
                         vb.TongTien = int.Parse(txtTongTien.Text);
                         vb.ThoiGianBan = DateTime.Now;
                         vb.ThoiGianThanhToan = DateTime.Now;
-                        //Còn thiếu một số thuộc tính chưa add dc
+                        vb.MaNhanVien = lblNhanvienHoTro.Text;
+                        vb.SoLuongHangHoa = 1; //mặc định là 1
+                        vb.SLVeBan = 1; //mặc định là 1
                         if (!dbvb.insertVeBan(ref err, vb))
                             MessageBox.Show("Thất bại!!!");
                         else
@@ -93,7 +80,9 @@ namespace QuanLyBanVeMayBay
                     vb.TongTien = int.Parse(txtTongTien.Text);
                     vb.ThoiGianBan = DateTime.Now;
                     vb.ThoiGianThanhToan = DateTime.Now;
-                    //Còn thiếu một số thuộc tính chưa add dc
+                    vb.MaNhanVien = lblNhanvienHoTro.Text;
+                    vb.SoLuongHangHoa = 1; //mặc định là 1
+                    vb.SLVeBan = 1; //mặc định là 1
                     if (!dbvb.insertVeBan(ref err, vb))
                         MessageBox.Show("Thất bại!!!");
                     else
@@ -109,7 +98,8 @@ namespace QuanLyBanVeMayBay
         {
             float KhuyenMai = float.Parse(cbKhuyenMai.SelectedItem.ToString());
             float GiaVe = float.Parse(txtGiaVe.Text);
-            float TongTien = GiaVe * KhuyenMai / 100;
+            float VAT = float.Parse(txtThueVAT.Text);
+            float TongTien = GiaVe + GiaVe * VAT / 100 - GiaVe * KhuyenMai / 100;
             txtTongTien.Text = TongTien.ToString();
         }
 

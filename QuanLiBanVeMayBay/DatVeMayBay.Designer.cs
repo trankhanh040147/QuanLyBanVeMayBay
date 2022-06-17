@@ -43,7 +43,7 @@ namespace QuanLyBanVeMayBay
             this.rdbNguoiLon = new System.Windows.Forms.RadioButton();
             this.cbKhuyenMai = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.cbThueVAT = new System.Windows.Forms.TextBox();
+            this.txtThueVAT = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -153,7 +153,7 @@ namespace QuanLyBanVeMayBay
             this.panel2.Controls.Add(this.rdbNguoiLon);
             this.panel2.Controls.Add(this.cbKhuyenMai);
             this.panel2.Controls.Add(this.label31);
-            this.panel2.Controls.Add(this.cbThueVAT);
+            this.panel2.Controls.Add(this.txtThueVAT);
             this.panel2.Controls.Add(this.label33);
             this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.label34);
@@ -285,15 +285,14 @@ namespace QuanLyBanVeMayBay
             this.label31.Size = new System.Drawing.Size(156, 26);
             this.label31.TabIndex = 2;
             this.label31.Text = "Thông tin phụ";
-            this.label31.Click += new System.EventHandler(this.label2_Click);
             // 
-            // cbThueVAT
+            // txtThueVAT
             // 
-            this.cbThueVAT.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.cbThueVAT.Location = new System.Drawing.Point(52, 171);
-            this.cbThueVAT.Name = "cbThueVAT";
-            this.cbThueVAT.Size = new System.Drawing.Size(215, 30);
-            this.cbThueVAT.TabIndex = 40;
+            this.txtThueVAT.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.txtThueVAT.Location = new System.Drawing.Point(52, 171);
+            this.txtThueVAT.Name = "txtThueVAT";
+            this.txtThueVAT.Size = new System.Drawing.Size(215, 30);
+            this.txtThueVAT.TabIndex = 40;
             // 
             // label33
             // 
@@ -349,7 +348,6 @@ namespace QuanLyBanVeMayBay
             this.label2.Size = new System.Drawing.Size(235, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "Thông tin khách hàng";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel3
             // 
@@ -621,7 +619,6 @@ namespace QuanLyBanVeMayBay
             this.label17.Size = new System.Drawing.Size(62, 22);
             this.label17.TabIndex = 38;
             this.label17.Text = "Giờ đi";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label21
             // 
@@ -984,7 +981,7 @@ namespace QuanLyBanVeMayBay
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.ComboBox cbMaChuyenBay;
         private System.Windows.Forms.ComboBox cbKhuyenMai;
-        private System.Windows.Forms.TextBox cbThueVAT;
+        private System.Windows.Forms.TextBox txtThueVAT;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.RadioButton rdbEmBe;
         private System.Windows.Forms.RadioButton rdbTreNho;
