@@ -13,11 +13,7 @@ namespace BussinessLogicLayer
     internal class DbThongBao
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
-        static void Main(string[] args)
-        {
-
-            Console.WriteLine("Doneee.......");
-        }
+       
 
         //Lấy danh sách tất cả thông báo
         public DataSet getThongBaos()

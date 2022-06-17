@@ -12,11 +12,7 @@ namespace BussinessLogicLayer
     public class DbDuongBay
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
-        static void Main(string[] args)
-        {
-
-            Console.WriteLine("Doneee.......");
-        }
+        
         public DataSet getDuongBays()
         {
             DataSet ds = new DataSet();

@@ -56,7 +56,7 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoangtgdi = new System.Windows.Forms.RadioButton();
             this.rdbKhoanggiobay = new System.Windows.Forms.RadioButton();
             this.btnTimDaNang = new System.Windows.Forms.Button();
-            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.dgvChuyenBay = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@ namespace QuanLyBanVeMayBay
             this.grbKhoangThoiGian.SuspendLayout();
             this.grbKhoanggio.SuspendLayout();
             this.grbBoLocDaNang.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChuyenBay)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panelCRUD.SuspendLayout();
@@ -105,6 +105,7 @@ namespace QuanLyBanVeMayBay
             // 
             // btnTimKiemThongThuong
             // 
+            this.btnTimKiemThongThuong.Enabled = false;
             this.btnTimKiemThongThuong.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiemThongThuong.ForeColor = System.Drawing.Color.Blue;
             this.btnTimKiemThongThuong.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
@@ -116,10 +117,12 @@ namespace QuanLyBanVeMayBay
             this.btnTimKiemThongThuong.TabIndex = 10;
             this.btnTimKiemThongThuong.Text = "Tìm kiếm";
             this.btnTimKiemThongThuong.UseVisualStyleBackColor = true;
+            this.btnTimKiemThongThuong.Click += new System.EventHandler(this.btnTimKiemThongThuong_Click);
             // 
             // dtpNgayden
             // 
             this.dtpNgayden.CustomFormat = "dd/mm/yyyy";
+            this.dtpNgayden.Enabled = false;
             this.dtpNgayden.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpNgayden.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayden.Location = new System.Drawing.Point(179, 126);
@@ -127,10 +130,12 @@ namespace QuanLyBanVeMayBay
             this.dtpNgayden.Name = "dtpNgayden";
             this.dtpNgayden.Size = new System.Drawing.Size(129, 25);
             this.dtpNgayden.TabIndex = 9;
+            this.dtpNgayden.Value = new System.DateTime(2022, 6, 17, 9, 52, 49, 0);
             // 
             // dtpGioBay
             // 
             this.dtpGioBay.CustomFormat = "dd/mm/yyyy";
+            this.dtpGioBay.Enabled = false;
             this.dtpGioBay.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpGioBay.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpGioBay.Location = new System.Drawing.Point(179, 46);
@@ -143,6 +148,7 @@ namespace QuanLyBanVeMayBay
             // dtpNgaydi
             // 
             this.dtpNgaydi.CustomFormat = "dd/mm/yyyy";
+            this.dtpNgaydi.Enabled = false;
             this.dtpNgaydi.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpNgaydi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgaydi.Location = new System.Drawing.Point(179, 84);
@@ -150,9 +156,11 @@ namespace QuanLyBanVeMayBay
             this.dtpNgaydi.Name = "dtpNgaydi";
             this.dtpNgaydi.Size = new System.Drawing.Size(129, 25);
             this.dtpNgaydi.TabIndex = 8;
+            this.dtpNgaydi.Value = new System.DateTime(2022, 6, 17, 9, 52, 37, 0);
             // 
             // txtMachuyenbay
             // 
+            this.txtMachuyenbay.Enabled = false;
             this.txtMachuyenbay.Font = new System.Drawing.Font("Arial", 9F);
             this.txtMachuyenbay.Location = new System.Drawing.Point(179, 167);
             this.txtMachuyenbay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -173,6 +181,7 @@ namespace QuanLyBanVeMayBay
             this.rdbMachuyenbay.TabStop = true;
             this.rdbMachuyenbay.Text = "Mã chuyến bay";
             this.rdbMachuyenbay.UseVisualStyleBackColor = true;
+            this.rdbMachuyenbay.CheckedChanged += new System.EventHandler(this.rdbMachuyenbay_CheckedChanged);
             // 
             // rdbNgayDen
             // 
@@ -187,6 +196,7 @@ namespace QuanLyBanVeMayBay
             this.rdbNgayDen.TabStop = true;
             this.rdbNgayDen.Text = "Ngày đến";
             this.rdbNgayDen.UseVisualStyleBackColor = true;
+            this.rdbNgayDen.CheckedChanged += new System.EventHandler(this.rdbNgayDen_CheckedChanged);
             // 
             // rdbNgayDi
             // 
@@ -201,6 +211,7 @@ namespace QuanLyBanVeMayBay
             this.rdbNgayDi.TabStop = true;
             this.rdbNgayDi.Text = "Ngày đi";
             this.rdbNgayDi.UseVisualStyleBackColor = true;
+            this.rdbNgayDi.CheckedChanged += new System.EventHandler(this.rdbNgayDi_CheckedChanged);
             // 
             // rdbGioBay
             // 
@@ -215,6 +226,7 @@ namespace QuanLyBanVeMayBay
             this.rdbGioBay.TabStop = true;
             this.rdbGioBay.Text = "Giờ bay";
             this.rdbGioBay.UseVisualStyleBackColor = true;
+            this.rdbGioBay.CheckedChanged += new System.EventHandler(this.rdbGioBay_CheckedChanged);
             // 
             // panel3
             // 
@@ -262,6 +274,7 @@ namespace QuanLyBanVeMayBay
             // dtpTgTo
             // 
             this.dtpTgTo.CustomFormat = "dd/mm/yyyy";
+            this.dtpTgTo.Enabled = false;
             this.dtpTgTo.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpTgTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpTgTo.Location = new System.Drawing.Point(132, 76);
@@ -283,6 +296,7 @@ namespace QuanLyBanVeMayBay
             // dtpTgFrom
             // 
             this.dtpTgFrom.CustomFormat = "dd/mm/yyyy";
+            this.dtpTgFrom.Enabled = false;
             this.dtpTgFrom.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpTgFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpTgFrom.Location = new System.Drawing.Point(132, 34);
@@ -338,6 +352,7 @@ namespace QuanLyBanVeMayBay
             // dtpGioFrom
             // 
             this.dtpGioFrom.CustomFormat = "dd/mm/yyyy";
+            this.dtpGioFrom.Enabled = false;
             this.dtpGioFrom.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpGioFrom.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpGioFrom.Location = new System.Drawing.Point(131, 34);
@@ -350,6 +365,7 @@ namespace QuanLyBanVeMayBay
             // dtpGioTo
             // 
             this.dtpGioTo.CustomFormat = "dd/mm/yyyy";
+            this.dtpGioTo.Enabled = false;
             this.dtpGioTo.Font = new System.Drawing.Font("Arial", 9F);
             this.dtpGioTo.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpGioTo.Location = new System.Drawing.Point(131, 80);
@@ -385,6 +401,7 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoangtgden.TabStop = true;
             this.rdbKhoangtgden.Text = "Khoảng thời gian đến";
             this.rdbKhoangtgden.UseVisualStyleBackColor = true;
+            this.rdbKhoangtgden.CheckedChanged += new System.EventHandler(this.rdbKhoangtgden_CheckedChanged);
             // 
             // rdbKhoangtgdi
             // 
@@ -399,6 +416,7 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoangtgdi.TabStop = true;
             this.rdbKhoangtgdi.Text = "Khoảng thời gian đi";
             this.rdbKhoangtgdi.UseVisualStyleBackColor = true;
+            this.rdbKhoangtgdi.CheckedChanged += new System.EventHandler(this.rdbKhoangtgdi_CheckedChanged);
             // 
             // rdbKhoanggiobay
             // 
@@ -413,9 +431,11 @@ namespace QuanLyBanVeMayBay
             this.rdbKhoanggiobay.TabStop = true;
             this.rdbKhoanggiobay.Text = "Khoảng giờ bay";
             this.rdbKhoanggiobay.UseVisualStyleBackColor = true;
+            this.rdbKhoanggiobay.CheckedChanged += new System.EventHandler(this.rdbKhoanggiobay_CheckedChanged);
             // 
             // btnTimDaNang
             // 
+            this.btnTimDaNang.Enabled = false;
             this.btnTimDaNang.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimDaNang.ForeColor = System.Drawing.Color.Blue;
             this.btnTimDaNang.Image = global::QuanLyBanVeMayBay.Properties.Resources.Search42;
@@ -427,18 +447,19 @@ namespace QuanLyBanVeMayBay
             this.btnTimDaNang.TabIndex = 10;
             this.btnTimDaNang.Text = "Tìm kiếm";
             this.btnTimDaNang.UseVisualStyleBackColor = true;
+            this.btnTimDaNang.Click += new System.EventHandler(this.btnTimDaNang_Click);
             // 
-            // dgvKhachHang
+            // dgvChuyenBay
             // 
-            this.dgvKhachHang.BackgroundColor = System.Drawing.Color.Aquamarine;
-            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvKhachHang.Location = new System.Drawing.Point(365, 231);
-            this.dgvKhachHang.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvKhachHang.Name = "dgvKhachHang";
-            this.dgvKhachHang.RowHeadersWidth = 51;
-            this.dgvKhachHang.Size = new System.Drawing.Size(1194, 770);
-            this.dgvKhachHang.TabIndex = 13;
+            this.dgvChuyenBay.BackgroundColor = System.Drawing.Color.Aquamarine;
+            this.dgvChuyenBay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvChuyenBay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvChuyenBay.Location = new System.Drawing.Point(365, 231);
+            this.dgvChuyenBay.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvChuyenBay.Name = "dgvChuyenBay";
+            this.dgvChuyenBay.RowHeadersWidth = 51;
+            this.dgvChuyenBay.Size = new System.Drawing.Size(1194, 770);
+            this.dgvChuyenBay.TabIndex = 13;
             // 
             // panel1
             // 
@@ -470,7 +491,7 @@ namespace QuanLyBanVeMayBay
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(699, 71);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Danh sách khách hàng";
+            this.label1.Text = "Danh Sách Chuyến Bay";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
@@ -507,6 +528,7 @@ namespace QuanLyBanVeMayBay
             this.btnReset.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnReset.UseAccentColor = false;
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnTim
             // 
@@ -528,13 +550,14 @@ namespace QuanLyBanVeMayBay
             this.btnTim.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnTim.UseAccentColor = false;
             this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // txtTim
             // 
             this.txtTim.AnimateReadOnly = false;
             this.txtTim.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTim.Depth = 0;
-            this.txtTim.Font = new System.Drawing.Font("Roboto", 9.6F);
+            this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F);
             this.txtTim.LeadingIcon = null;
             this.txtTim.Location = new System.Drawing.Point(44, 11);
             this.txtTim.Margin = new System.Windows.Forms.Padding(4);
@@ -573,9 +596,11 @@ namespace QuanLyBanVeMayBay
             this.btnReload.Text = "Reload";
             this.btnReload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // btnXoa
             // 
+            this.btnXoa.Enabled = false;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = global::QuanLyBanVeMayBay.Properties.Resources.remove2;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -589,6 +614,7 @@ namespace QuanLyBanVeMayBay
             // 
             // btnSua
             // 
+            this.btnSua.Enabled = false;
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = global::QuanLyBanVeMayBay.Properties.Resources.edit2;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -602,6 +628,7 @@ namespace QuanLyBanVeMayBay
             // 
             // btnThem
             // 
+            this.btnThem.Enabled = false;
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Image = global::QuanLyBanVeMayBay.Properties.Resources.add2;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -618,7 +645,7 @@ namespace QuanLyBanVeMayBay
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1559, 1001);
-            this.Controls.Add(this.dgvKhachHang);
+            this.Controls.Add(this.dgvChuyenBay);
             this.Controls.Add(this.panelCRUD);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -638,7 +665,7 @@ namespace QuanLyBanVeMayBay
             this.grbKhoanggio.PerformLayout();
             this.grbBoLocDaNang.ResumeLayout(false);
             this.grbBoLocDaNang.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChuyenBay)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panelCRUD.ResumeLayout(false);
@@ -652,7 +679,7 @@ namespace QuanLyBanVeMayBay
         private System.Windows.Forms.RadioButton rdbNgayDen;
         private System.Windows.Forms.RadioButton rdbGioBay;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.DataGridView dgvChuyenBay;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;

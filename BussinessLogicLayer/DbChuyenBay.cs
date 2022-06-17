@@ -13,11 +13,7 @@ namespace BussinessLogicLayer
     public class DbChuyenBay
     {
         static QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
-        static void Main(string[] args)
-        {
-
-            Console.WriteLine("Doneee.......");
-        }
+        
         public DataSet getChuyenBays()
         {
             DataSet ds = new DataSet();
@@ -37,7 +33,7 @@ namespace BussinessLogicLayer
             foreach (var i in dsChuyenBay)
             {
                 dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                    i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
             }
             ds.Tables.Add(dt);
             return ds;
@@ -91,7 +87,7 @@ namespace BussinessLogicLayer
                             foreach (var i in dsChuyenBay)
                             {
                                 dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                    i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                             }
                             ds.Tables.Add(dt);
                             return ds;
@@ -115,7 +111,7 @@ namespace BussinessLogicLayer
                             foreach (var i in dsChuyenBay)
                             {
                                 dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                    i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                             }
                             ds.Tables.Add(dt);
                             return ds;
@@ -134,12 +130,36 @@ namespace BussinessLogicLayer
                         try
                         {
                             var dsChuyenBay = dbs.ChuyenBays
-                                .Where(r => r.NgayDen == cb_search.NgayDen)
+                                .Where(r => r.NgayDen == cb_search.NgayDen.Date)
                                 .Select(r => r);
                             foreach (var i in dsChuyenBay)
                             {
                                 dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                    i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                    i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
+                            }
+                            ds.Tables.Add(dt);
+                            return ds;
+                        }
+                        catch (Exception ex)
+                        {
+                            err = ex.Message;
+                            return ds;
+                        }
+                    }
+                    break;
+                case 3:
+                    //Tìm theo ngày đi
+                    if (cb_search.NgayDi != null)
+                    {
+                        try
+                        {
+                            var dsChuyenBay = dbs.ChuyenBays
+                                .Where(r => r.NgayDi == cb_search.NgayDi.Date)
+                                .Select(r => r);
+                            foreach (var i in dsChuyenBay)
+                            {
+                                dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
+                                    i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                             }
                             ds.Tables.Add(dt);
                             return ds;
@@ -196,12 +216,12 @@ namespace BussinessLogicLayer
                     try
                     {
                         var dsChuyenBay = dbs.ChuyenBays
-                                .Where(r => r.NgayDi >= start_date && r.NgayDi <= end_date)
+                                .Where(r => r.NgayDi >= start_date.Date && r.NgayDi <= end_date.Date)
                                 .Select(r => r);
                         foreach (var i in dsChuyenBay)
                         {
                             dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                         }
                         ds.Tables.Add(dt);
                         return ds;
@@ -215,12 +235,12 @@ namespace BussinessLogicLayer
                     try
                     {
                         var dsChuyenBay = dbs.ChuyenBays
-                                  .Where(r => r.NgayDen >= start_date && r.NgayDen <= end_date)
+                                  .Where(r => r.NgayDen >= start_date.Date && r.NgayDen <= end_date.Date)
                                   .Select(r => r);
                         foreach (var i in dsChuyenBay)
                         {
                             dt.Rows.Add(i.MaChuyenBay, i.MaDuongBay, i.MaMayBay,
-                                i.NgayDen, i.GhiChu, i.NgayDi, i.GioBay, i.DiemDen, i.DiemDi);
+                                i.NgayDen.ToShortDateString(), i.GhiChu, i.NgayDi.ToShortDateString(), i.GioBay, i.DiemDen, i.DiemDi);
                         }
                         ds.Tables.Add(dt);
                         return ds;
