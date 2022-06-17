@@ -285,7 +285,6 @@ namespace QuanLyBanVeMayBay
             this.label31.Size = new System.Drawing.Size(156, 26);
             this.label31.TabIndex = 2;
             this.label31.Text = "Thông tin phụ";
-            this.label31.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtThueVAT
             // 
@@ -349,7 +348,6 @@ namespace QuanLyBanVeMayBay
             this.label2.Size = new System.Drawing.Size(235, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "Thông tin khách hàng";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel3
             // 
@@ -621,7 +619,6 @@ namespace QuanLyBanVeMayBay
             this.label17.Size = new System.Drawing.Size(62, 22);
             this.label17.TabIndex = 38;
             this.label17.Text = "Giờ đi";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label21
             // 

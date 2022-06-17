@@ -19,21 +19,6 @@ namespace QuanLyBanVeMayBay
             InitializeComponent();
         }
 
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpGioBay_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private QuanLyVeMayBayContext dbs = new QuanLyVeMayBayContext();
         private DbVeBan dbvb = new DbVeBan();
         private DbKhachHang dbkh = new DbKhachHang();
