@@ -47,6 +47,7 @@ namespace QuanLyBanVeMayBay
                 {
                     var kh1 = dbs.KhachHangs.FirstOrDefault(p => p.CMND == txtCMND.Text);
                     var ThongTinVe = dbs.ThongTinChiTietVes.Where(p => p.LoaiVe.Contains(listBox2.SelectedItem.ToString())).FirstOrDefault();
+                    var NhanVien = dbs.NhanViens.FirstOrDefault(p => p.TenNhanVien.Contains(lblNhanvienHoTro.Text));
                     if (kh1 == null)
                     {
                         vb.MaKhachHang = kh1.MaKhachHang;
@@ -54,7 +55,7 @@ namespace QuanLyBanVeMayBay
                         vb.TongTien = int.Parse(txtTongTien.Text);
                         vb.ThoiGianBan = DateTime.Now;
                         vb.ThoiGianThanhToan = DateTime.Now;
-                        vb.MaNhanVien = lblNhanvienHoTro.Text;
+                        vb.MaNhanVien = NhanVien.MaNhanVien;
                         vb.SoLuongHangHoa = 1; //mặc định là 1
                         vb.SLVeBan = 1; //mặc định là 1
                         if (!dbvb.insertVeBan(ref err, vb))
