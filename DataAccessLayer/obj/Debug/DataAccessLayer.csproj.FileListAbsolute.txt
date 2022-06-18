@@ -93,3 +93,17 @@ C:\UTEXLMS\Năm_2_2021-2022\HK2\LapTrinhTrenWindows\FinalProject\Main\QuanLyBanV
 C:\UTEXLMS\Năm_2_2021-2022\HK2\LapTrinhTrenWindows\FinalProject\Main\QuanLyBanVeMayBay\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
 C:\UTEXLMS\Năm_2_2021-2022\HK2\LapTrinhTrenWindows\FinalProject\Main\QuanLyBanVeMayBay\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.official2.resources
 C:\UTEXLMS\Năm_2_2021-2022\HK2\LapTrinhTrenWindows\FinalProject\Main\QuanLyBanVeMayBay\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.official3.resources
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\bin\Debug\EntityFramework.dll
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\bin\Debug\EntityFramework.xml
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.official.resources
+D:\WFOfficial\official\QuanLyBanVeMayBay\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache

@@ -30,6 +30,7 @@ namespace QuanLyBanVeMayBay
                 {
                     NhanVien nv = new NhanVien();
                     string err = "";
+                    nv.MaNhanVien = txtMaNhanVien.Text.Trim();
                     nv.HoNhanVien = txtHoNhanVien.Text;
                     nv.TenLotNhanVien = txtTenLotNhanVien.Text;
                     nv.TenNhanVien = txtTenNhanVien.Text;

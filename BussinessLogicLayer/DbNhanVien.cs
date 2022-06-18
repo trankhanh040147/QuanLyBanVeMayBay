@@ -254,6 +254,7 @@ namespace BussinessLogicLayer
                 NhanVien nv = dbs.NhanViens.FirstOrDefault(p => p.MaNhanVien == nv_update.MaNhanVien);
                 if (nv != null)
                 {
+                    nv.MaNhanVien = nv_update.MaNhanVien;
                     nv.TenNhanVien = nv_update.TenNhanVien;
                     nv.HoNhanVien = nv_update.HoNhanVien;
                     nv.TenLotNhanVien = nv_update.TenLotNhanVien;

@@ -51,17 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202206180735542_official.cs" />
-    <Compile Include="Migrations\202206180735542_official.designer.cs">
-      <DependentUpon>202206180735542_official.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202206180805139_official2.cs" />
-    <Compile Include="Migrations\202206180805139_official2.designer.cs">
-      <DependentUpon>202206180805139_official2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202206180813031_official3.cs" />
-    <Compile Include="Migrations\202206180813031_official3.designer.cs">
-      <DependentUpon>202206180813031_official3.cs</DependentUpon>
+    <Compile Include="Migrations\202206180928576_official.cs" />
+    <Compile Include="Migrations\202206180928576_official.designer.cs">
+      <DependentUpon>202206180928576_official.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ChuyenBay.cs" />
@@ -81,14 +73,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206180735542_official.resx">
-      <DependentUpon>202206180735542_official.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206180805139_official2.resx">
-      <DependentUpon>202206180805139_official2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206180813031_official3.resx">
-      <DependentUpon>202206180813031_official3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206180928576_official.resx">
+      <DependentUpon>202206180928576_official.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

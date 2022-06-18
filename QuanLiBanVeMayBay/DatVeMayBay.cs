@@ -61,7 +61,7 @@ namespace QuanLyBanVeMayBay
                         vb.SoLuongHangHoa = int.Parse(txtSoHangHoa.Text);
                         vb.SLVeBan = int.Parse(txtSoVeDat.Text);
                         if (!dbvb.insertVeBan(ref err, vb))
-                            MessageBox.Show("Thất bại!!!");
+                            MessageBox.Show(err);
                         else
                         {
                             MessageBox.Show("Thành công!!!");
@@ -91,7 +91,7 @@ namespace QuanLyBanVeMayBay
                     vb.SoLuongHangHoa = int.Parse(txtSoHangHoa.Text);
                     vb.SLVeBan = int.Parse(txtSoVeDat.Text); 
                     if (!dbvb.insertVeBan(ref err, vb))
-                        MessageBox.Show("Thất bại!!!");
+                        MessageBox.Show(err);
                     else
                     {
                         ThongTinVe.SoLuongCon -= vb.SLVeBan;

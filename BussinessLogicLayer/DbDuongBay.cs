@@ -319,6 +319,7 @@ namespace BussinessLogicLayer
                 DuongBay db = dbs.DuongBays.FirstOrDefault(p => p.MaDuongBay == db_update.MaDuongBay);
                 if (db !=null)
                 {
+                    db.MaDuongBay = db_update.MaDuongBay;
                     db.ViTri = db_update.ViTri;
                     db.ChieuDai = db_update.ChieuDai;
                     db.ChieuRong = db_update.ChieuRong;

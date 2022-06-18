@@ -391,6 +391,7 @@ namespace BussinessLogicLayer
                 VeBan vb = dbs.VeBans.FirstOrDefault(p => p.MaVeBan == vb_update.MaVeBan);
                 if (vb != null)
                 {
+                    vb.MaVeBan = vb_update.MaVeBan;
                     vb.MaVe = vb_update.MaVe;
                     vb.SLVeBan = vb_update.SLVeBan;
                     vb.MaNhanVien = vb_update.MaNhanVien;

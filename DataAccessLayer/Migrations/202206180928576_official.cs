@@ -116,7 +116,8 @@
                         DiaChi = c.String(nullable: false, maxLength: 50, unicode: false),
                         CMND = c.String(nullable: false, maxLength: 20, unicode: false),
                     })
-                .PrimaryKey(t => t.MaKhachHang);
+                .PrimaryKey(t => t.MaKhachHang)
+                .Index(t => t.CMND, unique: true);
             
             CreateTable(
                 "dbo.NhanVien",
@@ -129,10 +130,11 @@
                         DiaChi = c.String(nullable: false, maxLength: 50, unicode: false),
                         SoDienThoai = c.String(nullable: false, maxLength: 50, unicode: false),
                         ChucVu = c.String(maxLength: 50, unicode: false),
-                        TenDangNhap = c.String(nullable: false, maxLength: 50),
+                        TenDangNhap = c.String(nullable: false, maxLength: 50, unicode: false),
                         MatKhau = c.String(nullable: false, maxLength: 50, unicode: false),
                     })
-                .PrimaryKey(t => t.MaNhanVien);
+                .PrimaryKey(t => t.MaNhanVien)
+                .Index(t => t.TenDangNhap, unique: true);
             
             CreateTable(
                 "dbo.ThongBao",
@@ -162,6 +164,8 @@
             DropForeignKey("dbo.ChuyenBay", "MaMayBay", "dbo.MayBay");
             DropForeignKey("dbo.ChuyenBay", "MaDuongBay", "dbo.DuongBay");
             DropIndex("dbo.ThongBao", new[] { "MaNhanVien" });
+            DropIndex("dbo.NhanVien", new[] { "TenDangNhap" });
+            DropIndex("dbo.KhachHang", new[] { "CMND" });
             DropIndex("dbo.HangHoa", new[] { "MaVeBan" });
             DropIndex("dbo.VeBan", new[] { "MaKhachHang" });
             DropIndex("dbo.VeBan", new[] { "MaNhanVien" });

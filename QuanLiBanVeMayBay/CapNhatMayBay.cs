@@ -30,6 +30,7 @@ namespace QuanLyBanVeMayBay
                 {
                     MayBay mb = new MayBay();
                     string err = "";
+                    mb.MaMayBay = txtMaMayBay.Text;
                     mb.TenMayBay = txtTenMayBay.Text;
                     mb.HangSanXuat = txtHangSanXuat.Text;
                     mb.KichThuoc = int.Parse(txtKichThuoc.Text);   

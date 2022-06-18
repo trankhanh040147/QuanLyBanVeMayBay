@@ -32,6 +32,7 @@ namespace QuanLyBanVeMayBay
                 {
                     ChuyenBay cb = new ChuyenBay();
                     string err = "";
+                    cb.MaChuyenBay = txtChuyenbay.Text.Trim();
                     cb.MaDuongBay = txtMaDuongBay.Text.Trim();
                     cb.MaMayBay = txtMaMayBay.Text.Trim();
                     cb.DiemDi = txtDiemDi.Text;

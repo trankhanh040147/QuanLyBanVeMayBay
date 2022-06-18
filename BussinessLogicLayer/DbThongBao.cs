@@ -62,6 +62,7 @@ namespace BussinessLogicLayer
                 ThongBao tb = dbs.ThongBaos.FirstOrDefault(p => p.MaThongBao == tb_update.MaThongBao);
                 if (tb != null)
                 {
+                    tb.MaThongBao = tb_update.MaThongBao;
                     tb.MaNhanVien = tb_update.MaNhanVien;
                     tb.ThongBao1 = tb_update.ThongBao1;
                     tb.ThoiGian = tb_update.ThoiGian;

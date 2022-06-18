@@ -362,6 +362,7 @@ namespace BussinessLogicLayer
                 ChuyenBay cb = dbs.ChuyenBays.FirstOrDefault(p => p.MaChuyenBay == cb_update.MaChuyenBay);
                 if (cb != null)
                 {
+                    cb.MaChuyenBay = cb_update.MaChuyenBay;
                     cb.MaDuongBay = cb_update.MaDuongBay;
                     cb.MaMayBay = cb_update.MaMayBay;
                     cb.NgayDen = cb_update.NgayDen;

@@ -29,6 +29,7 @@ namespace QuanLyBanVeMayBay
                 {
                     DuongBay db = new DuongBay();
                     string err = "";
+                    db.MaDuongBay = txtMaDuongBay.Text.Trim();
                     db.ViTri = txtViTri.Text;
                     db.ChieuDai = int.Parse(txtChieuDai.Text);
                     db.ChieuRong = int.Parse(txtChieuRong.Text);

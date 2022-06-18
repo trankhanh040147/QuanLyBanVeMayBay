@@ -62,6 +62,7 @@ namespace BussinessLogicLayer
                 HangHoa hh = dbs.HangHoas.FirstOrDefault(p => p.MaHangHoa == hh_update.MaHangHoa);
                 if (hh != null)
                 {
+                    hh.MaHangHoa = hh_update.MaHangHoa;
                     hh.MaVeBan = hh_update.MaVeBan;
                     hh.TrongLuong = hh_update.TrongLuong;
                     hh.Loai = hh_update.Loai;

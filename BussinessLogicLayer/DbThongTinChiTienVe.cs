@@ -61,6 +61,7 @@ namespace BussinessLogicLayer
                 ThongTinChiTietVe tt = dbs.ThongTinChiTietVes.FirstOrDefault(p => p.MaVe == tt_update.MaVe);
                 if (tt != null)
                 {
+                    tt.MaVe = tt_update.MaVe;
                     tt.MaChuyenBay = tt_update.MaChuyenBay;
                     tt.LoaiVe = tt_update.LoaiVe;
                     tt.SoLuong = tt_update.SoLuong;

@@ -171,7 +171,7 @@ namespace QuanLyBanVeMayBay
 
             try
             {
-                if (chkDangSuDung1.Checked == true)
+                if (chkDangSuDung2.Checked == true)
                 {
                     temp_db.TinhTrang = "True";
                 }

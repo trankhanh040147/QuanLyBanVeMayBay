@@ -30,6 +30,7 @@ namespace QuanLyBanVeMayBay
                 {
                     KhachHang kh = new KhachHang();
                     string err = "";
+                    kh.MaKhachHang = txtMaKhachHang.Text.Trim();
                     kh.HoKhachHang = txtHoKhachHang.Text;
                     kh.TenLotKhachHang = txtTenLotKhachHang.Text;
                     kh.TenKhachHang = txtTenKhachHang.Text;

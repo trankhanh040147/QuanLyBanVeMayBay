@@ -269,6 +269,7 @@ namespace BussinessLogicLayer
                 KhachHang kh = dbs.KhachHangs.FirstOrDefault(p => p.MaKhachHang == kh_update.MaKhachHang);
                 if (kh != null)
                 {
+                    kh.MaKhachHang = kh_update.MaKhachHang;
                     kh.HoKhachHang = kh_update.HoKhachHang;
                     kh.TenKhachHang = kh_update.TenKhachHang;
                     kh.TenLotKhachHang = kh_update.TenLotKhachHang;

@@ -341,6 +341,7 @@ namespace BussinessLogicLayer
                 MayBay mb = dbs.MayBays.FirstOrDefault(p => p.MaMayBay == mb_update.MaMayBay);
                 if (mb != null)
                 {
+                    mb.MaMayBay = mb_update.MaMayBay;   
                     mb.TenMayBay = mb_update.TenMayBay;
                     mb.HangSanXuat = mb_update.HangSanXuat;
                     mb.KichThuoc = mb_update.KichThuoc;
