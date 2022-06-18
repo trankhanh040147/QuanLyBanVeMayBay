@@ -46,7 +46,7 @@ namespace QuanLyBanVeMayBay
                 btnCapNhatChuyenBay.Enabled = false;
                 btnCapnhatMaybay.Enabled = false;
                 btnCapNhatNhanVien.Enabled = false;
-                
+                btnTimkiemNhanvien.Enabled = false;
             }
         }
 

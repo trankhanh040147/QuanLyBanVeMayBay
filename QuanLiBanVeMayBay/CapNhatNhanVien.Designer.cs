@@ -274,8 +274,10 @@ namespace QuanLyBanVeMayBay
             this.txtMatKhau.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.txtMatKhau.Location = new System.Drawing.Point(209, 376);
             this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(190, 30);
             this.txtMatKhau.TabIndex = 8;
+            this.txtMatKhau.UseSystemPasswordChar = true;
             this.txtMatKhau.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMatKhau_KeyPress);
             // 
             // CapNhatNhanVien

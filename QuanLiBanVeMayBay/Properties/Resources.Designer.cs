@@ -83,6 +83,36 @@ namespace QuanLyBanVeMayBay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Booking {
+            get {
+                object obj = ResourceManager.GetObject("Booking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap booking35 {
+            get {
+                object obj = ResourceManager.GetObject("booking35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap booking50 {
+            get {
+                object obj = ResourceManager.GetObject("booking50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BookVe {
             get {
                 object obj = ResourceManager.GetObject("BookVe", resourceCulture);
@@ -203,6 +233,16 @@ namespace QuanLyBanVeMayBay.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit35 {
+            get {
+                object obj = ResourceManager.GetObject("exit35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Function {
             get {
                 object obj = ResourceManager.GetObject("Function", resourceCulture);
@@ -256,6 +296,16 @@ namespace QuanLyBanVeMayBay.Properties {
         internal static System.Drawing.Bitmap loginPage {
             get {
                 object obj = ResourceManager.GetObject("loginPage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logout35 {
+            get {
+                object obj = ResourceManager.GetObject("logout35", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

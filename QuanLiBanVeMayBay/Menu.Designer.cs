@@ -34,27 +34,27 @@ namespace QuanLyBanVeMayBay
             this.txtNguoiDangDangNhap = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.btnDangXuat = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnCapNhatChuyenBay = new System.Windows.Forms.Button();
+            this.btnCapnhatDuongbay = new System.Windows.Forms.Button();
+            this.btnCapnhatMaybay = new System.Windows.Forms.Button();
+            this.lblCapnhat = new System.Windows.Forms.Label();
+            this.btnDatVeMayBay = new System.Windows.Forms.Button();
+            this.btnCapNhatVeMayBay = new System.Windows.Forms.Button();
+            this.btnCapNhatKhachHang = new System.Windows.Forms.Button();
+            this.btnCapNhatNhanVien = new System.Windows.Forms.Button();
+            this.lblCapnhathethong = new System.Windows.Forms.Label();
             this.btnTimKiemDuongbay = new System.Windows.Forms.Button();
             this.btnTimKiemMayBay = new System.Windows.Forms.Button();
             this.btnTimkiemKhachhang = new System.Windows.Forms.Button();
             this.btnTimkiemChuyenbay = new System.Windows.Forms.Button();
             this.btnTimkiemNhanvien = new System.Windows.Forms.Button();
             this.lblTimkiem = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnDatVeMayBay = new System.Windows.Forms.Button();
-            this.btnCapNhatVeMayBay = new System.Windows.Forms.Button();
-            this.btnCapNhatKhachHang = new System.Windows.Forms.Button();
-            this.btnCapNhatNhanVien = new System.Windows.Forms.Button();
-            this.lblCapnhathethong = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnCapNhatChuyenBay = new System.Windows.Forms.Button();
-            this.btnCapnhatDuongbay = new System.Windows.Forms.Button();
-            this.btnCapnhatMaybay = new System.Windows.Forms.Button();
-            this.lblCapnhat = new System.Windows.Forms.Label();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -119,38 +119,6 @@ namespace QuanLyBanVeMayBay
             this.label2.TabIndex = 2;
             this.label2.Text = "Người đang đăng nhập:";
             // 
-            // btnThoat
-            // 
-            this.btnThoat.AutoSize = true;
-            this.btnThoat.BackColor = System.Drawing.Color.White;
-            this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnThoat.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(1044, 45);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(162, 58);
-            this.btnThoat.TabIndex = 1;
-            this.btnThoat.Text = "  Thoát";
-            this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // btnDangXuat
-            // 
-            this.btnDangXuat.AutoSize = true;
-            this.btnDangXuat.BackColor = System.Drawing.Color.White;
-            this.btnDangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDangXuat.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangXuat.Location = new System.Drawing.Point(850, 45);
-            this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(166, 58);
-            this.btnDangXuat.TabIndex = 1;
-            this.btnDangXuat.Text = "  Đăng xuất";
-            this.btnDangXuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDangXuat.UseVisualStyleBackColor = false;
-            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -178,6 +146,180 @@ namespace QuanLyBanVeMayBay
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(400, 622);
             this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.Controls.Add(this.btnDatVeMayBay);
+            this.panel3.Controls.Add(this.btnCapNhatVeMayBay);
+            this.panel3.Controls.Add(this.btnCapNhatKhachHang);
+            this.panel3.Controls.Add(this.btnCapNhatNhanVien);
+            this.panel3.Controls.Add(this.lblCapnhathethong);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(838, 132);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(400, 622);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel4.Controls.Add(this.btnCapNhatChuyenBay);
+            this.panel4.Controls.Add(this.btnCapnhatDuongbay);
+            this.panel4.Controls.Add(this.btnCapnhatMaybay);
+            this.panel4.Controls.Add(this.lblCapnhat);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(400, 132);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(438, 622);
+            this.panel4.TabIndex = 3;
+            // 
+            // btnCapNhatChuyenBay
+            // 
+            this.btnCapNhatChuyenBay.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCapNhatChuyenBay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapNhatChuyenBay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhatChuyenBay.Image = global::QuanLyBanVeMayBay.Properties.Resources.ChuyenBay;
+            this.btnCapNhatChuyenBay.Location = new System.Drawing.Point(0, 322);
+            this.btnCapNhatChuyenBay.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCapNhatChuyenBay.Name = "btnCapNhatChuyenBay";
+            this.btnCapNhatChuyenBay.Size = new System.Drawing.Size(438, 102);
+            this.btnCapNhatChuyenBay.TabIndex = 6;
+            this.btnCapNhatChuyenBay.Text = "   Chuyến bay";
+            this.btnCapNhatChuyenBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapNhatChuyenBay.UseVisualStyleBackColor = false;
+            this.btnCapNhatChuyenBay.Click += new System.EventHandler(this.btnCapNhatChuyenBay_Click);
+            // 
+            // btnCapnhatDuongbay
+            // 
+            this.btnCapnhatDuongbay.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCapnhatDuongbay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapnhatDuongbay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapnhatDuongbay.Image = global::QuanLyBanVeMayBay.Properties.Resources.DuongBay32;
+            this.btnCapnhatDuongbay.Location = new System.Drawing.Point(0, 220);
+            this.btnCapnhatDuongbay.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCapnhatDuongbay.Name = "btnCapnhatDuongbay";
+            this.btnCapnhatDuongbay.Size = new System.Drawing.Size(438, 102);
+            this.btnCapnhatDuongbay.TabIndex = 4;
+            this.btnCapnhatDuongbay.Text = "    Đường bay";
+            this.btnCapnhatDuongbay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapnhatDuongbay.UseVisualStyleBackColor = false;
+            this.btnCapnhatDuongbay.Click += new System.EventHandler(this.btnCapnhatDuongbay_Click);
+            // 
+            // btnCapnhatMaybay
+            // 
+            this.btnCapnhatMaybay.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCapnhatMaybay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapnhatMaybay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapnhatMaybay.Image = global::QuanLyBanVeMayBay.Properties.Resources.Plane;
+            this.btnCapnhatMaybay.Location = new System.Drawing.Point(0, 118);
+            this.btnCapnhatMaybay.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCapnhatMaybay.Name = "btnCapnhatMaybay";
+            this.btnCapnhatMaybay.Size = new System.Drawing.Size(438, 102);
+            this.btnCapnhatMaybay.TabIndex = 3;
+            this.btnCapnhatMaybay.Text = "   Máy bay";
+            this.btnCapnhatMaybay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapnhatMaybay.UseVisualStyleBackColor = false;
+            this.btnCapnhatMaybay.Click += new System.EventHandler(this.btnCapnhatMaybay_Click);
+            // 
+            // lblCapnhat
+            // 
+            this.lblCapnhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lblCapnhat.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCapnhat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCapnhat.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapnhat.Image = global::QuanLyBanVeMayBay.Properties.Resources.Update2;
+            this.lblCapnhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblCapnhat.Location = new System.Drawing.Point(0, 0);
+            this.lblCapnhat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCapnhat.Name = "lblCapnhat";
+            this.lblCapnhat.Size = new System.Drawing.Size(438, 118);
+            this.lblCapnhat.TabIndex = 1;
+            this.lblCapnhat.Text = "Cập nhật thông tin ";
+            this.lblCapnhat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnDatVeMayBay
+            // 
+            this.btnDatVeMayBay.BackColor = System.Drawing.Color.Yellow;
+            this.btnDatVeMayBay.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnDatVeMayBay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDatVeMayBay.ForeColor = System.Drawing.Color.Red;
+            this.btnDatVeMayBay.Image = global::QuanLyBanVeMayBay.Properties.Resources.booking50;
+            this.btnDatVeMayBay.Location = new System.Drawing.Point(0, 520);
+            this.btnDatVeMayBay.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDatVeMayBay.Name = "btnDatVeMayBay";
+            this.btnDatVeMayBay.Size = new System.Drawing.Size(400, 102);
+            this.btnDatVeMayBay.TabIndex = 5;
+            this.btnDatVeMayBay.Text = "ĐẶT VÉ MÁY BAY";
+            this.btnDatVeMayBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDatVeMayBay.UseVisualStyleBackColor = false;
+            this.btnDatVeMayBay.Click += new System.EventHandler(this.btnDatVeMayBay_Click_1);
+            // 
+            // btnCapNhatVeMayBay
+            // 
+            this.btnCapNhatVeMayBay.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCapNhatVeMayBay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapNhatVeMayBay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhatVeMayBay.Image = global::QuanLyBanVeMayBay.Properties.Resources.BookVe1;
+            this.btnCapNhatVeMayBay.Location = new System.Drawing.Point(0, 322);
+            this.btnCapNhatVeMayBay.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCapNhatVeMayBay.Name = "btnCapNhatVeMayBay";
+            this.btnCapNhatVeMayBay.Size = new System.Drawing.Size(400, 102);
+            this.btnCapNhatVeMayBay.TabIndex = 4;
+            this.btnCapNhatVeMayBay.Text = "Vé máy bay";
+            this.btnCapNhatVeMayBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapNhatVeMayBay.UseVisualStyleBackColor = false;
+            this.btnCapNhatVeMayBay.Click += new System.EventHandler(this.btnCapNhatVeMayBay_Click);
+            // 
+            // btnCapNhatKhachHang
+            // 
+            this.btnCapNhatKhachHang.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCapNhatKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapNhatKhachHang.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhatKhachHang.Image = global::QuanLyBanVeMayBay.Properties.Resources.client3;
+            this.btnCapNhatKhachHang.Location = new System.Drawing.Point(0, 220);
+            this.btnCapNhatKhachHang.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCapNhatKhachHang.Name = "btnCapNhatKhachHang";
+            this.btnCapNhatKhachHang.Size = new System.Drawing.Size(400, 102);
+            this.btnCapNhatKhachHang.TabIndex = 2;
+            this.btnCapNhatKhachHang.Text = "   Khách hàng";
+            this.btnCapNhatKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapNhatKhachHang.UseVisualStyleBackColor = false;
+            this.btnCapNhatKhachHang.Click += new System.EventHandler(this.btnCapNhatKhachHang_Click);
+            // 
+            // btnCapNhatNhanVien
+            // 
+            this.btnCapNhatNhanVien.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCapNhatNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapNhatNhanVien.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhatNhanVien.Image = global::QuanLyBanVeMayBay.Properties.Resources.Staff;
+            this.btnCapNhatNhanVien.Location = new System.Drawing.Point(0, 118);
+            this.btnCapNhatNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCapNhatNhanVien.Name = "btnCapNhatNhanVien";
+            this.btnCapNhatNhanVien.Size = new System.Drawing.Size(400, 102);
+            this.btnCapNhatNhanVien.TabIndex = 1;
+            this.btnCapNhatNhanVien.Text = "   Nhân viên";
+            this.btnCapNhatNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapNhatNhanVien.UseVisualStyleBackColor = false;
+            this.btnCapNhatNhanVien.Click += new System.EventHandler(this.btnCapNhatNhanVien_Click_1);
+            // 
+            // lblCapnhathethong
+            // 
+            this.lblCapnhathethong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lblCapnhathethong.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCapnhathethong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCapnhathethong.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapnhathethong.Image = global::QuanLyBanVeMayBay.Properties.Resources.System2;
+            this.lblCapnhathethong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblCapnhathethong.Location = new System.Drawing.Point(0, 0);
+            this.lblCapnhathethong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCapnhathethong.Name = "lblCapnhathethong";
+            this.lblCapnhathethong.Size = new System.Drawing.Size(400, 118);
+            this.lblCapnhathethong.TabIndex = 1;
+            this.lblCapnhathethong.Text = "Cập nhật hệ thống";
+            this.lblCapnhathethong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnTimKiemDuongbay
             // 
@@ -275,178 +417,39 @@ namespace QuanLyBanVeMayBay
             this.lblTimkiem.Text = "Tìm kiếm thông tin";
             this.lblTimkiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
+            // btnThoat
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel3.Controls.Add(this.btnDatVeMayBay);
-            this.panel3.Controls.Add(this.btnCapNhatVeMayBay);
-            this.panel3.Controls.Add(this.btnCapNhatKhachHang);
-            this.panel3.Controls.Add(this.btnCapNhatNhanVien);
-            this.panel3.Controls.Add(this.lblCapnhathethong);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(838, 132);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(400, 622);
-            this.panel3.TabIndex = 2;
+            this.btnThoat.AutoSize = true;
+            this.btnThoat.BackColor = System.Drawing.Color.White;
+            this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnThoat.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Image = global::QuanLyBanVeMayBay.Properties.Resources.exit35;
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(1044, 45);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(162, 58);
+            this.btnThoat.TabIndex = 1;
+            this.btnThoat.Text = "  Thoát";
+            this.btnThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnDatVeMayBay
+            // btnDangXuat
             // 
-            this.btnDatVeMayBay.BackColor = System.Drawing.Color.Yellow;
-            this.btnDatVeMayBay.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnDatVeMayBay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatVeMayBay.ForeColor = System.Drawing.Color.Red;
-            this.btnDatVeMayBay.Location = new System.Drawing.Point(0, 520);
-            this.btnDatVeMayBay.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDatVeMayBay.Name = "btnDatVeMayBay";
-            this.btnDatVeMayBay.Size = new System.Drawing.Size(400, 102);
-            this.btnDatVeMayBay.TabIndex = 5;
-            this.btnDatVeMayBay.Text = "ĐẶT VÉ MÁY BAY";
-            this.btnDatVeMayBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDatVeMayBay.UseVisualStyleBackColor = false;
-            this.btnDatVeMayBay.Click += new System.EventHandler(this.btnDatVeMayBay_Click_1);
-            // 
-            // btnCapNhatVeMayBay
-            // 
-            this.btnCapNhatVeMayBay.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCapNhatVeMayBay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCapNhatVeMayBay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhatVeMayBay.Image = global::QuanLyBanVeMayBay.Properties.Resources.BookVe1;
-            this.btnCapNhatVeMayBay.Location = new System.Drawing.Point(0, 322);
-            this.btnCapNhatVeMayBay.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCapNhatVeMayBay.Name = "btnCapNhatVeMayBay";
-            this.btnCapNhatVeMayBay.Size = new System.Drawing.Size(400, 102);
-            this.btnCapNhatVeMayBay.TabIndex = 4;
-            this.btnCapNhatVeMayBay.Text = "Vé máy bay";
-            this.btnCapNhatVeMayBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCapNhatVeMayBay.UseVisualStyleBackColor = false;
-            this.btnCapNhatVeMayBay.Click += new System.EventHandler(this.btnCapNhatVeMayBay_Click);
-            // 
-            // btnCapNhatKhachHang
-            // 
-            this.btnCapNhatKhachHang.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCapNhatKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCapNhatKhachHang.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhatKhachHang.Image = global::QuanLyBanVeMayBay.Properties.Resources.client3;
-            this.btnCapNhatKhachHang.Location = new System.Drawing.Point(0, 220);
-            this.btnCapNhatKhachHang.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCapNhatKhachHang.Name = "btnCapNhatKhachHang";
-            this.btnCapNhatKhachHang.Size = new System.Drawing.Size(400, 102);
-            this.btnCapNhatKhachHang.TabIndex = 2;
-            this.btnCapNhatKhachHang.Text = "   Khách hàng";
-            this.btnCapNhatKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCapNhatKhachHang.UseVisualStyleBackColor = false;
-            this.btnCapNhatKhachHang.Click += new System.EventHandler(this.btnCapNhatKhachHang_Click);
-            // 
-            // btnCapNhatNhanVien
-            // 
-            this.btnCapNhatNhanVien.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCapNhatNhanVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCapNhatNhanVien.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhatNhanVien.Image = global::QuanLyBanVeMayBay.Properties.Resources.Staff;
-            this.btnCapNhatNhanVien.Location = new System.Drawing.Point(0, 118);
-            this.btnCapNhatNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCapNhatNhanVien.Name = "btnCapNhatNhanVien";
-            this.btnCapNhatNhanVien.Size = new System.Drawing.Size(400, 102);
-            this.btnCapNhatNhanVien.TabIndex = 1;
-            this.btnCapNhatNhanVien.Text = "   Nhân viên";
-            this.btnCapNhatNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCapNhatNhanVien.UseVisualStyleBackColor = false;
-            this.btnCapNhatNhanVien.Click += new System.EventHandler(this.btnCapNhatNhanVien_Click_1);
-            // 
-            // lblCapnhathethong
-            // 
-            this.lblCapnhathethong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblCapnhathethong.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCapnhathethong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblCapnhathethong.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCapnhathethong.Image = global::QuanLyBanVeMayBay.Properties.Resources.System2;
-            this.lblCapnhathethong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblCapnhathethong.Location = new System.Drawing.Point(0, 0);
-            this.lblCapnhathethong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCapnhathethong.Name = "lblCapnhathethong";
-            this.lblCapnhathethong.Size = new System.Drawing.Size(400, 118);
-            this.lblCapnhathethong.TabIndex = 1;
-            this.lblCapnhathethong.Text = "Cập nhật hệ thống";
-            this.lblCapnhathethong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel4.Controls.Add(this.btnCapNhatChuyenBay);
-            this.panel4.Controls.Add(this.btnCapnhatDuongbay);
-            this.panel4.Controls.Add(this.btnCapnhatMaybay);
-            this.panel4.Controls.Add(this.lblCapnhat);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(400, 132);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(438, 622);
-            this.panel4.TabIndex = 3;
-            // 
-            // btnCapNhatChuyenBay
-            // 
-            this.btnCapNhatChuyenBay.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCapNhatChuyenBay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCapNhatChuyenBay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhatChuyenBay.Image = global::QuanLyBanVeMayBay.Properties.Resources.ChuyenBay;
-            this.btnCapNhatChuyenBay.Location = new System.Drawing.Point(0, 322);
-            this.btnCapNhatChuyenBay.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCapNhatChuyenBay.Name = "btnCapNhatChuyenBay";
-            this.btnCapNhatChuyenBay.Size = new System.Drawing.Size(438, 102);
-            this.btnCapNhatChuyenBay.TabIndex = 6;
-            this.btnCapNhatChuyenBay.Text = "   Chuyến bay";
-            this.btnCapNhatChuyenBay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCapNhatChuyenBay.UseVisualStyleBackColor = false;
-            this.btnCapNhatChuyenBay.Click += new System.EventHandler(this.btnCapNhatChuyenBay_Click);
-            // 
-            // btnCapnhatDuongbay
-            // 
-            this.btnCapnhatDuongbay.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCapnhatDuongbay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCapnhatDuongbay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapnhatDuongbay.Image = global::QuanLyBanVeMayBay.Properties.Resources.DuongBay32;
-            this.btnCapnhatDuongbay.Location = new System.Drawing.Point(0, 220);
-            this.btnCapnhatDuongbay.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCapnhatDuongbay.Name = "btnCapnhatDuongbay";
-            this.btnCapnhatDuongbay.Size = new System.Drawing.Size(438, 102);
-            this.btnCapnhatDuongbay.TabIndex = 4;
-            this.btnCapnhatDuongbay.Text = "    Đường bay";
-            this.btnCapnhatDuongbay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCapnhatDuongbay.UseVisualStyleBackColor = false;
-            this.btnCapnhatDuongbay.Click += new System.EventHandler(this.btnCapnhatDuongbay_Click);
-            // 
-            // btnCapnhatMaybay
-            // 
-            this.btnCapnhatMaybay.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCapnhatMaybay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCapnhatMaybay.Font = new System.Drawing.Font("Candara", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapnhatMaybay.Image = global::QuanLyBanVeMayBay.Properties.Resources.Plane;
-            this.btnCapnhatMaybay.Location = new System.Drawing.Point(0, 118);
-            this.btnCapnhatMaybay.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCapnhatMaybay.Name = "btnCapnhatMaybay";
-            this.btnCapnhatMaybay.Size = new System.Drawing.Size(438, 102);
-            this.btnCapnhatMaybay.TabIndex = 3;
-            this.btnCapnhatMaybay.Text = "   Máy bay";
-            this.btnCapnhatMaybay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCapnhatMaybay.UseVisualStyleBackColor = false;
-            this.btnCapnhatMaybay.Click += new System.EventHandler(this.btnCapnhatMaybay_Click);
-            // 
-            // lblCapnhat
-            // 
-            this.lblCapnhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblCapnhat.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblCapnhat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblCapnhat.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCapnhat.Image = global::QuanLyBanVeMayBay.Properties.Resources.Update2;
-            this.lblCapnhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblCapnhat.Location = new System.Drawing.Point(0, 0);
-            this.lblCapnhat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCapnhat.Name = "lblCapnhat";
-            this.lblCapnhat.Size = new System.Drawing.Size(438, 118);
-            this.lblCapnhat.TabIndex = 1;
-            this.lblCapnhat.Text = "Cập nhật thông tin ";
-            this.lblCapnhat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDangXuat.AutoSize = true;
+            this.btnDangXuat.BackColor = System.Drawing.Color.White;
+            this.btnDangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDangXuat.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.Image = global::QuanLyBanVeMayBay.Properties.Resources.logout35;
+            this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangXuat.Location = new System.Drawing.Point(850, 45);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(166, 58);
+            this.btnDangXuat.TabIndex = 1;
+            this.btnDangXuat.Text = "  Đăng xuất";
+            this.btnDangXuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // Menu
             // 

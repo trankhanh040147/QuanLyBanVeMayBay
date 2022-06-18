@@ -130,6 +130,9 @@
   <data name="Search42" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Total33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Total33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="reload2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reload2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,8 +157,8 @@
   <data name="DuongBay32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="client3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\client3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Function111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Function11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Search3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +190,9 @@
   <data name="Search41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BookVe1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BookVe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Function" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Function.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -217,8 +223,14 @@
   <data name="DuongBay3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Total33" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\Total33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="booking35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\booking35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="client3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\client3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DuongBay31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\DuongBay3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,8 +238,8 @@
   <data name="Search21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Search2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Function111" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\Function11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logout35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\logout35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Function11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Function11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,10 +247,13 @@
   <data name="Staff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\assets\img\Staff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\assets\img\Coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Booking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\Booking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BookVe1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BookVe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\exit35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="booking50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\assets\img\booking50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

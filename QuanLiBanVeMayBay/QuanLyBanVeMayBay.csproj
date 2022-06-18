@@ -314,6 +314,21 @@
   <ItemGroup>
     <None Include="Resources\BookVe.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\logout35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\exit35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\booking35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\booking50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
