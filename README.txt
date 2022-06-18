@@ -1,0 +1,4 @@
+---Đồ án cuối kì HCMUTE môn Lập trình Windows---
+SV Thực hiện: Trần Phúc Khánh + Nguyễn Phong Phú + Thành Lợi
+Công nghệ sử dụng: Entity Framework 6 - Code First 
+Đề tài: Quản lí hệ thống bán vé máy bay

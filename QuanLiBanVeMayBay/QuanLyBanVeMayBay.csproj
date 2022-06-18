@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7ADCED10-BF12-412A-A01F-AC63210D757D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyBanVeMayBay</RootNamespace>
+    <AssemblyName>QuanLyBanVeMayBay</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BussinessLogicLayer">
+      <HintPath>..\BussinessLogicLayer\bin\Debug\BussinessLogicLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="DataAccessLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataAccessLayer\bin\Debug\DataAccessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSurface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSurface.1.1.4\lib\net452\MaterialSurface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CapNhatChuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatChuyenBay.Designer.cs">
+      <DependentUpon>CapNhatChuyenBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhatDuongBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatDuongBay.Designer.cs">
+      <DependentUpon>CapNhatDuongBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhatKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatKhachHang.Designer.cs">
+      <DependentUpon>CapNhatKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhatMayBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatMayBay.Designer.cs">
+      <DependentUpon>CapNhatMayBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhatNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatNhanVien.Designer.cs">
+      <DependentUpon>CapNhatNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachChuyenBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachChuyenBay.Designer.cs">
+      <DependentUpon>DanhSachChuyenBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachDuongBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachDuongBay.Designer.cs">
+      <DependentUpon>DanhSachDuongBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachKhachHang.Designer.cs">
+      <DependentUpon>DanhSachKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachMayBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachMayBay.Designer.cs">
+      <DependentUpon>DanhSachMayBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachNhanVien.Designer.cs">
+      <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachVeBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachVeBan.Designer.cs">
+      <DependentUpon>DanhSachVeBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatVeMayBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatVeMayBay.Designer.cs">
+      <DependentUpon>DatVeMayBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CapNhatChuyenBay.resx">
+      <DependentUpon>CapNhatChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhatDuongBay.resx">
+      <DependentUpon>CapNhatDuongBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhatKhachHang.resx">
+      <DependentUpon>CapNhatKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhatMayBay.resx">
+      <DependentUpon>CapNhatMayBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhatNhanVien.resx">
+      <DependentUpon>CapNhatNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachChuyenBay.resx">
+      <DependentUpon>DanhSachChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachDuongBay.resx">
+      <DependentUpon>DanhSachDuongBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachKhachHang.resx">
+      <DependentUpon>DanhSachKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachMayBay.resx">
+      <DependentUpon>DanhSachMayBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachNhanVien.resx">
+      <DependentUpon>DanhSachNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachVeBan.resx">
+      <DependentUpon>DanhSachVeBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatVeMayBay.resx">
+      <DependentUpon>DatVeMayBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\loginPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Search3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Update2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Search4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\System2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\DuongBay2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\DuongBay3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\client3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\ChuyenBay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Authorization.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Function.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Function11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Function.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Function11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renew30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\BookVe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Complete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\assets\img\Total33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookVe.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
